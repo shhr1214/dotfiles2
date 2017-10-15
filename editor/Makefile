@@ -1,7 +1,7 @@
 all:
 
-link:
+setup:
 	ln -fs ${DOTFILES}/editor/.spacemacs ${HOME}/.spacemacs
 
-unlink:
+remove:
 	rm ${HOME}/.spacemacs

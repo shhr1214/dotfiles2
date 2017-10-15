@@ -1,6 +1,6 @@
 all:
 
-init:
-	cd shell && make link
-	cd editor && make link
-	cd tmux $$ make link
+setup:
+	cd shell  && make setup
+	cd editor && make setup
+	cd tmux   $$ make setup
