@@ -1,3 +1,5 @@
-DOTFILES=$(cd $(dirname $0) && pwd)
+# shell
+ln -s ${DOTFILES}/.bash_profile ~/.bash_profile
+ln -s ${DOTFILES}/.bashrc ~/.bashrc
 
 ln -s ${DOTFILES}/.spacemacs ~/.spacemacs
