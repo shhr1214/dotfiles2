@@ -486,7 +486,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "3632cf223c62cb7da121be0ed641a2243f7ec0130178722554e613c9ab3131de" default)))
+    ("4e63466756c7dbd78b49ce86f5f0954b92bf70b30c01c494b37c586639fa3f6f" "5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "3632cf223c62cb7da121be0ed641a2243f7ec0130178722554e613c9ab3131de" default)))
  '(evil-want-Y-yank-to-eol t)
  '(package-selected-packages
    (quote
