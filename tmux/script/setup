@@ -1,0 +1,10 @@
+#!/bin/bash
+DOTFILES = ${HOME}/.dotfiles
+
+ln -fs ${DOTFILES}/tmux/.tmux.conf ~/.tmux.conf
+
+if [ ! -e ${DOTFILES}/tmux/plugins/tpm ]; then
+    git clone https://github.com/tmux-plugins/tpm ${DOTFILES}/tmux/plugins/tpm
+fi
+
+${DOTFILES}/tmux/plugins/tpm/bin/install_plugins

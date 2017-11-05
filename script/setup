@@ -1,0 +1,6 @@
+#!/bin/bash
+DOTFILES = ${HOME}/.dotfiles
+
+bash ${DOTFILES}/lang/script/setup
+bash ${DOTFILES}/shell/script/setup
+bash ${DOTFILES}/tmux/script/setup

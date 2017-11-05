@@ -3,5 +3,5 @@ limit coredumpsize 0
 bindkey -d
 bindkey -e
 
-source ${DOTFILES}/editor/init.zsh
-source ${DOTFILES}/lang/init.zsh
+source ${DOTFILES}/editor/export.zsh
+source ${DOTFILES}/lang/export.zsh
