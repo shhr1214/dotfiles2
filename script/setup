@@ -1,5 +1,5 @@
 #!/bin/bash
-DOTFILES = ${HOME}/.dotfiles
+DOTFILES=${HOME}/.dotfiles
 
 bash ${DOTFILES}/lang/script/setup
 bash ${DOTFILES}/shell/script/setup
