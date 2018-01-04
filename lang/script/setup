@@ -1,14 +1,22 @@
 #!/bin/bash
 
-if [ ! -e ${HOME}/.cargo ]; then
-    curl https://sh.rustup.rs -sSf | sh
-    rustup install nightly
-    rustup default nightly
-    rustup completions zsh > ~/.zfunc/_rustup
-fi
+# rust
 
-brew install go
+rustup install nightly
+rustup default nightly
+rustup component add rls-preview --toolchain nightly
+rustup component add rust-analysis --toolchain nightly
+rustup component add rust-src --toolchain nightly
+rustup completions zsh > ~/.zfunc/_rustup
 
-if [ ! -e ${HOME}/.pyenv ]; then
-    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-fi
+cargo install racer
+cargo install clippy
+cargo install cargo-update
+
+# # pyenv の設定
+# pyenv virtualenv 2.7.13 neovim-2
+# pyenv shell neovim-2
+# pip install neovim
+# pyenv virtualenv 3.6.1 neovim-3
+# pyenv shell neovim-3
+# pip install neovim

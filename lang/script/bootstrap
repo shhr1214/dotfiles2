@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ ! -e ${HOME}/.cargo ]; then
+    curl https://sh.rustup.rs -sSf | sh
+fi
+
+brew install go
+brew install dep
+
+brew install lua
+
+brew install pyenv
+brew install pyenv-virtualenv
+brew install rbenv
+brew install ruby-build
+brew install ndenv
