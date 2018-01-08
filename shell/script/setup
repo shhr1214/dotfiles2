@@ -7,6 +7,6 @@ ln -fs ${HOME}/.dotfiles/shell/.zshrc ${HOME}/.zshrc
 source .zshrc
 
 brew install peco
-brew install ghq
+go get -u github.com/motemen/ghq
 
 git config --global ghq.root ~/src
