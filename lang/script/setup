@@ -1,17 +1,21 @@
 #!/bin/bash
 
 # rust
-
+rustup self update
+rustup update
 rustup install nightly
 rustup default nightly
-rustup component add rls-preview --toolchain nightly
-rustup component add rust-analysis --toolchain nightly
-rustup component add rust-src --toolchain nightly
+rustup component add rls-preview
+rustup component add rust-analysis
+rustup component add rust-src
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install racer
 cargo install clippy
 cargo install cargo-update
+
+# go
+go get -u github.com/golang/dep/cmd/dep
 
 # # pyenv の設定
 # pyenv virtualenv 2.7.13 neovim-2

@@ -10,7 +10,7 @@ if &compatible
 endif
 
 set runtimepath+=$HOME/.dotfiles/editor/dein/repos/github.com/Shougo/dein.vim
-let s:dein_dir=expand($HOME/.dotfiles/.'/editor/dein/')
+let s:dein_dir=$HOME . '/.dotfiles/editor/dein/'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)

@@ -5,7 +5,6 @@ if [ ! -e ${HOME}/.cargo ]; then
 fi
 
 brew install go
-brew install dep
 
 brew install lua
 
@@ -13,4 +12,4 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
 brew install ruby-build
-brew install ndenv
+brew install nodebrew

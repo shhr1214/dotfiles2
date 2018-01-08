@@ -3,14 +3,15 @@
 # rust
 rustup self update
 rustup update
-rustup component add rls-preview --toolchain nightly
-rustup component add rust-analysis --toolchain nightly
-rustup component add rust-src --toolchain nightly
+rustup component add rls-preview
+rustup component add rust-analysis
+rustup component add rust-src
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install-update -a
 
 # Golang
+go get -u -v github.com/golang/dep/cmd/dep
 go get -u -v github.com/nsf/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u -v golang.org/x/tools/cmd/guru
