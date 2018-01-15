@@ -3,8 +3,11 @@
 autoload -Uz run-help
 autoload -Uz add-zsh-hook
 autoload -Uz colors && colors
-# autoload -Uz compinit && compinit -u
+autoload -Uz compinit && compinit
 autoload -Uz is-at-least
+
+# 補完の大文字小文字区別
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 typeset -U path PATH
 
