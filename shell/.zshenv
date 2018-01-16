@@ -43,6 +43,8 @@ source ${DOTFILES}/lang/export.zsh
 alias ls=exa
 alias ll="exa -l"
 
+alias e="emacs -nw"
+alias ew="/usr/local/Cellar/emacs-plus/25.3/bin/emacs"
 alias emacs="emacs -nw"
 alias emacs-with-window="/usr/local/Cellar/emacs-plus/25.3/bin/emacs"
 alias vi="nvim -u NONE --noplugin"

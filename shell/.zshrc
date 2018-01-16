@@ -8,9 +8,9 @@ export TERM='xterm-256color'
 autoload -Uz colors
 colors
 
-PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m:%~]%{$reset_color%}"
-# PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{$reset_color%}"
-# RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{${reset_color}%}"
+# PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m:%~]%{$reset_color%}"
+PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{$reset_color%}"
+RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{${reset_color}%}"
 
 # zcompile
 if [ $DOTFILES/shell/.zshrc -nt ~/.zshrc.zwc ]; then
