@@ -404,14 +404,14 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  ;; (when window-system
-  ;;   (progn
-  ;;     (setq ns-use-srgb-colorspace nil)
-  ;;     (set-language-environment "Japanese")
-  ;;     (prefer-coding-system 'utf-8-unix)
-  ;;     (setq ns-use-srgb-colorspace nil)
-  ;;     (setq coding-system-for-write 'utf-8-unix)
-  ;;     (setq initial-frame-alist '((height . 40) (width . 120)))))
+  (when window-system
+    (progn
+      (setq ns-use-srgb-colorspace t)
+      (set-language-environment "Japanese")
+      (prefer-coding-system 'utf-8-unix)
+      (setq coding-system-for-write 'utf-8-unix)
+      ;; (setq initial-frame-alist '((height . 40) (width . 120)))
+      ))
 
   (setq-default evil-escape-delay 0.4)
 
