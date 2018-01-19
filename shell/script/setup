@@ -10,3 +10,7 @@ brew install peco
 go get -u github.com/motemen/ghq
 
 git config --global ghq.root ~/src
+
+cargo install exa
+cargo install ripgrep
+cargo install fd-find
