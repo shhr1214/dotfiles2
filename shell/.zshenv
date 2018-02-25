@@ -10,7 +10,7 @@ autoload -Uz is-at-least
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 typeset -U path PATH
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export LANGUAGE="en_US.UTF-8"
 export LANG="${LANGUAGE}"
@@ -44,10 +44,10 @@ source ${DOTFILES}/lang/export.zsh
 alias ls=exa
 alias ll="exa -l"
 
-alias e="emacs -nw"
-alias ew="/usr/local/Cellar/emacs-plus/25.3/bin/emacs"
 alias emacs="emacs -nw"
+alias e="emacs"
 alias emacs-with-window="/usr/local/Cellar/emacs-plus/25.3/bin/emacs"
+alias ew="emacs-with-window"
 alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 

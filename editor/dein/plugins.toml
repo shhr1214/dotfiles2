@@ -14,6 +14,10 @@ hook_add = '''
 '''
 
 # ==============================================================================
+# denite
+# ==============================================================================
+
+# ==============================================================================
 # edit
 # ==============================================================================
 
@@ -43,6 +47,9 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'w0rp/ale'
 
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
 # ==============================================================================
 # colorscheme
 # ==============================================================================
@@ -65,8 +72,8 @@ build = './install.sh'
 hook_source = '''
 set hidden
 let g:LanguageClient_serverCommands = {
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ 'vue': ['vls'],
-    \ 'rust': ['rls'],
     \ }
 let g:LanguageClient_autoStart = 1
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>

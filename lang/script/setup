@@ -16,6 +16,7 @@ cargo install cargo-update
 
 # go
 go get -u github.com/golang/dep/cmd/dep
+brew install go-delve/delve/delve
 
 # # pyenv の設定
 # pyenv virtualenv 2.7.13 neovim-2
