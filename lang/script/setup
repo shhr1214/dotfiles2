@@ -25,3 +25,6 @@ brew install go-delve/delve/delve
 # pyenv virtualenv 3.6.1 neovim-3
 # pyenv shell neovim-3
 # pip install neovim
+
+# php
+phpbrew init

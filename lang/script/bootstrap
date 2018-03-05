@@ -13,3 +13,4 @@ brew install pyenv-virtualenv
 brew install rbenv
 brew install ruby-build
 brew install nodebrew
+brew install phpbrew
