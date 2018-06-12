@@ -1,8 +1,8 @@
 set encoding=utf-8
 
 " python
-let g:python_host_prog=$PYENV_ROOT.'/versions/2.7.14/bin/python'
-let g:python3_host_prog=$PYENV_ROOT.'/versions/3.6.2/bin/python'
+let g:python_host_prog=$PYENV_ROOT.'/versions/2.7.15/bin/python'
+let g:python3_host_prog=$PYENV_ROOT.'/versions/3.6.5/bin/python'
 
 " dein
 if &compatible

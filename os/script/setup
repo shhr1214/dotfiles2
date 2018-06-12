@@ -1,0 +1,17 @@
+# google
+brew cask install google-backup-and-sync
+brew cask install google-chrome
+brew cask install google-japanese-ime
+
+# keyborad
+brew cask install karabiner-elements
+
+# font
+brew tap caskroom/fonts
+brew cask install font-fira-code
+
+brew cask install kindle
+
+# keyboard
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 10

@@ -1,4 +1,6 @@
 #!/bin/bash
+brew install tmux
+
 ln -fs ${HOME}/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 if [ ! -e ${HOME}/.dotfiles/tmux/plugins/tpm ]; then

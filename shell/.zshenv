@@ -39,6 +39,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 # その他
 source ${DOTFILES}/editor/export.zsh
 source ${DOTFILES}/lang/export.zsh
+source ${DOTFILES}/tools/export.zsh
 
 # alias
 alias ls=exa

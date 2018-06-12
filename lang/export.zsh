@@ -3,6 +3,9 @@ source $HOME/.cargo/env
 export RUST_SRC_PATH="$HOME/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 fpath+=${HOME}/.zfunc
 
+# elm
+export ELM_HOME=$HOME/node_modules/elm
+
 # go
 export GOPATH="$HOME"
 # export GOROOT="$HOME"

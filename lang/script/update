@@ -17,8 +17,9 @@ go get -u github.com/rogpeppe/godef
 go get -u golang.org/x/tools/cmd/guru
 go get -u golang.org/x/tools/cmd/gorename
 go get -u golang.org/x/tools/cmd/goimports
+go get -u github.com/zmb3/gogetdoc
 go get -u github.com/alecthomas/gometalinter
-gometalinter --install
+gometalinter --install --update
 go get -u github.com/godoctor/godoctor
 go install github.com/godoctor/godoctor
 go get -u github.com/fatih/gomodifytags

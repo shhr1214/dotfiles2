@@ -14,17 +14,27 @@ cargo install racer
 cargo install clippy
 cargo install cargo-update
 
+# elm
+brew install elm
+brew install node
+
 # go
 go get -u github.com/golang/dep/cmd/dep
 brew install go-delve/delve/delve
 
-# # pyenv の設定
-# pyenv virtualenv 2.7.13 neovim-2
-# pyenv shell neovim-2
-# pip install neovim
-# pyenv virtualenv 3.6.1 neovim-3
-# pyenv shell neovim-3
-# pip install neovim
+# pyenv の設定
+pyenv virtualenv 2.7 neovim-2
+pyenv shell neovim-2
+pip install neovim
+pyenv virtualenv 3.7.0b2 neovim-3
+pyenv shell neovim-3
+pip install neovim
 
 # php
 phpbrew init
+
+# dotnet
+brew install Caskroom/cask/dotnet
+
+# scheme
+brew install gauche

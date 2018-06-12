@@ -1,5 +1,15 @@
 #!/bin/bash
+# vi
+brew install nvim
+curl -sLf https://spacevim.org/install.sh | bash
+ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
+
+# emacs
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+brew linkapps emacs-plus
+git clone https://github.com/syl20bnr/spacemacs ${HOME}/.emacs.d
+(cd ${HOME}/.emacs.d && git checkout -b develop origin/develop)
 
 ln -fs ${HOME}/.dotfiles/editor/.spacemacs ${HOME}/.spacemacs
-ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
 
