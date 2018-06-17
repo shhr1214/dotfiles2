@@ -40,3 +40,21 @@ name = "lsp"
 filetypes = [
   "rust"
 ]
+
+# Languages
+#
+[[layers]]
+name = 'lang#rust'
+
+[[layers]]
+name = 'lang#go'
+
+[[layers]]
+name = 'markdown'
+
+[[layers]]
+name = 'lang#json'
+
+[[layers]]
+name = 'lang#toml'
+

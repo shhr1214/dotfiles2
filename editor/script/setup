@@ -3,6 +3,7 @@
 brew install nvim
 curl -sLf https://spacevim.org/install.sh | bash
 ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
+ln -fs ${HOME}/.dotfiles/editor/spacevim.toml ${HOME}/.SpaceVim.d/init.toml
 
 # emacs
 brew tap d12frosted/emacs-plus
@@ -12,4 +13,7 @@ git clone https://github.com/syl20bnr/spacemacs ${HOME}/.emacs.d
 (cd ${HOME}/.emacs.d && git checkout -b develop origin/develop)
 
 ln -fs ${HOME}/.dotfiles/editor/.spacemacs ${HOME}/.spacemacs
+
+# vscode
+brew cask install visual-studio-code
 
