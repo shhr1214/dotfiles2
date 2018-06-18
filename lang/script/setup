@@ -38,3 +38,6 @@ brew install Caskroom/cask/dotnet
 
 # scheme
 brew install gauche
+
+# jvm familiy
+curl -s "https://get.sdkman.io" | bash
