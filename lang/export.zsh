@@ -26,8 +26,5 @@ eval "$(rbenv init -)"
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# php
-source $HOME/.phpbrew/bashrc
-
 # jvm family
 source ${HOME}/.sdkman/bin/sdkman-init.sh
