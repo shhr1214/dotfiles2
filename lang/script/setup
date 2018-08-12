@@ -8,6 +8,7 @@ rustup default nightly
 rustup component add rls-preview
 rustup component add rust-analysis
 rustup component add rust-src
+rustup component add rustfmt-preview --toolchain nightly
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install racer
