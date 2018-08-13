@@ -6,6 +6,7 @@ ln -fs ${HOME}/.dotfiles/shell/.zshrc ${HOME}/.zshrc
 
 source .zshrc
 
+brew install tig
 brew install peco
 brew install cmake
 go get -u github.com/motemen/ghq
