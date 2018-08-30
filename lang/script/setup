@@ -11,7 +11,7 @@ rustup component add rust-src
 rustup component add rustfmt-preview --toolchain nightly
 rustup completions zsh > ~/.zfunc/_rustup
 
-cargo install racer
+cargo +nightly install racer
 cargo install clippy
 cargo install cargo-update
 
