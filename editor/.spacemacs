@@ -62,8 +62,10 @@ This function should only modify configuration layer settings."
      ;; erlang
      git
      (go :variables
+         go-backend 'lsp
          go-format-before-save t
          go-tab-width 4
+         godoc-at-point-function 'godoc-gogetdoc
          gofmt-command "goimports")
      gtags
      ;; haskell
