@@ -9,25 +9,27 @@ if &compatible
   set nocompatible
 endif
 
-set runtimepath+=$HOME/.dotfiles/editor/dein/repos/github.com/Shougo/dein.vim
-let s:dein_dir=$HOME . '/.dotfiles/editor/dein/'
+set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
+let s:dein_dir=$HOME . '/.cache/dein'
+let s:dein_toml_dir=$HOME . '/.dotfiles/editor/dein'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
+  call dein#add(s:dein_dir . '/repos/github.com/Shougo/dein.vim')
 
-  call dein#load_toml(s:dein_dir . 'plugins.toml', {'lazy': 0})
-  call dein#load_toml(s:dein_dir . 'lazy.toml', {'lazy': 1})
+  call dein#load_toml(s:dein_toml_dir . '/plugins.toml', {'lazy': 0})
+  call dein#load_toml(s:dein_toml_dir . '/lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()
 endif
 
-if has('vim_starting') && dein#check_install()
-  call dein#install()
-endif
-
 filetype plugin indent on
 syntax enable
+
+if dein#check_install()
+  call dein#install()
+endif
 
 " vim
 autocmd FileType vim setlocal tabstop=2 shiftwidth=2

@@ -37,6 +37,7 @@ export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # その他
+export XDG_CONFIG_HOME=${HOME}/.config
 source ${DOTFILES}/editor/export.zsh
 source ${DOTFILES}/lang/export.zsh
 source ${DOTFILES}/tools/export.zsh
@@ -47,7 +48,7 @@ alias ll="exa -l"
 
 alias emacs="emacs -nw"
 alias e="emacs"
-alias emacs-with-window="/usr/local/Cellar/emacs-plus/25.3/bin/emacs"
+alias emacs-with-window="\emacs"
 alias ew="emacs-with-window"
 alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
