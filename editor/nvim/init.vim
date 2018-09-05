@@ -88,10 +88,6 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-if has('nvim')
-  colorscheme tender
-endif
-
 set showtabline=2
 
 set splitright
