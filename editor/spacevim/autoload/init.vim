@@ -6,3 +6,5 @@ inoremap <silent> fd <esc>
 inoremap <silent> <C-b> <Left>
 inoremap <silent> <C-f> <Right>
 
+" ==============================================================================
+set tabstop=4
