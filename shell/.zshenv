@@ -17,7 +17,7 @@ export LANG="${LANGUAGE}"
 export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
-export EDITOR=vi
+export EDITOR="nvim -u NONE --noplugin"
 export CVSEDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 
