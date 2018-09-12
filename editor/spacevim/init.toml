@@ -64,7 +64,16 @@ name = 'lang#rust'
 name = 'lang#elm'
 
 [[layers]]
+name = 'lang#haskell'
+
+[[layers]]
+name = 'lang#lisp'
+
+[[layers]]
 name = 'lang#go'
+
+[[layers]]
+name = 'lang#c'
 
 [[layers]]
 name = 'lang#python'

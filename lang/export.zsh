@@ -6,6 +6,9 @@ fpath+=${HOME}/.zfunc
 # elm
 export ELM_HOME=$HOME/node_modules/elm
 
+# haskell
+export PATH="$HOME/.local/bin:$PATH"
+
 # go
 export GOPATH="$HOME"
 # export GOROOT="$HOME"
