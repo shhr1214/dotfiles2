@@ -2,9 +2,3 @@
 brew install tmux
 
 ln -fs ${HOME}/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
-
-if [ ! -e ${HOME}/.dotfiles/tmux/plugins/tpm ]; then
-    git clone https://github.com/tmux-plugins/tpm ${HOME}/.dotfiles/tmux/plugins/tpm
-fi
-
-${HOME}/.dotfiles/tmux/plugins/tpm/bin/install_plugins
