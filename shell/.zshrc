@@ -4,7 +4,7 @@ bindkey -d
 bindkey -e
 
 # prompt
-export TERM='xterm-256color'
+export TERM='screen-256color'
 autoload -Uz colors
 colors
 
