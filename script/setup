@@ -4,3 +4,4 @@ bash ${HOME}/.dotfiles/editor/script/setup
 bash ${HOME}/.dotfiles/lang/script/setup
 bash ${HOME}/.dotfiles/shell/script/setup
 bash ${HOME}/.dotfiles/tmux/script/setup
+bash ${HOME}/.dotfiles/tools/script/setup
