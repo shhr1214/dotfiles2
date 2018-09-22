@@ -55,6 +55,9 @@ default_position = 'top'
 default_height = 30
 
 [[layers]]
+name = 'colorscheme'
+
+[[layers]]
 name = 'lsp'
 filetypes = [
   'rust'
