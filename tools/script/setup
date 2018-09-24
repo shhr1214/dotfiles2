@@ -1,2 +1,4 @@
 mkdir ${HOME}/.config/alacritty
 ln -fs ${HOME}/.dotfiles/tools/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
+
+yarn global add dockly
