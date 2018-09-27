@@ -93,3 +93,6 @@ name = 'lang#javascript'
 [[layers]]
 name = 'lang#typescript'
 
+[[layers]]
+name = 'lang#dockerfile'
+
