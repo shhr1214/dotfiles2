@@ -25,6 +25,7 @@
     enable_statusline_display_mode = false
     relativenumber = false
     bootstrap_after = "init#after"
+    default_indent = 4
 
 # Enable autocomplete layer
 [[layers]]
