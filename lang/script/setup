@@ -51,3 +51,7 @@ brew install gauche
 
 # jvm familiy
 curl -s "https://get.sdkman.io" | bash
+
+# yarn
+curl -o- -L https://yarnpkg.com/install.sh | bash
+

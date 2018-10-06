@@ -33,3 +33,6 @@ go get -u github.com/godoctor/godoctor
 go install github.com/godoctor/godoctor
 go get -u github.com/fatih/gomodifytags
 
+
+# yarn
+curl --compressed -o- -L https://yarnpkg.com/install.sh | bash

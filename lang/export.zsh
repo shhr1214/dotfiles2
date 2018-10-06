@@ -28,6 +28,7 @@ eval "$(rbenv init -)"
 
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
 # jvm family
 source ${HOME}/.sdkman/bin/sdkman-init.sh
