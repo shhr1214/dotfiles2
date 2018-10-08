@@ -52,8 +52,8 @@ name = 'git'
 
 [[layers]]
 name = 'shell'
-default_position = 'top'
-default_height = 30
+default_position = 'bottom'
+default_height = 20
 
 [[layers]]
 name = 'colorscheme'
@@ -66,9 +66,6 @@ filetypes = [
 
 [[layers]]
 name = 'lang#rust'
-
-[[layers]]
-name = 'lang#elm'
 
 [[layers]]
 name = 'lang#haskell'
@@ -93,6 +90,12 @@ name = 'lang#javascript'
 
 [[layers]]
 name = 'lang#typescript'
+
+[[layers]]
+name = 'lang#vue'
+
+[[layers]]
+name = 'lang#elm'
 
 [[layers]]
 name = 'lang#dockerfile'

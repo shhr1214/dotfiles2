@@ -48,6 +48,7 @@ brew install Caskroom/cask/dotnet
 
 # scheme
 brew install gauche
+brew install minimal-racket
 
 # jvm familiy
 curl -s "https://get.sdkman.io" | bash
