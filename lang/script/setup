@@ -52,6 +52,7 @@ brew install minimal-racket
 
 # jvm familiy
 curl -s "https://get.sdkman.io" | bash
+brew install clojure
 
 # yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
