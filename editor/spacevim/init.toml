@@ -62,11 +62,10 @@ name = 'colorscheme'
 name = 'lsp'
 filetypes = [
   'rust',
-  'haskell',
+# 'haskell',
   'go',
   'python',
   'typescript',
-  'javascript',
   'html'
 ]
 
