@@ -11,7 +11,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # go
 export GOPATH="$HOME"
-# export GOROOT="$HOME"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
@@ -27,7 +26,6 @@ export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
 
 # node
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
 # jvm family
