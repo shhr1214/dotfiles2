@@ -94,6 +94,9 @@ name = 'lang#python'
 name = 'lang#java'
 
 [[layers]]
+name = 'lang#kotlin'
+
+[[layers]]
 name = 'lang#scala'
 
 [[layers]]
