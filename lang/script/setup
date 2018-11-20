@@ -53,6 +53,7 @@ brew install Caskroom/cask/dotnet
 # jvm familiy
 curl -s "https://get.sdkman.io" | bash
 brew install clojure
+brew install shyiko/ktlint/ktlint
 
 # yarn
 curl -o -L https://yarnpkg.com/install.sh | bash
