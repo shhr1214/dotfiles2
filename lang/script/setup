@@ -44,6 +44,7 @@ pip install --user yapf
 pip install --user autoflake
 pip install --user isort
 
+brew install cquery
 brew install lua
 brew install node
 brew install gauche
