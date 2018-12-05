@@ -84,6 +84,7 @@ This function should only modify configuration layer settings."
      ;; ocaml
      org
      php
+     protobuf
      (python :variables
              python-backend 'lsp
              python-enable-yapf-format-on-save t
