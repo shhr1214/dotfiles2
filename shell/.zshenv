@@ -53,4 +53,6 @@ alias ew="emacs-with-window"
 alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 
+alias ssh="TERM=xterm-256color ssh"
+
 alias update="~/.dotfiles/script/update"
