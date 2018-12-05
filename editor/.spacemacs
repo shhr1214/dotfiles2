@@ -105,7 +105,7 @@ This function should only modify configuration layer settings."
             shell-default-shell 'eshell
             shell-default-height 30
             shell-default-position 'bottom)
-     sql
+     (sql :variables sql-auto-indent nil)
      (syntax-checking :valiables syntax-checking-enable-tooltips nil)
      themes-megapack
      (typescript :variables
