@@ -25,24 +25,32 @@ stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
 
 # go
 go get -u github.com/golang/dep/cmd/dep
-brew install go-delve/delve/delve
+go get -u github.com/derekparker/delve/cmd/dlv
 
-# pyenv の設定
+# python
 brew install pyenv
 brew install pyenv-virtualenv
+
+pyenv install 3.7.1
+pyenv install 2.7.15
+
+pyenv global 3.7.1 2.7.15
+pip3 install pynvim
+pip3 install flake8
+pip3 install yapf
+pip3 install autoflake
+pip3 install isort
+pip3 install python-language-server
+pip2 install pynvim
+pip2 install flake8
+pip2 install yapf
+pip2 install autoflake
+pip2 install isort
+pip2 install python-language-server
+
+# ruby
 brew install rbenv
 brew install ruby-build
-
-pyenv virtualenv 2.7 neovim-2
-pyenv shell neovim-2
-pip2 install neovim
-pyenv virtualenv 3.7.0b2 neovim-3
-pyenv shell neovim-3
-pip3 install neovim
-pip install --user flake8
-pip install --user yapf
-pip install --user autoflake
-pip install --user isort
 
 brew install cquery
 brew install lua
