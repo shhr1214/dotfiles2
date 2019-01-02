@@ -14,3 +14,5 @@ git clone https://github.com/syl20bnr/spacemacs ${HOME}/.emacs.d
 
 ln -fs ${HOME}/.dotfiles/editor/.spacemacs ${HOME}/.spacemacs
 
+# editorconfig
+ln -fs ${HOME}/.dotfiles/editor/editorconfig ${HOME}/.editorconfig

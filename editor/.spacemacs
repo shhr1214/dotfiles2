@@ -569,11 +569,6 @@ before packages are loaded."
   ;; (remove-hook 'elm-mode-hook 'company-mode)
   (spacemacs|disable-company elm-mode)
 
-  ;; java-mode
-  (add-hook 'java-mode-hook
-            '(lambda ()
-               (setq tab-width 4)))
-
   ;; javascript-mode
   (setq-default
    css-indent-offset 2
@@ -589,12 +584,6 @@ before packages are loaded."
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
-
-  ;; php-mode
-  (add-hook 'php-mode-hook
-            '(lambda ()
-               (setq tab-width 4)
-               (setq c-basic-offset 4)))
 
   (setq org-bullets-bullet-list '("*" "**" "***" "****"))
   )
