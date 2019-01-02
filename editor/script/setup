@@ -14,7 +14,3 @@ git clone https://github.com/syl20bnr/spacemacs ${HOME}/.emacs.d
 
 ln -fs ${HOME}/.dotfiles/editor/.spacemacs ${HOME}/.spacemacs
 
-# vscode
-brew cask install visual-studio-code
-ln -s ${HOME}/.dotfiles/editor/vscode/User $HOME/Library/Application\ Support/Code/User
-ln -s ${HOME}/.dotfiles/editor/vscode/.vscode $HOME/.vscode
