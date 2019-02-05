@@ -7,3 +7,18 @@ insert_final_newline = true
 indent_size = 4
 indent_style = space
 trim_trailing_whitespace = true
+
+[*.c]
+indent_size = 2
+
+[*.s]
+indent_style = tab
+
+[*.asm]
+indent_size = 2
+
+[{**.el,.spacemacs}]
+indent_size = 2
+
+[{Makefile,**.mk}]
+indent_style = tab
