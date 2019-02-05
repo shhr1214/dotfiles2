@@ -3,3 +3,6 @@ ln -fs ${HOME}/.dotfiles/tools/alacritty.yml ${HOME}/.config/alacritty/alacritty
 
 yarn global add dockly
 yarn global add dockerfile-language-server-nodejs
+
+brew cask install alacritty
+
