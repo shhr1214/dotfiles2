@@ -1,6 +1,7 @@
 # rust
 source $HOME/.cargo/env
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+export RUST_BACKTRACE=1
 fpath+=${HOME}/.zfunc
 
 # elm
