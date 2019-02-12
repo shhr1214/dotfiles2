@@ -82,7 +82,7 @@ This function should only modify configuration layer settings."
      kotlin
      ;; lua
       (lsp :variables
-        lsp-ui-sideline-enable nil)
+           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      neotree
      ;; ocaml
