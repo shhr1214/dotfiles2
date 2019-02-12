@@ -1,24 +1,19 @@
 set encoding=utf-8
 
-" python
-let g:python_host_prog=$PYENV_ROOT.'/versions/2.7.15/bin/python'
-let g:python3_host_prog=$PYENV_ROOT.'/versions/3.6.5/bin/python'
-
 " dein
 if &compatible
   set nocompatible
 endif
 
-set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
-let s:dein_dir=$HOME . '/.cache/dein'
-let s:dein_toml_dir=$HOME . '/.dotfiles/editor/dein'
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+let s:dein_dir='~/.cache/dein'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#add(s:dein_dir . '/repos/github.com/Shougo/dein.vim')
 
-  call dein#load_toml(s:dein_toml_dir . '/plugins.toml', {'lazy': 0})
-  call dein#load_toml(s:dein_toml_dir . '/lazy.toml', {'lazy': 1})
+  call dein#load_toml($DOTFILES . '/editor/nvim/plugins.toml', {'lazy': 0})
+  call dein#load_toml($DOTFILES . '/editor/nvim/lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()

@@ -81,7 +81,8 @@ This function should only modify configuration layer settings."
      (javascript :variables javascript-backend 'lsp)
      kotlin
      ;; lua
-     lsp
+      (lsp :variables
+        lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      neotree
      ;; ocaml
@@ -268,7 +269,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Cica"
+   dotspacemacs-default-font '("FuraCode Nerd Font"
                                :size 17
                                :weight normal
                                :width normal)

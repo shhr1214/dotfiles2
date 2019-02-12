@@ -85,4 +85,3 @@ noremap <silent> S :call LanugageClient_textDocument_documentSymbol()<CR>
 
 [[plugins]] # Toml
 repo = 'cespare/vim-toml'
-
