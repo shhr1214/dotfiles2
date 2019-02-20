@@ -3,11 +3,11 @@
 # rust
 rustup self update
 rustup update
-rustup component add rls-preview
+rustup component add rls
 rustup component add rust-analysis
 rustup component add rust-src
-rustup component add rustfmt-preview --toolchain nightly
-rustup component add clippy-preview
+rustup component add rustfmt --toolchain nightly
+rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install-update -a

@@ -5,11 +5,11 @@ rustup self update
 rustup update
 rustup install nightly
 rustup default nightly
-rustup component add rls-preview
+rustup component add rls
 rustup component add rust-analysis
 rustup component add rust-src
-rustup component add rustfmt-preview --toolchain nightly
-rustup component add clippy-preview
+rustup component add rustfmt --toolchain nightly
+rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo +nightly install racer
@@ -63,6 +63,8 @@ brew install Caskroom/cask/dotnet
 curl -s "https://get.sdkman.io" | bash
 brew install clojure
 brew install shyiko/ktlint/ktlint
+brew install scalastyle
+sdk install sbt
 
 # yarn
 curl -o -L https://yarnpkg.com/install.sh | bash
