@@ -2,7 +2,7 @@
 # vi
 brew install nvim
 curl -sLf https://spacevim.org/install.sh | bash
-ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
+# ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
 # ln -fs ${HOME}/.dotfiles/editor/spacevim ${HOME}/.SpaceVim.d
 
 # emacs

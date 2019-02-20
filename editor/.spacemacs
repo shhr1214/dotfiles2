@@ -88,6 +88,7 @@ This function should only modify configuration layer settings."
      ;; ocaml
      org
      php
+     prettier
      protobuf
      (python :variables
              python-backend 'lsp
@@ -103,6 +104,8 @@ This function should only modify configuration layer settings."
            rust-backend 'lsp
            rust-format-on-save t)
      (scala :variables
+            scala-enable-eldoc t
+            scala-auto-start-ensime t
             scala-auto-insert-asterisk-in-comments t)
      scheme
      (shell :variables

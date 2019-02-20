@@ -69,3 +69,4 @@ sdk install sbt
 # yarn
 curl -o -L https://yarnpkg.com/install.sh | bash
 yarn global add vscode-html-languageserver-bin typescript typescript-language-server
+yarn global add prettier
