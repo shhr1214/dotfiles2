@@ -62,7 +62,7 @@ This function should only modify configuration layer settings."
      ;; elixir
      emacs-lisp
      (elm :variables
-          elm-format-command "elm-format"
+          elm-format-command "elm-format-0.19"
           elm-format-on-save t
           elm-sort-imports-on-save t)
      ;; erlang
@@ -81,8 +81,9 @@ This function should only modify configuration layer settings."
      (javascript :variables javascript-backend 'lsp)
      kotlin
      ;; lua
-      (lsp :variables
-           lsp-ui-sideline-enable nil)
+     (lsp :variables
+          lsp-navigation 'simple
+          lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      neotree
      ;; ocaml
