@@ -76,7 +76,7 @@ This function should only modify configuration layer settings."
      (gtags :variables gtags-enable-by-default nil)
      (haskell :variables haskell-enable-hindent t)
      helm
-     html
+     (html :variables web-fmt-tool 'prettier)
      (java :variables java-backend 'lsp)
      (javascript :variables javascript-backend 'lsp)
      kotlin
