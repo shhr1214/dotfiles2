@@ -59,7 +59,7 @@ zle -N peco-src
 bindkey '^]' peco-src
 
 # docker kubernetes
-source <(kubectl completion bash)
+# source <(kubectl completion bash)
 
 # if (which zprof > /dev/null 2>&1) ;then
 #   zprof
