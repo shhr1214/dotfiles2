@@ -65,6 +65,8 @@ brew install clojure
 brew install shyiko/ktlint/ktlint
 brew install scalastyle
 sdk install sbt
+brew install Cask
+cask upgrade-cask
 
 # yarn
 curl -o -L https://yarnpkg.com/install.sh | bash
