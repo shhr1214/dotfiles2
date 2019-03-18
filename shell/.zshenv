@@ -3,7 +3,6 @@
 autoload -Uz run-help
 autoload -Uz add-zsh-hook
 autoload -Uz colors && colors
-autoload -Uz compinit && compinit
 autoload -Uz is-at-least
 
 # 補完の大文字小文字区別
@@ -43,8 +42,8 @@ source ${DOTFILES}/lang/export.zsh
 source ${DOTFILES}/tools/export.zsh
 
 # alias
-alias ls=exa
-alias ll="exa -l"
+alias ls=lsd
+alias ll="ls -l"
 
 alias emacs="emacs -nw"
 alias e="emacs"
