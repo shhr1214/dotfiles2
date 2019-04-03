@@ -56,7 +56,6 @@ This function should only modify configuration layer settings."
      csv
      dap
      debug
-
      ;; deft
      docker
      ;; elixir
