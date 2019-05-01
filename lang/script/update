@@ -6,7 +6,7 @@ rustup update
 rustup component add rls
 rustup component add rust-analysis
 rustup component add rust-src
-rustup component add rustfmt --toolchain nightly
+rustup component add rustfmt
 rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
