@@ -57,6 +57,7 @@ This function should only modify configuration layer settings."
      dap
      debug
      ;; deft
+     dhall
      docker
      ;; elixir
      emacs-lisp
@@ -95,8 +96,8 @@ This function should only modify configuration layer settings."
              python-enable-yapf-format-on-save t
              python-sort-imports-on-save t
              python-test-runner 'pytest)
-     react
      racket
+     react
      (ruby :valiables
            ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rbenv)
