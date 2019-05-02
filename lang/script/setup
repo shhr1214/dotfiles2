@@ -59,6 +59,9 @@ brew install gauche
 brew install minimal-racket
 brew install Caskroom/cask/dotnet
 
+# scheme racket 
+raco pkg install drracket
+
 # jvm familiy
 curl -s "https://get.sdkman.io" | bash
 brew install clojure
