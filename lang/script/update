@@ -33,4 +33,3 @@ go get -u github.com/godoctor/godoctor
 go install github.com/godoctor/godoctor
 
 go get -u github.com/alecthomas/gometalinter
-gometalinter --install --update
