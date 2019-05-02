@@ -573,6 +573,9 @@ before packages are loaded."
          '(("\\.vue$" . vue-mode)
            ) auto-mode-alist))
 
+  ;; racket
+  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
+
   ;; elm-mode
   ;; (remove-hook 'elm-mode-hook 'company-mode)
   (spacemacs|disable-company elm-mode)
