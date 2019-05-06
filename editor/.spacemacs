@@ -93,7 +93,7 @@ This function should only modify configuration layer settings."
      protobuf
      (python :variables
              python-backend 'lsp
-             python-enable-yapf-format-on-save t
+             python-format-on-save t
              python-sort-imports-on-save t
              python-test-runner 'pytest)
      racket
