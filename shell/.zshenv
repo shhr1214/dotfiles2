@@ -9,7 +9,7 @@ autoload -Uz is-at-least
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 typeset -U path PATH
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.dotfiles/script:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export LANGUAGE="en_US.UTF-8"
 export LANG="${LANGUAGE}"
@@ -53,5 +53,3 @@ alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 
 alias ssh="TERM=xterm-256color ssh"
-
-alias update="~/.dotfiles/script/update"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -eu
+
+docker run -it -v ${PWD}:/mnt shhr1214/cc9-ubuntu:latest /bin/bash
