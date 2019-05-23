@@ -46,7 +46,8 @@ This function should only modify configuration layer settings."
      ;; asciidoc
      better-defaults
      (c-c++ :variables
-            c-c++-backend 'lsp-cquery
+            ; c-c++-backend 'lsp-cquery
+            c-c++-backend 'rtags
             c-c++-enable-clang-format-on-save t
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
