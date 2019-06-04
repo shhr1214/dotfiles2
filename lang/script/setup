@@ -61,7 +61,7 @@ brew install gauche
 brew install minimal-racket
 brew install Caskroom/cask/dotnet
 
-# scheme racket 
+# scheme racket
 raco pkg install drracket
 
 # jvm familiy
@@ -72,6 +72,9 @@ brew install scalastyle
 sdk install sbt
 brew install Cask
 cask upgrade-cask
+
+# ocaml
+brew install opam
 
 # yarn
 curl -o -L https://yarnpkg.com/install.sh | bash
