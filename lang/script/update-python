@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# pip で install した python のもろもろをアップデート
+
+pip list | awk '{print $1}' | tail +3 | xargs pip install --upgrade

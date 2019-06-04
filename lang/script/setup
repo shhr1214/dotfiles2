@@ -41,12 +41,14 @@ pip3 install yapf
 pip3 install autoflake
 pip3 install isort
 pip3 install python-language-server
+pip3 install black
 pip2 install pynvim
 pip2 install flake8
 pip2 install yapf
 pip2 install autoflake
 pip2 install isort
 pip2 install python-language-server
+pip2 install black
 
 # ruby
 brew install rbenv
