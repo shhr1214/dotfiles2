@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-tab-key-behavior 'cycle)
-     ;; asciidoc
+     asciidoc
      better-defaults
      (c-c++ :variables
             ; c-c++-backend 'lsp-cquery
@@ -57,16 +57,16 @@ This function should only modify configuration layer settings."
      csv
      dap
      debug
-     ;; deft
+     deft
      dhall
      docker
-     ;; elixir
+     elixir
      emacs-lisp
      (elm :variables
           elm-format-command "elm-format-0.19"
           elm-format-on-save t
           elm-sort-imports-on-save t)
-     ;; erlang
+     erlang
      git
      (go :variables
          go-backend 'lsp
@@ -81,13 +81,13 @@ This function should only modify configuration layer settings."
      (java :variables java-backend 'lsp)
      (javascript :variables javascript-backend 'lsp)
      kotlin
-     ;; lua
+     lua
      (lsp :variables
           lsp-navigation 'simple
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
-     ;; ocaml
+     ocaml
      org
      php
      prettier
@@ -95,6 +95,7 @@ This function should only modify configuration layer settings."
      (python :variables
              python-backend 'lsp
              python-format-on-save t
+             python-formatter 'black
              python-sort-imports-on-save t
              python-test-runner 'pytest)
      racket
@@ -578,13 +579,13 @@ before packages are loaded."
   (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
 
   ;; elm-mode
-  ;; (remove-hook 'elm-mode-hook 'company-mode)
+  (remove-hook 'elm-mode-hook 'company-mode)
   (spacemacs|disable-company elm-mode)
 
-  ;; (eval-after-load 'google-c-style
-  ;;   (dolist (v google-c-style)
-  ;;     (when (and (listp v) (eq (car v) 'c-basic-offset))
-  ;;       (setcdr v 4))))
+  (eval-after-load 'google-c-style
+    (dolist (v google-c-style)
+      (when (and (listp v) (eq (car v) 'c-basic-offset))
+        (setcdr v 4))))
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
