@@ -46,8 +46,8 @@ This function should only modify configuration layer settings."
      asciidoc
      better-defaults
      (c-c++ :variables
-            ; c-c++-backend 'lsp-cquery
-            c-c++-backend 'rtags
+            c-c++-backend 'lsp-cquery
+            ;; c-c++-backend 'rtags
             c-c++-enable-clang-format-on-save t
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
@@ -75,7 +75,10 @@ This function should only modify configuration layer settings."
          godoc-at-point-function 'godoc-gogetdoc
          gofmt-command "goimports")
      (gtags :variables gtags-enable-by-default nil)
-     (haskell :variables haskell-enable-hindent t)
+     (haskell :variables
+              haskell-completion-backend 'lsp
+              haskell-process-type 'stack-ghci
+              haskell-enable-hindent t)
      helm
      (html :variables web-fmt-tool 'prettier)
      (java :variables java-backend 'lsp)
@@ -574,6 +577,17 @@ before packages are loaded."
         (append
          '(("\\.vue$" . vue-mode)
            ) auto-mode-alist))
+
+  ;; haskell
+  (defun haskell-indentation-advice ()
+    (when (and (< 1 (line-number-at-pos))
+            (save-excursion
+              (forward-line -1)
+              (string= "" (s-trim (buffer-substring (line-beginning-position) (line-end-position))))))
+      (delete-region (line-beginning-position) (point))))
+
+  (advice-add 'haskell-indentation-newline-and-indent
+    :after 'haskell-indentation-advice)
 
   ;; racket
   (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
