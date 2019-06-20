@@ -61,6 +61,9 @@ brew install gauche
 brew install minimal-racket
 brew install Caskroom/cask/dotnet
 
+# perl
+npm install -g perli
+
 # scheme racket
 raco pkg install drracket
 

@@ -43,7 +43,7 @@ source ${DOTFILES}/tools/export.zsh
 
 # alias
 alias ls="lsd"
-alias ll="ls -l"
+alias ll="ls --group-dirs first -l"
 
 alias emacs="emacs -nw"
 alias e="emacs"

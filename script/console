@@ -2,4 +2,8 @@
 
 set -eu
 
-docker run -it -v ${PWD}:/mnt shhr1214/cc9-ubuntu:latest /bin/bash
+docker run -it -v ${PWD}:/mnt \
+  --cap-add SYS_PTRACE \
+  --security-opt "seccomp=unconfined" \
+  shhr1214/cc9-ubuntu:latest \
+  /bin/bash

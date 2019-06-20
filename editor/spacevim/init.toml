@@ -95,6 +95,9 @@ name = 'lang#python'
 format-on-save = 1
 
 [[layers]]
+name = 'lang#perl'
+
+[[layers]]
 name = 'lang#java'
 
 [[layers]]
@@ -107,6 +110,9 @@ name = 'lang#scala'
 name = 'lang#clojure'
 
 [[layers]]
+name = 'lang#elm'
+
+[[layers]]
 name = 'lang#javascript'
 
 [[layers]]
@@ -116,13 +122,10 @@ name = 'lang#typescript'
 name = 'lang#json'
 
 [[layers]]
-name = 'lang#vue'
-
-[[layers]]
-name = 'lang#elm'
-
-[[layers]]
 name = 'lang#html'
+
+[[layers]]
+name = 'lang#vue'
 
 [[layers]]
 name = 'lang#dockerfile'
