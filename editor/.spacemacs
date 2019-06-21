@@ -251,6 +251,11 @@ It should only modify the values of Spacemacs settings."
    ;; True if the home buffer should respond to resize events. (default t)
    dotspacemacs-startup-buffer-responsive t
 
+   ;; Default major mode for a new empty buffer. Possible values are mode
+   ;; names such as `text-mode'; and `nil' to use Fundamental mode.
+   ;; (default `text-mode')
+   dotspacemacs-new-empty-buffer-major-mode 'text-mode
+
    ;; Default major mode of the scratch buffer (default `text-mode')
    dotspacemacs-scratch-mode 'text-mode
 
@@ -382,6 +387,11 @@ It should only modify the values of Spacemacs settings."
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
    dotspacemacs-maximized-at-startup nil
+
+   ;; If non-nil the frame is undecorated when Emacs starts up. Combine this
+   ;; variable with `dotspacemacs-maximized-at-startup' in OSX to obtain
+   ;; borderless fullscreen. (default nil)
+   dotspacemacs-undecorated-at-startup nil
 
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
@@ -623,7 +633,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
     '(custom-safe-themes
          (quote
-             ("bd0c3e37c53f6515b5f5532bdae38aa0432a032171b415159d5945a162bc5aaa" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" default)))
+             ("1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" "bd0c3e37c53f6515b5f5532bdae38aa0432a032171b415159d5945a162bc5aaa" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" default)))
  '(evil-want-Y-yank-to-eol nil)
     '(package-selected-packages
          (quote
