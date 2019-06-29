@@ -8,7 +8,6 @@ export TERM='xterm-24bit'
 autoload -Uz colors
 colors
 
-# PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m:%~]%{$reset_color%}"
 PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{$reset_color%}"
 RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{${reset_color}%}"
 
@@ -61,15 +60,7 @@ bindkey '^]' peco-src
 # docker kubernetes
 # source <(kubectl completion bash)
 
-# if (which zprof > /dev/null 2>&1) ;then
-#   zprof
-# fi
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR=${HOME}/.sdkman
-[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 
 [ -f ${HOME}/.dotfiles/private/.zshrc ] && source ${HOME}/.dotfiles/private/.zshrc
 

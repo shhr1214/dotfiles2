@@ -9,6 +9,7 @@ export ELM_HOME=$HOME/node_modules/elm
 
 # haskell
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cask/bin:$PATH"
 
 # go
 export GOPATH="$HOME"
@@ -30,5 +31,5 @@ eval "$(rbenv init -)"
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
 # jvm family
+export SDKMAN_DIR=${HOME}/.sdkman
 source ${HOME}/.sdkman/bin/sdkman-init.sh
-export PATH="$HOME/.cask/bin:$PATH"
