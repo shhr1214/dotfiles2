@@ -61,8 +61,9 @@ bindkey '^]' peco-src
 # source <(kubectl completion bash)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 [ -f ${HOME}/.dotfiles/private/.zshrc ] && source ${HOME}/.dotfiles/private/.zshrc
+
+true
 
 # if (which zprof > /dev/null 2>&1) ;then
 #   zprof
