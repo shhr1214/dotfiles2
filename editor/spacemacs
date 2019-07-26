@@ -52,21 +52,21 @@ This function should only modify configuration layer settings."
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
      clojure
-     csharp
+     ;; csharp
      colors
      csv
      dap
      debug
      deft
-     dhall
+     ;; dhall
      docker
      elixir
      emacs-lisp
-     (elm :variables
-          elm-format-command "elm-format-0.19"
-          elm-format-on-save t
-          elm-sort-imports-on-save t)
-     erlang
+     ;; (elm :variables
+     ;;      elm-format-command "elm-format-0.19"
+     ;;      elm-format-on-save t
+     ;;      elm-sort-imports-on-save t)
+     ;; erlang
      git
      (go :variables
          go-backend 'lsp
@@ -90,9 +90,9 @@ This function should only modify configuration layer settings."
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
-     ocaml
+     ;; ocaml
      org
-     php
+     ;; php
      prettier
      protobuf
      (python :variables
@@ -101,7 +101,7 @@ This function should only modify configuration layer settings."
              python-formatter 'black
              python-sort-imports-on-save t
              python-test-runner 'pytest)
-     racket
+     ;; racket
      react
      (ruby :valiables
            ruby-enable-enh-ruby-mode t
@@ -600,11 +600,11 @@ before packages are loaded."
     :after 'haskell-indentation-advice)
 
   ;; racket
-  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
+  ;; (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
 
   ;; elm-mode
-  (remove-hook 'elm-mode-hook 'company-mode)
-  (spacemacs|disable-company elm-mode)
+  ;; (remove-hook 'elm-mode-hook 'company-mode)
+  ;; (spacemacs|disable-company elm-mode)
 
   (eval-after-load 'google-c-style
     (dolist (v google-c-style)

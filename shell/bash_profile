@@ -3,3 +3,5 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export DOTFILES=$HOME/.dotfiles
+export PATH="$HOME/.cargo/bin:$PATH"
+. "${HOME}"/.nix-profile/etc/profile.d/nix.sh

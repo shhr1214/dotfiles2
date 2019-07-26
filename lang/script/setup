@@ -4,7 +4,6 @@
 rustup self update
 rustup update
 rustup install nightly
-rustup default nightly
 rustup component add rls
 rustup component add rust-analysis
 rustup component add rust-src
@@ -12,29 +11,26 @@ rustup component add rustfmt
 rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
-cargo +nightly install racer
-cargo install cargo-update
-
-# elm
-brew install elm
-brew install node
+cargo install racer
 
 # haskell
-curl -sSL https://get.haskellstack.org/ | sh
+nix-env --install stack
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
 
+# elm
+nix-env --install nodejs
+nix-env --install elm
+
 # go
-go get -u github.com/golang/dep/cmd/dep
-go get -u github.com/derekparker/delve/cmd/dlv
+nix-env --install go
+nix-env --install delve
 
 # python
-brew install pyenv
-brew install pyenv-virtualenv
+nix-env --install python-2.7.16
+nix-env --install python2.7-pip-19.1.1
+nix-env --install python3-3.7.4
+nix-env --install python3.7-pip-19.1.1
 
-pyenv install 3.7.1
-pyenv install 2.7.15
-
-pyenv global 3.7.1 2.7.15
 pip3 install pynvim
 pip3 install flake8
 pip3 install yapf
@@ -51,35 +47,11 @@ pip2 install python-language-server
 pip2 install black
 
 # ruby
-brew install rbenv
-brew install ruby-build
-
-brew install cquery
-brew install lua
-brew install node
-brew install gauche
-brew install minimal-racket
-brew install Caskroom/cask/dotnet
-
-# perl
-npm install -g perli
-
-# scheme racket
-raco pkg install drracket
+nix-env --install ruby
 
 # jvm familiy
-curl -s "https://get.sdkman.io" | bash
-brew install clojure
-brew install shyiko/ktlint/ktlint
-brew install scalastyle
-sdk install sbt
-brew install Cask
-cask upgrade-cask
-
-# ocaml
-brew install opam
 
 # yarn
-curl -o -L https://yarnpkg.com/install.sh | bash
+nix-env --install yarn
 yarn global add vscode-html-languageserver-bin typescript typescript-language-server
 yarn global add prettier

@@ -4,3 +4,4 @@ cd ${HOME}/.dotfiles && git pull
 bash ${HOME}/.dotfiles/shell/script/update
 bash ${HOME}/.dotfiles/lang/script/update
 bash ${HOME}/.dotfiles/editor/script/update
+

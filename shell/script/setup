@@ -1,18 +1,13 @@
 #!/bin/bash
-ln -fs ${HOME}/.dotfiles/shell/.bash_profile ${HOME}/.bash_profile
-ln -fs ${HOME}/.dotfiles/shell/.bashrc ${HOME}/.bashrc
-ln -fs ${HOME}/.dotfiles/shell/.zshenv ${HOME}/.zshenv
-ln -fs ${HOME}/.dotfiles/shell/.zshrc ${HOME}/.zshrc
+
+nix-env --install zsh
+nix-env --install tmux
+
+ln -fs ${HOME}/.dotfiles/shell/bash_profile ${HOME}/.bash_profile
+ln -fs ${HOME}/.dotfiles/shell/bashrc ${HOME}/.bashrc
+ln -fs ${HOME}/.dotfiles/shell/zshenv ${HOME}/.zshenv
+ln -fs ${HOME}/.dotfiles/shell/zshrc ${HOME}/.zshrc
+ln -fs ${HOME}/.dotfiles/shell/tmux.conf ~/.tmux.conf
 
 source .zshrc
 
-brew install tig
-brew install peco
-brew install cmake
-go get -u github.com/motemen/ghq
-
-git config --global ghq.root ~/src
-
-cargo install exa
-cargo install ripgrep
-cargo install fd-find

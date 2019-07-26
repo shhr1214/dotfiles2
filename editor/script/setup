@@ -1,21 +1,26 @@
 #!/bin/bash
-# vi
-brew install nvim
+
+nix-env --install emacs
+nix-env --install neovim
+
+# spacemacs
+if [ ! -e ${HOME}/.emacs.d ]; then
+    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+    (cd ~/.emacs.d && git checkout -b develop origin/develop)
+fi
+
+# spacevim
+if [ ! -e ${HOME}/.dotfiles/editor/dein ]; then
+    mkdir -p ${HOME}/.dotfiles/editor/dein
+    curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+    sh ./installer.sh  ${HOME}/.cache/dein
+    rm ./installer.sh
+fi
 curl -sLf https://spacevim.org/install.sh | bash
-# ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
-# ln -fs ${HOME}/.dotfiles/editor/spacevim ${HOME}/.SpaceVim.d
 
-# emacs
-brew tap d12frosted/emacs-plus
-brew install emacs-plus
-brew linkapps emacs-plus
-git clone https://github.com/syl20bnr/spacemacs ${HOME}/.emacs.d
-(cd ${HOME}/.emacs.d && git checkout -b develop origin/develop)
+mkdir -p ${HOME}/.config
 
-ln -fs ${HOME}/.dotfiles/editor/.spacemacs ${HOME}/.spacemacs
-
-# vscode
-brew cask install visual-studio-code
-
-# editorconfig
+ln -fs ${HOME}/.dotfiles/editor/spacemacs ${HOME}/.spacemacs
+ln -fs ${HOME}/.dotfiles/editor/nvim ${HOME}/.config/nvim
+ln -fs ${HOME}/.dotfiles/editor/spacevim ${HOME}/.SpaceVim.d
 ln -fs ${HOME}/.dotfiles/editor/editorconfig ${HOME}/.editorconfig

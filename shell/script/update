@@ -1,6 +1,3 @@
 #!/bin/bash
 
-brew update
-brew upgrade
-go get -u github.com/motemen/ghq
-
+nix-env --upgrade
