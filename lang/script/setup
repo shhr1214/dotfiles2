@@ -30,6 +30,7 @@ nix-env --install python-2.7.16
 nix-env --install python2.7-pip-19.1.1
 nix-env --install python3-3.7.4
 nix-env --install python3.7-pip-19.1.1
+nix-env --install pipenv-2018.11.26
 
 pip3 install pynvim
 pip3 install flake8
