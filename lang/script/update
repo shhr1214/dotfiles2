@@ -10,8 +10,6 @@ rustup component add rustfmt
 rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
-cargo install-update -a
-
 # Golang
 go get -u github.com/cweill/gotests/...
 go get -u github.com/davidrjenni/reftools/cmd/fillstruct

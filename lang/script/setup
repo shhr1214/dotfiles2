@@ -12,6 +12,7 @@ rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install racer
+mkdir "${HOME}"/.zfunc
 
 # haskell
 nix-env --install stack
