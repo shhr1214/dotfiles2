@@ -9,7 +9,6 @@ autoload -Uz is-at-least
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 typeset -U path PATH
-export PATH="$HOME/.dotfiles/script:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export LANGUAGE="en_US.UTF-8"
 export LANG="${LANGUAGE}"
@@ -39,7 +38,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export XDG_CONFIG_HOME=${HOME}/.config
 source ${DOTFILES}/editor/export.zsh
 source ${DOTFILES}/lang/export.zsh
-source ${DOTFILES}/tools/export.zsh
+# source ${DOTFILES}/tools/export.zsh
 
 # alias
 alias ls="lsd --group-dirs first "

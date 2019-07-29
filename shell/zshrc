@@ -57,9 +57,6 @@ function peco-src () {
 zle -N peco-src
 bindkey '^]' peco-src
 
-# docker kubernetes
-# source <(kubectl completion bash)
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ${HOME}/.dotfiles/private/.zshrc ] && source ${HOME}/.dotfiles/private/.zshrc
 
