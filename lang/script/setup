@@ -28,25 +28,18 @@ nix-env --install delve
 
 # python
 nix-env --install python-2.7.16
-nix-env --install python2.7-pip-19.1.1
 nix-env --install python3-3.7.4
-nix-env --install python3.7-pip-19.1.1
 nix-env --install pipenv-2018.11.26
+python3 -m ensurepip --default-pip --user
+pip3 install --upgrade --user pip
 
-pip3 install pynvim
-pip3 install flake8
-pip3 install yapf
-pip3 install autoflake
-pip3 install isort
-pip3 install python-language-server
-pip3 install black
-pip2 install pynvim
-pip2 install flake8
-pip2 install yapf
-pip2 install autoflake
-pip2 install isort
-pip2 install python-language-server
-pip2 install black
+pip3 install --user pynvim
+pip3 install --user flake8
+pip3 install --user yapf
+pip3 install --user autoflake
+pip3 install --user isort
+pip3 install --user 'python-language-server[all]'
+pip3 install --user black
 
 # ruby
 nix-env --install ruby
