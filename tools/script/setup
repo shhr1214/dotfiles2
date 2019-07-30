@@ -1,5 +1,6 @@
 #!/bin/bash
 
+nix-env --install docker
 nix-env --install ripgrep
 nix-env --install lsd
 nix-env --install ghq
@@ -7,5 +8,9 @@ nix-env --install tig
 nix-env --install peco
 nix-env --install tokei
 
-echo '[ghq]' >> $HOME/.gitconfig           
-echo 'root = $HOME/src' >> $HOME/.gitconfig
+cat >> $HOME/.gitconfig <<EOF
+
+[ghq]
+root = ${HOME}/src
+EOF
+
