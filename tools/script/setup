@@ -7,3 +7,5 @@ nix-env --install tig
 nix-env --install peco
 nix-env --install tokei
 
+echo '[ghq]' >> $HOME/.gitconfig           
+echo 'root = $HOME/src' >> $HOME/.gitconfig
