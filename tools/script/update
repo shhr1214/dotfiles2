@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ghq get -u shhr1214/tools
+(cd ${HOME}/src/github.com/shhr1214/tools && cargo install --force --path .)
