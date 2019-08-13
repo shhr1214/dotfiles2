@@ -12,7 +12,7 @@ PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{$reset_color%}"
 RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{${reset_color}%}"
 
 # zcompile
-if [ $DOTFILES/shell/.zshrc -nt ~/.zshrc.zwc ]; then
+if [ $DOTFILES/shell/zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
 
