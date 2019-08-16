@@ -4,6 +4,10 @@ autoload -Uz run-help
 autoload -Uz add-zsh-hook
 autoload -Uz colors && colors
 autoload -Uz is-at-least
+autoload -Uz vcs_info
+
+fpath+=${HOME}/.zfunc
+autoload -Uz compinit && compinit -u
 
 # 補完の大文字小文字区別
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

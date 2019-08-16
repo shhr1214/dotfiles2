@@ -3,7 +3,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # rust
 source $HOME/.cargo/env
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
-fpath+=${HOME}/.zfunc
 
 # haskell
 export PATH="$HOME/.cask/bin:$PATH"
