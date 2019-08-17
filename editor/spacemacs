@@ -90,7 +90,7 @@ This function should only modify configuration layer settings."
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
-     ;; ocaml
+     ocaml
      org
      ;; php
      prettier

@@ -15,6 +15,10 @@ export GOPATH="$HOME"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
+# ruby
+export GEM_HOME="$HOME"/bin/gem
+export PATH="$HOME/bin/gem/bin:$PATH"
+
 # jvm family
 # export SDKMAN_DIR=${HOME}/.sdkman
 # source ${HOME}/.sdkman/bin/sdkman-init.sh

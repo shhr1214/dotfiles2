@@ -18,6 +18,13 @@ mkdir "${HOME}"/.zfunc
 nix-env --install stack
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
 
+# ocaml
+nix-env --install ocaml
+nix-env --install opam
+opam init
+opam config setup -a
+opam install merlin utop ocp-indent
+
 # elm
 nix-env --install nodejs
 nix-env --install elm
@@ -43,6 +50,7 @@ pip3 install --user black
 
 # ruby
 nix-env --install ruby
+mkdir -p "$HOME"/bin/gem
 
 # jvm familiy
 
