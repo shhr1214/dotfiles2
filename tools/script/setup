@@ -1,6 +1,5 @@
 #!/bin/bash
 
-nix-env --install docker
 nix-env --install ripgrep
 nix-env --install lsd
 nix-env --install ghq
@@ -8,6 +7,10 @@ nix-env --install tig
 nix-env --install peco
 nix-env --install tokei
 nix-env --install bat
+
+nix-env --install alacritty
+mkdir -p ${HOME}/config/alacritty
+ln -fs ${HOME}/.dotfiles/tools/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
 
 cat >> $HOME/.gitconfig <<EOF
 
