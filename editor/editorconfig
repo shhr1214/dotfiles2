@@ -32,10 +32,10 @@ indent_size = 2
 [*.{html,css}]
 indent_size = 2
 
-[*.py}]
+[*.py]
 indent_size = 4
 
-[*.rb}]
+[*.rb]
 indent_size = 2
 
 [*.c]
