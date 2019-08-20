@@ -332,7 +332,7 @@ live_config_reload: true
 #  args:
 #    - --login
 shell:
-  program: /Users/shhr1214/.nix-profile/bin/zsh
+  program: /bin/zsh
 
 # Startup directory
 #
