@@ -25,6 +25,9 @@ opam init
 opam config setup -a
 opam install merlin utop ocp-indent
 
+# elixir
+nix-env --install elixir
+
 # elm
 nix-env --install nodejs
 nix-env --install elm
