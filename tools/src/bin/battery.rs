@@ -10,7 +10,7 @@ fn main() -> Result<(), Error> {
 
     match battery.state() {
         State::Full => {
-            println!("\u{f578} {:.0}", battery.state_of_charge().get::<percent>());
+            println!("\u{f578} {:.0}%", battery.state_of_charge().get::<percent>());
             std::process::exit(0);
         }
         State::Charging => {
