@@ -7,6 +7,9 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-apple-darwin/lib/ru
 # haskell
 export PATH="$HOME/.cask/bin:$PATH"
 
+# ocaml
+alias ocaml="rlwrap ocaml"
+
 # elm
 export ELM_HOME=$HOME/node_modules/elm
 
