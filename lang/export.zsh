@@ -8,6 +8,7 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-apple-darwin/lib/ru
 export PATH="$HOME/.cask/bin:$PATH"
 
 # ocaml
+eval $(opam env)
 alias ocaml="rlwrap ocaml"
 
 # elm

@@ -73,7 +73,8 @@ This function should only modify configuration layer settings."
          go-format-before-save t
          go-tab-width 4
          godoc-at-point-function 'godoc-gogetdoc
-         gofmt-command "goimports")
+         gofmt-command "goimports"
+         go-linter 'golangci-lint)
      (gtags :variables gtags-enable-by-default nil)
      (haskell :variables
               haskell-completion-backend 'lsp
