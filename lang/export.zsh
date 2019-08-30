@@ -11,9 +11,6 @@ export PATH="$HOME/.cask/bin:$PATH"
 eval $(opam env)
 alias ocaml="rlwrap ocaml"
 
-# elm
-export ELM_HOME=$HOME/node_modules/elm
-
 # go
 export GOPATH="$HOME"
 export GOBIN="$GOPATH/bin"
@@ -26,3 +23,10 @@ export PATH="$HOME/bin/gem/bin:$PATH"
 # jvm family
 # export SDKMAN_DIR=${HOME}/.sdkman
 # source ${HOME}/.sdkman/bin/sdkman-init.sh
+
+# node
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# elm
+export ELM_HOME=$HOME/node_modules/elm
+
