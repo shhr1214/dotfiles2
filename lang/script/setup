@@ -55,6 +55,9 @@ pip3 install --user black
 nix-env --install ruby
 mkdir -p "$HOME"/bin/gem
 
+# c/c++
+nix-env --install ccls
+
 # jvm familiy
 
 # yarn

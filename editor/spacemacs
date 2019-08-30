@@ -46,11 +46,14 @@ This function should only modify configuration layer settings."
      asciidoc
      better-defaults
      (c-c++ :variables
-            c-c++-backend 'lsp-cquery
+            c-c++-adopt-subprojects t
+            c-c++-backend 'lsp-ccls
             ;; c-c++-backend 'rtags
             c-c++-enable-clang-format-on-save t
-            c-c++-enable-google-style t
-            c-c++-enable-google-newline t)
+            ;; c-c++-enable-google-style t
+            ;; c-c++-enable-google-newline t
+            c-c++-lsp-sem-highlight-rainbow t
+            c++-enable-organize-includes-on-save t)
      clojure
      ;; csharp
      colors
@@ -635,7 +638,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
   '(custom-safe-themes
      (quote
-       ("b0fd04a1b4b614840073a82a53e88fe2abc3d731462d6fde4e541807825af342" "1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" "bd0c3e37c53f6515b5f5532bdae38aa0432a032171b415159d5945a162bc5aaa" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" default)))
+       ("34c99997eaa73d64b1aaa95caca9f0d64229871c200c5254526d0062f8074693" "b0fd04a1b4b614840073a82a53e88fe2abc3d731462d6fde4e541807825af342" "1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" "bd0c3e37c53f6515b5f5532bdae38aa0432a032171b415159d5945a162bc5aaa" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" default)))
  '(evil-want-Y-yank-to-eol nil)
   '(package-selected-packages
      (quote
