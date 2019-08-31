@@ -59,6 +59,7 @@ mkdir -p "$HOME"/bin/gem
 nix-env --install ccls
 
 # jvm familiy
+nix-env --install clojure
 
 # yarn
 nix-env --install yarn
