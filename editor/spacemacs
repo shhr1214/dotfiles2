@@ -546,7 +546,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (when window-system
     (progn
-      (set-fontset-font t 'japanese-jisx0208 "Fira Code")
+      (set-fontset-font t 'japanese-jisx0208 "FuraCode Nerd Font Mono")
       (setq powerline-image-apple-rgb t)
       (set-language-environment "Japanese")
       (prefer-coding-system 'utf-8-unix)
