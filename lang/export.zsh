@@ -29,4 +29,3 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # elm
 export ELM_HOME=$HOME/node_modules/elm
-

@@ -67,5 +67,6 @@ nix-env --install clojure
 
 # yarn
 nix-env --install yarn
-yarn global add vscode-html-languageserver-bin typescript typescript-language-server
+yarn global add vscode-html-languageserver-bin
+yarn global add typescript typescript-language-server
 yarn global add prettier
