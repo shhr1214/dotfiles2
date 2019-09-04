@@ -14,6 +14,9 @@ rustup completions zsh > ~/.zfunc/_rustup
 cargo install racer
 mkdir "${HOME}"/.zfunc
 
+# script
+nix-env --install ShellCheck
+
 # haskell
 nix-env --install stack
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
@@ -50,10 +53,11 @@ pip3 install --user autoflake
 pip3 install --user isort
 pip3 install --user 'python-language-server[all]'
 pip3 install --user black
+pip3 install --user bashate
 
 # ruby
 nix-env --install ruby
-mkdir -p "$HOME"/bin/gem
+mkdir -p "${HOME}"/bin/gem
 
 # c/c++
 nix-env --install ccls
