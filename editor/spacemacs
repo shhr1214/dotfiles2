@@ -53,7 +53,10 @@ This function should only modify configuration layer settings."
             ;; c-c++-enable-google-newline t
             c-c++-lsp-sem-highlight-rainbow t
             c++-enable-organize-includes-on-save t)
-     clojure
+     (clojure :variables
+              clojure-enable-sayid t
+              clojure-enable-clj-refactor t
+              clojure-enable-linters 'clj-kondo)
      ;; csharp
      colors
      csv
@@ -82,10 +85,22 @@ This function should only modify configuration layer settings."
               haskell-completion-backend 'lsp
               haskell-process-type 'stack-ghci
               haskell-enable-hindent t)
-     helm
-     (html :variables web-fmt-tool 'prettier)
+     ;; helm
+     (html :variables
+           web-fmt-tool 'prettier
+           css-enable-lsp t
+           less-enable-lsp t
+           scss-enable-lsp t)
+     import-js
+     ivy
      (java :variables java-backend 'lsp)
-     (javascript :variables javascript-backend 'lsp)
+     (javascript :variables
+                 javascript-backend 'lsp
+                 javascript-fmt-tool 'prettier
+                 javascript-fmt-on-save t
+                 javascript-import-tool 'import-js
+                 javascript-repl 'nodejs)
+     (json :valiables json-fmt-tool 'prettier)
      kotlin
      lua
      (lsp :variables
@@ -101,7 +116,7 @@ This function should only modify configuration layer settings."
      (python :variables
              python-backend 'lsp
              python-format-on-save t
-             python-formatter 'black
+             python-formatter 'lsp
              python-sort-imports-on-save t
              python-test-runner 'pytest)
      ;; racket
@@ -122,11 +137,14 @@ This function should only modify configuration layer settings."
             shell-default-height 30
             shell-default-position 'bottom)
      shell-scripts
-     (sql :variables sql-auto-indent nil)
+     (sql :variables
+          sql-capitalize-keywords t
+          sql-auto-indent nil)
      (syntax-checking :valiables syntax-checking-enable-tooltips nil)
      themes-megapack
      treemacs
      (typescript :variables
+                 typescript-backend 'lsp
                  typescript-fmt-tool 'typescript-formatter
                  typescript-fmt-on-save t)
      (unicode-fonts :variables unicode-fonts-force-multi-color-on-mac t)

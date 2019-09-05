@@ -32,12 +32,19 @@ opam user-setup install
 nix-env --install elixir
 
 # elm
-nix-env --install nodejs
 nix-env --install elm
 
 # go
 nix-env --install go
 nix-env --install delve
+
+# javascript / web
+nix-env --install nodejs
+nix-env --install yarn
+yarn global add typescript typescript-language-server
+yarn global add prettier import-js
+yarn global add vscode-html-languageserver-bin
+yarn global add vscode-css-languageserver-bin
 
 # python
 nix-env --install python-2.7.16
@@ -52,21 +59,21 @@ pip3 install --user yapf
 pip3 install --user autoflake
 pip3 install --user isort
 pip3 install --user 'python-language-server[all]'
+pip3 install --user pyls-isort
+pip3 install --user pyls-mypy
+pip3 install --user importmagic
+pip3 install --user epc
 pip3 install --user black
+
 pip3 install --user bashate
 
 # ruby
 nix-env --install ruby
 mkdir -p "${HOME}"/bin/gem
+gem install sqlint
 
 # c/c++
 nix-env --install ccls
 
 # jvm familiy
 nix-env --install clojure
-
-# yarn
-nix-env --install yarn
-yarn global add vscode-html-languageserver-bin
-yarn global add typescript typescript-language-server
-yarn global add prettier
