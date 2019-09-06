@@ -74,6 +74,10 @@ gem install solargraph
 gem install pry
 gem install sqlint
 
+# crystal
+nix-env --install crystal
+nix-env --install icr
+
 # c/c++
 nix-env --install ccls
 

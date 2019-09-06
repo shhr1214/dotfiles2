@@ -59,6 +59,7 @@ This function should only modify configuration layer settings."
               clojure-enable-linters 'clj-kondo)
      ;; csharp
      colors
+     crystal
      csv
      dap
      debug
