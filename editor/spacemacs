@@ -121,9 +121,7 @@ This function should only modify configuration layer settings."
              python-test-runner 'pytest)
      ;; racket
      react
-     (ruby :valiables
-           ruby-enable-enh-ruby-mode t
-           ruby-version-manager 'rbenv)
+     (ruby :valiables ruby-enable-enh-ruby-mode t)
      (rust :variables
            rust-backend 'lsp
            rust-format-on-save t)

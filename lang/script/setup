@@ -70,6 +70,8 @@ pip3 install --user bashate
 # ruby
 nix-env --install ruby
 mkdir -p "${HOME}"/bin/gem
+gem install solargraph
+gem install pry
 gem install sqlint
 
 # c/c++
