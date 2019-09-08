@@ -1,2 +1,8 @@
-[mypy-somelibrary]
+[mypy-numpy.*]
+ignore_missing_imports = True
+
+[mypy-pandas.*]
+ignore_missing_imports = True
+
+[mypy-matplotlib.*]
 ignore_missing_imports = True
