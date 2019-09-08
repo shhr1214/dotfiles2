@@ -1,0 +1,2 @@
+[mypy-somelibrary]
+ignore_missing_imports = True

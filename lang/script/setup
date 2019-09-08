@@ -59,6 +59,7 @@ pip3 install --user yapf
 pip3 install --user autoflake
 pip3 install --user isort
 pip3 install --user 'python-language-server[all]'
+pip3 install --uesr 'ptvsd>=4.2'
 pip3 install --user pyls-isort
 pip3 install --user pyls-mypy
 pip3 install --user importmagic
@@ -66,6 +67,9 @@ pip3 install --user epc
 pip3 install --user black
 
 pip3 install --user bashate
+
+ln -fs "${HOME}"/.dotfiles/lang/mypy     "${HOME}"/.config/mypy
+ln -fs "${HOME}"/.dotfiles/lang/pylintrc "${HOME}"/.config/pylintrc
 
 # ruby
 nix-env --install ruby
