@@ -93,7 +93,7 @@ This function should only modify configuration layer settings."
            less-enable-lsp t
            scss-enable-lsp t)
      import-js
-     ivy
+     (ivy :variables ivy-extra-directories nil)
      (java :variables java-backend 'lsp)
      (javascript :variables
                  javascript-backend 'lsp
@@ -101,7 +101,9 @@ This function should only modify configuration layer settings."
                  javascript-fmt-on-save t
                  javascript-import-tool 'import-js
                  javascript-repl 'nodejs)
-     (json :valiables json-fmt-tool 'prettier)
+     (json :variables
+           json-fmt-tool 'prettier
+           json-fmt-on-save t)
      kotlin
      lua
      (lsp :variables
@@ -112,6 +114,7 @@ This function should only modify configuration layer settings."
      ocaml
      org
      ;; php
+     plantuml
      prettier
      protobuf
      (python :variables
@@ -123,7 +126,7 @@ This function should only modify configuration layer settings."
              python-test-runner 'pytest)
      ;; racket
      react
-     (ruby :valiables ruby-enable-enh-ruby-mode t)
+     (ruby :variables ruby-enable-enh-ruby-mode t)
      (rust :variables
            rust-backend 'lsp
            rust-format-on-save t)
@@ -140,7 +143,7 @@ This function should only modify configuration layer settings."
      (sql :variables
           sql-capitalize-keywords t
           sql-auto-indent nil)
-     (syntax-checking :valiables syntax-checking-enable-tooltips nil)
+     (syntax-checking :variables syntax-checking-enable-tooltips nil)
      themes-megapack
      treemacs
      (typescript :variables
