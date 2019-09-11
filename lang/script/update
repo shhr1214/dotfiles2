@@ -27,3 +27,7 @@ go get -u github.com/godoctor/godoctor
 go install github.com/godoctor/godoctor
 
 go get -u github.com/alecthomas/gometalinter
+
+# python
+pip3 install --user --upgrade pip
+pip3 list --outdated | tail -n +3 | awk '{print $1}' | xargs pip3 install --user --upgrade
