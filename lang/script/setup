@@ -28,11 +28,11 @@ opam config setup -a
 opam install merlin utop ocp-indent
 opam user-setup install
 
-# elixir
-nix-env --install elixir
+# c/c++
+nix-env --install ccls
 
-# elm
-nix-env --install elm
+# jvm familiy
+nix-env --install clojure
 
 # go
 nix-env --install go
@@ -45,6 +45,12 @@ yarn global add typescript typescript-language-server
 yarn global add prettier import-js
 yarn global add vscode-html-languageserver-bin
 yarn global add vscode-css-languageserver-bin
+
+# elixir
+nix-env --install elixir
+
+# elm
+nix-env --install elm
 
 # python
 nix-env --install python-2.7.16
@@ -81,9 +87,3 @@ gem install sqlint
 # crystal
 nix-env --install crystal
 nix-env --install icr
-
-# c/c++
-nix-env --install ccls
-
-# jvm familiy
-nix-env --install clojure
