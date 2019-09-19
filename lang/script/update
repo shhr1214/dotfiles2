@@ -31,3 +31,9 @@ go get -u github.com/alecthomas/gometalinter
 # python
 pip3 install --user --upgrade pip
 pip3 list --outdated | tail -n +3 | awk '{print $1}' | xargs pip3 install --user --upgrade
+
+# ruby
+gem update $(gem outdated | cut -d ' ' -f 1)
+
+# node
+yarn global upgrade
