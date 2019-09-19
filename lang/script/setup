@@ -87,3 +87,9 @@ gem install sqlint
 # crystal
 nix-env --install crystal
 nix-env --install icr
+
+# html / css
+gem install specific_install
+gem specific_install https://github.com/brigade/scss-lint.git
+gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
+yarn global add vscode-css-languageserver-bin
