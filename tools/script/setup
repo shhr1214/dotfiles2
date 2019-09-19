@@ -9,12 +9,11 @@ nix-env --install tokei
 nix-env --install bat
 
 nix-env --install alacritty
-mkdir -p ${HOME}/config/alacritty
-ln -fs ${HOME}/.dotfiles/tools/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
+mkdir -p "${HOME}"/config/alacritty
+ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml "${HOME}"/.config/alacritty/alacritty.yml
 
-cat >> $HOME/.gitconfig <<EOF
+cat >> "$HOME"/.gitconfig <<EOF
 
 [ghq]
 root = ${HOME}/src
 EOF
-

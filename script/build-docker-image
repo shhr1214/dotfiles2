@@ -1,5 +1,3 @@
 #!/bin/bash
 
-set -eu
-
-(cd ${HOME}/.dotfiles/docker && docker build -t shhr1214/cc9-ubuntu . )
+(cd "${HOME}"/.dotfiles/docker && docker build -t shhr1214/cc9-ubuntu . )
