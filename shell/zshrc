@@ -52,7 +52,7 @@ bindkey '^]' peco-src
 export PATH="$HOME/.cargo/bin:$HOME/.dotfiles/script:$HOME/.dotfiles/bin:/usr/local/bin:$PATH"
 
 # zcompile
-if [ $DOTFILES/shell/zshrc -nt ~/.zshrc.zwc ]; then
+if [ $HOME/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
 

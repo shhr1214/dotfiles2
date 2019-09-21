@@ -12,8 +12,8 @@ if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#add(s:dein_dir . '/repos/github.com/Shougo/dein.vim')
 
-  call dein#load_toml($DOTFILES . '/editor/nvim/plugins.toml', {'lazy': 0})
-  call dein#load_toml($DOTFILES . '/editor/nvim/lazy.toml', {'lazy': 1})
+  call dein#load_toml($HOME . '/.dotfiles/editor/nvim/plugins.toml', {'lazy': 0})
+  call dein#load_toml($HOME . '/.dotfiles/editor/nvim/lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()
