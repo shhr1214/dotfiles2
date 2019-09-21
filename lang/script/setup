@@ -88,6 +88,10 @@ gem install sqlint
 nix-env --install crystal
 nix-env --install icr
 
+# php
+nix-env --install php-composer
+yarn global add intelephense
+
 # html / css
 gem install specific_install
 gem specific_install https://github.com/brigade/scss-lint.git
