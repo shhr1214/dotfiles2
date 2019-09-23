@@ -54,26 +54,24 @@ nix-env --install elixir
 nix-env --install elm
 
 # python
-nix-env --install python-2.7.16
 nix-env --install python3-3.7.4
 nix-env --install pipenv-2018.11.26
-python3 -m ensurepip --default-pip --user
-pip3 install --upgrade --user pip
+python -m ensurepip --default-pip --user
+pip install --upgrade --user pip
 
-pip3 install --user pynvim
-pip3 install --user flake8
-pip3 install --user yapf
-pip3 install --user autoflake
-pip3 install --user isort
-pip3 install --user 'python-language-server[all]'
-pip3 install --uesr 'ptvsd>=4.2'
-pip3 install --user pyls-isort
-pip3 install --user pyls-mypy
-pip3 install --user importmagic
-pip3 install --user epc
-pip3 install --user black
-
-pip3 install --user bashate
+pip install --user pynvim
+pip install --user flake8
+pip install --user yapf
+pip install --user autoflake
+pip install --user isort
+pip install --user 'python-language-server[all]'
+pip install --uesr 'ptvsd>=4.2'
+pip install --user pyls-isort
+pip install --user pyls-mypy
+pip install --user importmagic
+pip install --user epc
+pip install --user black
+pip install --user bashate
 
 ln -fs "${HOME}"/.dotfiles/lang/mypy     "${HOME}"/.config/mypy
 ln -fs "${HOME}"/.dotfiles/lang/pylintrc "${HOME}"/.config/pylintrc
@@ -98,3 +96,4 @@ gem install specific_install
 gem specific_install https://github.com/brigade/scss-lint.git
 gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
 yarn global add vscode-css-languageserver-bin
+
