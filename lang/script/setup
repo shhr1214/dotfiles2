@@ -20,6 +20,7 @@ nix-env --install ShellCheck
 # haskell
 nix-env --install stack
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
+nix-env -iA selection --arg selector 'p: { inherit (p) ghc865; }' -f https://github.com/infinisil/all-hies/tarball/master
 
 # ocaml
 nix-env --install opam

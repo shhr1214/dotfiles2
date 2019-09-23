@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# nix https://nixos.org/nix/
+curl https://nixos.org/nix/install | sh
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
+nix-env -iA nixpkgs.cachix
+cachix use all-hies
+
