@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# rust
 if [ ! -e "${HOME}"/.cargo ]; then
     curl https://sh.rustup.rs -sSf | sh
 fi
+
+# js
+nix-env --install nodejs
+nix-env --install yarn
+
+# python
+nix-env --install python3-3.7.4
+nix-env --install pipenv-2018.11.26
+python -m ensurepip --default-pip --user
+pip install --upgrade --user pip
+
+# ruby
+nix-env --install ruby
+mkdir -p "${HOME}"/bin/gem

@@ -16,6 +16,8 @@ mkdir "${HOME}"/.zfunc
 
 # script
 nix-env --install ShellCheck
+yarn global add bash-language-server
+pip install --user bashate
 
 # haskell
 nix-env --install stack
@@ -40,8 +42,6 @@ nix-env --install go
 nix-env --install delve
 
 # javascript / web
-nix-env --install nodejs
-nix-env --install yarn
 yarn global add typescript typescript-language-server
 yarn global add prettier import-js
 yarn global add vscode-html-languageserver-bin
@@ -54,11 +54,6 @@ nix-env --install elixir
 nix-env --install elm
 
 # python
-nix-env --install python3-3.7.4
-nix-env --install pipenv-2018.11.26
-python -m ensurepip --default-pip --user
-pip install --upgrade --user pip
-
 pip install --user pynvim
 pip install --user flake8
 pip install --user yapf
@@ -71,14 +66,11 @@ pip install --user pyls-mypy
 pip install --user importmagic
 pip install --user epc
 pip install --user black
-pip install --user bashate
 
 ln -fs "${HOME}"/.dotfiles/lang/mypy     "${HOME}"/.config/mypy
 ln -fs "${HOME}"/.dotfiles/lang/pylintrc "${HOME}"/.config/pylintrc
 
 # ruby
-nix-env --install ruby
-mkdir -p "${HOME}"/bin/gem
 gem install solargraph
 gem install pry
 gem install sqlint
@@ -96,4 +88,3 @@ gem install specific_install
 gem specific_install https://github.com/brigade/scss-lint.git
 gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
 yarn global add vscode-css-languageserver-bin
-

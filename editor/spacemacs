@@ -141,7 +141,7 @@ This function should only modify configuration layer settings."
             shell-default-term-shell "/bin/zsh"
             shell-default-height 30
             shell-default-position 'bottom)
-     shell-scripts
+     (shell-scripts :variables shell-scripts-backend 'lsp)
      (sql :variables
           sql-capitalize-keywords t
           sql-auto-indent nil)
