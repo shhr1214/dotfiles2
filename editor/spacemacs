@@ -57,7 +57,7 @@ This function should only modify configuration layer settings."
               clojure-enable-sayid t
               clojure-enable-clj-refactor t
               clojure-enable-linters 'clj-kondo)
-     ;; csharp
+     csharp
      colors
      crystal
      csv
@@ -73,6 +73,7 @@ This function should only modify configuration layer settings."
      ;;      elm-format-on-save t
      ;;      elm-sort-imports-on-save t)
      ;; erlang
+     fsharp
      git
      (go :variables
          go-backend 'lsp
