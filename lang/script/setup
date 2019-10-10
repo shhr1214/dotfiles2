@@ -38,6 +38,9 @@ nix-env --install ccls
 nix-env --install clojure
 nix-env --install sbt
 
+# elixir
+nix-env --install elixir
+
 # go
 nix-env --install go
 nix-env --install delve
@@ -48,8 +51,12 @@ yarn global add prettier import-js
 yarn global add vscode-html-languageserver-bin
 yarn global add vscode-css-languageserver-bin
 
-# elixir
-nix-env --install elixir
+# html / css
+gem install specific_install
+gem specific_install https://github.com/brigade/scss-lint.git
+gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
+yarn global add vscode-css-languageserver-bin
+yarn global add js-beautify
 
 # elm
 nix-env --install elm
@@ -86,8 +93,3 @@ nix-env --install icr
 nix-env --install php-composer
 yarn global add intelephense
 
-# html / css
-gem install specific_install
-gem specific_install https://github.com/brigade/scss-lint.git
-gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
-yarn global add vscode-css-languageserver-bin
