@@ -11,7 +11,8 @@ rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
 # Golang
-GO111MODULE=on go get -v golang.org/x/tools/gopls@latest
+cd "${HOME}/.dotfiles/lang/tools"
+GO111MODULE=on go get -u golang.org/x/tools/gopls@latest
 go get -u github.com/alecthomas/gometalinter
 go get -u github.com/cweill/gotests/...
 go get -u github.com/davidrjenni/reftools/cmd/fillstruct
@@ -29,6 +30,7 @@ go get -u golang.org/x/tools/cmd/godoc
 go get -u golang.org/x/tools/cmd/goimports
 go get -u golang.org/x/tools/cmd/gorename
 go get -u golang.org/x/tools/cmd/guru
+cd "${HOME}/.dotfiles"
 
 # python
 pip3 install --user --upgrade pip
