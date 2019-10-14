@@ -3,7 +3,6 @@
 # rust
 rustup self update
 rustup update
-rustup install nightly
 rustup component add rls
 rustup component add rust-analysis
 rustup component add rust-src

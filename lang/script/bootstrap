@@ -5,7 +5,7 @@ if [ ! -e "${HOME}"/.cargo ]; then
     curl https://sh.rustup.rs -sSf | sh
 fi
 
-# js
+# javascript
 nix-env --install nodejs
 nix-env --install yarn
 

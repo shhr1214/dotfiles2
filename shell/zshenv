@@ -1,5 +1,6 @@
 # zmodload zsh/zprof && zprof
 
+export NIX_IGNORE_SYMLINK_STORE=1
 . "${HOME}"/.nix-profile/etc/profile.d/nix.sh
 
 autoload -Uz run-help
