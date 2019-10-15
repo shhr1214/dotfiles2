@@ -8,7 +8,6 @@ require (
 	cloud.google.com/go/storage v1.1.0 // indirect
 	github.com/alecthomas/gometalinter v3.0.0+incompatible // indirect
 	github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d // indirect
-	github.com/bombsimon/wsl v1.2.4 // indirect
 	github.com/coreos/bbolt v1.3.3 // indirect
 	github.com/coreos/etcd v3.3.16+incompatible // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
@@ -20,10 +19,10 @@ require (
 	github.com/fatih/structtag v1.1.0 // indirect
 	github.com/go-toolsmith/astinfo v1.0.0 // indirect
 	github.com/godoctor/godoctor v0.0.0-20181123222458-69df17f3a6f6 // indirect
-	github.com/gogo/protobuf v1.3.0 // indirect
+	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/golangci/gocyclo v0.0.0-20180528144436-0a533e8fa43d // indirect
-	github.com/golangci/golangci-lint v1.20.0 // indirect
+	github.com/golangci/golangci-lint v1.21.0 // indirect
 	github.com/golangci/revgrep v0.0.0-20180812185044-276a5c0a1039 // indirect
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/pprof v0.0.0-20190930153522-6ce02741cba3 // indirect
@@ -73,11 +72,11 @@ require (
 	golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8 // indirect
 	golang.org/x/lint v0.0.0-20190930215403-16217165b5de // indirect
 	golang.org/x/mobile v0.0.0-20191002175909-6d0d39b2ca82 // indirect
-	golang.org/x/net v0.0.0-20191011234655-491137f69257 // indirect
+	golang.org/x/net v0.0.0-20191014212845-da9a3fd4c582 // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
-	golang.org/x/sys v0.0.0-20191010194322-b09406accb47 // indirect
+	golang.org/x/sys v0.0.0-20191018095205-727590c5006e // indirect
 	golang.org/x/time v0.0.0-20190921001708-c4c64cad1fd0 // indirect
-	golang.org/x/tools v0.0.0-20191012152004-8de300cfc20a // indirect
+	golang.org/x/tools v0.0.0-20191018000036-341939e08647 // indirect
 	golang.org/x/tools/gopls v0.1.7 // indirect
 	golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898 // indirect
 	google.golang.org/appengine v1.6.5 // indirect

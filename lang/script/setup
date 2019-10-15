@@ -20,6 +20,7 @@ pip install --user bashate
 
 # haskell
 nix-env --install stack
+nix-env --install ghc
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
 nix-env -iA selection --arg selector 'p: { inherit (p) ghc865; }' -f https://github.com/infinisil/all-hies/tarball/master
 

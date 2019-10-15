@@ -19,7 +19,7 @@ window:
   # If both are `0`, this setting is ignored.
   dimensions:
     columns: 90
-    lines: 30
+    lines: 32
 
   # Window position (changes require restart)
   #
@@ -224,7 +224,7 @@ schemas:
     primary:
       background: '0x282a36'
       foreground: '0xf8f8f2'
-  
+
     # Normal colors
     normal:
       black:   '0x000000'
@@ -235,7 +235,7 @@ schemas:
       magenta: '0xff79c6'
       cyan:    '0x8be9fd'
       white:   '0xbfbfbf'
-  
+
     # Bright colors
     bright:
       black:   '0x575b70'
@@ -253,7 +253,7 @@ schemas:
     primary:
       background: '0x282c34'
       foreground: '0xabb2bf'
-  
+
     # Normal colors
     normal:
       # NOTE: Use '0x131613' for the `black` color if you'd like to see
@@ -266,7 +266,7 @@ schemas:
       magenta: '0xc678dd'
       cyan:    '0x56b6c2'
       white:   '0xabb2bf'
-  
+
     # Bright colors
     bright:
       black:   '0x5c6370'
@@ -284,7 +284,7 @@ colors: *one-dark
 #   primary:
 #     background: '0x000000'
 #     foreground: '0xeaeaea'
-# 
+#
 #     # Bright and dim foreground colors
 #     #
 #     # The dimmed foreground color is calculated automatically if it is not present.
@@ -292,7 +292,7 @@ colors: *one-dark
 #     # is `false`, the normal foreground color will be used.
 #     #dim_foreground: '0x9a9a9a'
 #     #bright_foreground: '0xffffff'
-# 
+#
 #   # Cursor colors
 #   #
 #   # Colors which should be used to draw the terminal cursor. If these are unset,
@@ -300,7 +300,7 @@ colors: *one-dark
 #   #cursor:
 #   #  text: '0x000000'
 #   #  cursor: '0xffffff'
-# 
+#
 #   # Selection colors
 #   #
 #   # Colors which should be used to draw the selection area. If selection
@@ -309,7 +309,7 @@ colors: *one-dark
 #   #selection:
 #   #  text: '0xeaeaea'
 #   #  background: '0x404040'
-# 
+#
 #   # Normal colors
 #   normal:
 #     black:   '0x000000'
@@ -320,7 +320,7 @@ colors: *one-dark
 #     magenta: '0xc397d8'
 #     cyan:    '0x70c0ba'
 #     white:   '0xeaeaea'
-# 
+#
 #   # Bright colors
 #   bright:
 #     black:   '0x666666'
@@ -331,7 +331,7 @@ colors: *one-dark
 #     magenta: '0xb77ee0'
 #     cyan:    '0x54ced6'
 #     white:   '0xffffff'
-# 
+#
 #   # Dim colors
 #   #
 #   # If the dim colors are not set, they will be calculated automatically based
@@ -345,7 +345,7 @@ colors: *one-dark
 #   #  magenta: '0x80638e'
 #   #  cyan:    '0x497e7a'
 #   #  white:   '0x9a9a9a'
-# 
+#
 #   # Indexed Colors
 #   #
 #   # The indexed colors include all colors from 16 to 256.
