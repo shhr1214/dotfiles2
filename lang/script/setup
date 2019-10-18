@@ -35,7 +35,10 @@ opam user-setup install
 nix-env --install ccls
 
 # jvm familiy
+nix-env --install adoptopenjdk-openj9-bin
 nix-env --install clojure
+nix-env --install boot
+nix-env --install leiningen
 nix-env --install sbt
 
 # elixir
@@ -92,4 +95,3 @@ nix-env --install icr
 # php
 nix-env --install php-composer
 yarn global add intelephense
-
