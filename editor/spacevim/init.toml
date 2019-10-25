@@ -32,8 +32,9 @@
     # layer
     relativenumber = false
     default_indent = 4
-    bootstrap_after = "init#after"
-    spacevim_autocomplete_method = 'coc'
+    bootstrap_before = "myspacevim#before"
+    bootstrap_after  = "myspacevim#after"
+    autocomplete_method = 'coc'
 
 # Enable autocomplete layer
 [[layers]]
@@ -71,13 +72,16 @@ name = 'colorscheme'
 name = 'lsp'
 filetypes = [
   'rust',
-  # 'haskell',
+  'haskell',
   'go',
   # 'kotlin',
   'python',
   'typescript',
   'html'
 ]
+[layers.override_cmd]
+  rust = ["rustup", "run", "stable", "rls"]
+  go = ["gopls"]
 
 [[layers]]
 name = 'lang#rust'
