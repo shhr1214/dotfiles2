@@ -70,6 +70,7 @@ pip install --user flake8
 pip install --user yapf
 pip install --user autoflake
 pip install --user isort
+pip install --user coverage
 pip install --user 'python-language-server[all]'
 pip install --uesr 'ptvsd>=4.2'
 pip install --user pyls-isort
