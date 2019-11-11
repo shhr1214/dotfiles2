@@ -580,6 +580,9 @@ before packages are loaded."
       ;; (setq initial-frame-alist '((height . 40) (width . 120)))
       ))
 
+  (add-hook 'evil-insert-state-entry-hook (lambda () (send-string-to-terminal "\033[5 q")))
+  (add-hook 'evil-normal-state-entry-hook (lambda () (send-string-to-terminal "\033[0 q")))
+
   (setq-default neo-theme 'nerd)
   (setq-default evil-escape-delay 0.4)
 
