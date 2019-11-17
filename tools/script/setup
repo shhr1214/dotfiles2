@@ -8,6 +8,8 @@ nix-env --install peco
 nix-env --install tokei
 nix-env --install bat
 nix-env --install ranger
+nix-env --install jq
+nix-env --install htop
 
 nix-env --install alacritty
 mkdir -p "${HOME}"/config/alacritty

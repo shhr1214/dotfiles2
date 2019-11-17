@@ -11,6 +11,7 @@ rustup component add clippy
 rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install racer
+cargo install cargo-edit
 mkdir "${HOME}"/.zfunc
 
 # script

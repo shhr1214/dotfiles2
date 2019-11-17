@@ -7,3 +7,4 @@ nix-channel --update
 nix-env -iA nixpkgs.cachix
 cachix use all-hies
 
+nix-env --install openssl
