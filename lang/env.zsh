@@ -11,6 +11,9 @@ export PATH="$HOME/.cask/bin:$PATH"
 eval $(opam env)
 alias ocaml="rlwrap ocaml"
 
+# jvm family
+alias cljs="lumo -r"
+
 # dotnet
 export PATH="/usr/local/share/dotnet:$PATH"
 

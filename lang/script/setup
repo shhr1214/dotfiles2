@@ -41,6 +41,7 @@ nix-env --install clojure
 nix-env --install boot
 nix-env --install leiningen
 nix-env --install sbt
+yarn global add lumo-cljs
 
 # elixir
 nix-env --install elixir
