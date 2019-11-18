@@ -127,6 +127,7 @@ name = 'lang#elm'
 
 [[layers]]
 name = 'lang#javascript'
+auto_fix = true
 
 [[layers]]
 name = 'lang#typescript'
