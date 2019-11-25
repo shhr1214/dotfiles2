@@ -24,6 +24,12 @@ indent_size = 2
 [*.java]
 indent_size = 4
 
+[*.kt]
+indent_size = 4
+
+[*.gradle]
+indent_size = 2
+
 [*.elm]
 indent_size = 4
 
