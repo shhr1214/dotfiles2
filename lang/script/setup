@@ -38,6 +38,7 @@ nix-env --install ccls
 # jvm familiy
 nix-env --install adoptopenjdk-openj9-bin
 nix-env --install clojure
+nix-env --install kotlin
 nix-env --install boot
 nix-env --install leiningen
 nix-env --install sbt
@@ -80,6 +81,8 @@ pip install --user pyls-mypy
 pip install --user importmagic
 pip install --user epc
 pip install --user black
+# pip install --user cython
+# pip install --user scikit-learn
 pip install --user jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 
