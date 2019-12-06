@@ -24,6 +24,7 @@ export PATH="$GOBIN:$PATH"
 
 # node
 export PATH="$HOME/.yarn/bin:$PATH"
+export NODE_PATH="$HOME/.config/yarn/global/node_modules"
 
 # elm
 export ELM_HOME="$HOME/node_modules/elm"
