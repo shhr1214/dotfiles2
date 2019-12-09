@@ -74,7 +74,7 @@ filetypes = [
   'rust',
   'haskell',
   'go',
-  # 'kotlin',
+  'kotlin',
   'python',
   'typescript',
   'html'
@@ -82,6 +82,7 @@ filetypes = [
 [layers.override_cmd]
   rust = ["rustup", "run", "stable", "rls"]
   go = ["gopls"]
+  kotlin = ["kotlin-language-server"]
 
 [[layers]]
 name = 'lang#rust'
