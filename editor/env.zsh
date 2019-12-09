@@ -6,6 +6,7 @@ alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 
 alias spacemacs="rm ${HOME}/.emacs.d && ln -fs ${HOME}/.spacemacs.emacs.d ${HOME}/.emacs.d && emacs"
+alias spacemacsrepo="open https://github.com/syl20bnr/spacemacs/tree/develop"
 alias doomemacs="rm ${HOME}/.emacs.d && ln -fs ${HOME}/.doom.emacs.d ${HOME}/.emacs.d && emacs"
 
 export PATH="$HOME/.doom.emacs.d/bin:$PATH"
