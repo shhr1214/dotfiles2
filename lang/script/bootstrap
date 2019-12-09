@@ -6,7 +6,7 @@ if [ ! -e "${HOME}"/.cargo ]; then
 fi
 
 # javascript
-nix-env --install nodejs
+nix-env --install nodejs-13.3.0
 nix-env --install yarn
 
 # python
