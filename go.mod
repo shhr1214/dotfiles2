@@ -15,9 +15,10 @@ require (
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
 	github.com/creack/pty v1.1.9 // indirect
 	github.com/cweill/gotests v1.5.3 // indirect
-	github.com/davidrjenni/reftools v0.0.0-20191020193632-c872ffe85332 // indirect
+	github.com/davidrjenni/reftools v0.0.0-20191208181309-4b4ae7b393d3 // indirect
 	github.com/fatih/gomodifytags v1.0.1 // indirect
-	github.com/fatih/structtag v1.1.0 // indirect
+	github.com/fatih/structtag v1.2.0 // indirect
+	github.com/go-critic/go-critic v0.4.0 // indirect
 	github.com/go-toolsmith/astinfo v1.0.0 // indirect
 	github.com/godoctor/godoctor v0.0.0-20181123222458-69df17f3a6f6 // indirect
 	github.com/gogo/protobuf v1.3.1 // indirect
@@ -27,22 +28,22 @@ require (
 	github.com/golangci/revgrep v0.0.0-20180812185044-276a5c0a1039 // indirect
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/pprof v0.0.0-20190930153522-6ce02741cba3 // indirect
-	github.com/google/shlex v0.0.0-20181106134648-c34317bd91bf // indirect
+	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/gorilla/websocket v1.4.1 // indirect
 	github.com/gostaticanalysis/analysisutil v0.0.3 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.11.3 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/haya14busa/gopkgs v1.0.0 // indirect
-	github.com/josharian/impl v0.0.0-20190715203526-f0d59e96e372 // indirect
+	github.com/josharian/impl v0.0.0-20191119165012-6b9658ad00c7 // indirect
 	github.com/jstemmer/go-junit-report v0.9.1 // indirect
 	github.com/julienschmidt/httprouter v1.3.0 // indirect
 	github.com/klauspost/compress v1.8.6 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/logrusorgru/aurora v0.0.0-20190803045625-94edacc10f9b // indirect
-	github.com/mattn/go-isatty v0.0.10 // indirect
+	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/mattn/goveralls v0.0.3 // indirect
-	github.com/mdempsky/gocode v0.0.0-20190203001940-7fb65232883f // indirect
+	github.com/mdempsky/gocode v0.0.0-20191202075140-939b4a677f2f // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
 	github.com/pelletier/go-toml v1.6.0 // indirect
 	github.com/prometheus/client_golang v1.1.0 // indirect
@@ -53,12 +54,12 @@ require (
 	github.com/rogpeppe/go-internal v1.5.0 // indirect
 	github.com/rogpeppe/godef v1.1.1 // indirect
 	github.com/russross/blackfriday v2.0.0+incompatible // indirect
-	github.com/securego/gosec v0.0.0-20191104154532-b4c76d4234af // indirect
+	github.com/securego/gosec v0.0.0-20191119104125-df484bfa9e9f // indirect
 	github.com/shirou/gopsutil v2.19.9+incompatible // indirect
 	github.com/shurcooL/go v0.0.0-20190704215121-7189cc372560 // indirect
 	github.com/spf13/afero v1.2.2 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/spf13/viper v1.5.0 // indirect
+	github.com/spf13/viper v1.6.1 // indirect
 	github.com/ugorji/go v1.1.7 // indirect
 	github.com/uudashr/gocognit v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.5.0 // indirect
@@ -72,18 +73,18 @@ require (
 	golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8 // indirect
 	golang.org/x/lint v0.0.0-20190930215403-16217165b5de // indirect
 	golang.org/x/mobile v0.0.0-20191002175909-6d0d39b2ca82 // indirect
-	golang.org/x/net v0.0.0-20191116160921-f9c825593386 // indirect
+	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
-	golang.org/x/sys v0.0.0-20191115151921-52ab43148777 // indirect
+	golang.org/x/sys v0.0.0-20191210023423-ac6580df4449 // indirect
 	golang.org/x/time v0.0.0-20190921001708-c4c64cad1fd0 // indirect
-	golang.org/x/tools v0.0.0-20191116214431-80313e1ba718 // indirect
-	golang.org/x/tools/gopls v0.2.1 // indirect
-	golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898 // indirect
+	golang.org/x/tools v0.0.0-20191213032237-7093a17b0467 // indirect
+	golang.org/x/tools/gopls v0.2.2 // indirect
+	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
 	google.golang.org/genproto v0.0.0-20191009194640-548a555dbc03 // indirect
 	google.golang.org/grpc v1.24.0 // indirect
 	gopkg.in/alecthomas/kingpin.v3-unstable v3.0.0-20191105091915-95d230a53780 // indirect
-	gopkg.in/yaml.v2 v2.2.5 // indirect
+	gopkg.in/yaml.v2 v2.2.7 // indirect
 	mvdan.cc/unparam v0.0.0-20191111180625-960b1ec0f2c2 // indirect
 	sourcegraph.com/sqs/pbtypes v1.0.0 // indirect
 )
