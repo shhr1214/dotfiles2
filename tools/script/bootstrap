@@ -8,7 +8,3 @@ nix-env -iA nixpkgs.cachix
 cachix use all-hies
 
 nix-env --install openssl
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
