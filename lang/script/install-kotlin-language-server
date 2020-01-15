@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd "$HOME/.dotfiles/lang/script"
+cd "${HOME}/.dotfiles/lang/script"
 curl -LO "https://github.com/fwcd/kotlin-language-server/releases/download/0.5.2/server.zip"
 unzip server.zip
 rm server.zip
 
-mv server "$HOME/.dotfiles/private/kotlin-language-server"
-ln -fs "$HOME/.dotfiles/private/kotlin-language-server/bin/kotlin-language-server" "$HOME/bin/kotlin-language-server"
+mv server "${HOME}/.dotfiles/private/kotlin-language-server"
+ln -fs "${HOME}/.dotfiles/private/kotlin-language-server/bin/kotlin-language-server" "${HOME}/bin/kotlin-language-server"

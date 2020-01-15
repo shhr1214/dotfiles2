@@ -12,7 +12,7 @@ rustup completions zsh > ~/.zfunc/_rustup
 
 cargo install racer
 cargo install cargo-edit
-mkdir "${HOME}"/.zfunc
+mkdir "${HOME}/.zfunc"
 
 # script
 nix-env --install ShellCheck
@@ -89,8 +89,8 @@ pip install --user black
 pip install --user jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 
-ln -fs "${HOME}"/.dotfiles/lang/mypy     "${HOME}"/.config/mypy
-ln -fs "${HOME}"/.dotfiles/lang/pylintrc "${HOME}"/.config/pylintrc
+ln -fs "${HOME}/.dotfiles/lang/mypy"     "${HOME}/.config/mypy"
+ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${HOME}/.config/pylintrc"
 
 # ruby
 gem install solargraph

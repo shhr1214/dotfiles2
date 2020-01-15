@@ -7,7 +7,7 @@ bindkey -e
 export TERM='xterm-24bit'
 
 PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{$reset_color%}"
-RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{${reset_color}%}"
+RPROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%~]%{$reset_color%}"
 
 # git
 setopt prompt_subst
@@ -17,7 +17,7 @@ zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
 zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
-PROMPT=$PROMPT'${vcs_info_msg_0_} '
+PROMPT="${PROMPT}${vcs_info_msg_0_} "
 
 # peco
 setopt hist_ignore_all_dups
@@ -29,15 +29,15 @@ function peco_select_history() {
   else
     tac="tail -r"
   fi
-  BUFFER=$(fc -l -n 1 | eval $tac | peco --query "$LBUFFER")
+  BUFFER=$(fc -l -n 1 | eval $tac | peco --query "${LBUFFER}")
   CURSOR=$#BUFFER
   zle clear-screen
 }
 zle -N peco_select_history
 bindkey '^r' peco_select_history
 function peco-src () {
-  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
+  local selected_dir=$(ghq list -p | peco --query "${LBUFFER}")
+  if [ -n "${selected_dir}" ]; then
     BUFFER="cd ${selected_dir}"
     zle accept-line
   fi
@@ -49,10 +49,10 @@ bindkey '^]' peco-src
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}"/.dotfiles/private/.zshrc ] && source "${HOME}"/.dotfiles/private/.zshrc
 
-export PATH="$HOME/.cargo/bin:$HOME/.dotfiles/script:$HOME/.dotfiles/bin:/usr/local/bin:$PATH"
+export PATH="${HOME}/.cargo/bin:${HOME}/.dotfiles/script:${HOME}/.dotfiles/bin:/usr/local/bin:${PATH}"
 
 # zcompile
-if [ "$HOME"/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
+if [ "${HOME}"/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
 

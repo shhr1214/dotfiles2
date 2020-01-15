@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # rust
-if [ ! -e "${HOME}"/.cargo ]; then
+if [ ! -e "${HOME}/.cargo" ]; then
     curl https://sh.rustup.rs -sSf | sh
 fi
 
@@ -18,4 +18,4 @@ pip install --upgrade --user pip
 
 # ruby
 nix-env --install ruby
-mkdir -p "${HOME}"/bin/gem
+mkdir -p "${HOME}/bin/gem"

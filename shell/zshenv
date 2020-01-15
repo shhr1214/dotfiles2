@@ -1,7 +1,7 @@
 # zmodload zsh/zprof && zprof
 
 export NIX_IGNORE_SYMLINK_STORE=1
-. "${HOME}"/.nix-profile/etc/profile.d/nix.sh
+. "${HOME}/.nix-profile/etc/profile.d/nix.sh"
 
 autoload -Uz run-help
 autoload -Uz add-zsh-hook
@@ -9,7 +9,7 @@ autoload -Uz colors && colors
 autoload -Uz is-at-least
 autoload -Uz vcs_info
 
-fpath+="${HOME}"/.zfunc
+fpath+="${HOME}/.zfunc"
 autoload -Uz compinit && compinit -u
 
 # 補完の大文字小文字区別
@@ -29,12 +29,12 @@ export GIT_EDITOR="${EDITOR}"
 export PAGER=less
 export LESSCHARSET='utf-8'
 
-export HISTFILE="${HOME}"/.zsh_history
+export HISTFILE="${HOME}/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=1000000
 export LISTMAX=50
 
-export XDG_CONFIG_HOME="${HOME}"/.config
-source "${HOME}"/.dotfiles/tools/env.zsh
-source "${HOME}"/.dotfiles/editor/env.zsh
-source "${HOME}"/.dotfiles/lang/env.zsh
+export XDG_CONFIG_HOME="${HOME}/.config"
+source "${HOME}/.dotfiles/tools/env.zsh"
+source "${HOME}/.dotfiles/editor/env.zsh"
+source "${HOME}/.dotfiles/lang/env.zsh"
