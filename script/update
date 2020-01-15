@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd "${HOME}"/.dotfiles && git pull
+(cd "${HOME}/.dotfiles" && git pull)
 
-bash "${HOME}"/.dotfiles/shell/script/update
-bash "${HOME}"/.dotfiles/lang/script/update
-bash "${HOME}"/.dotfiles/editor/script/update
-bash "${HOME}"/.dotfiles/tools/script/update
+bash "${HOME}/.dotfiles/shell/script/update"
+bash "${HOME}/.dotfiles/lang/script/update"
+bash "${HOME}/.dotfiles/editor/script/update"
+bash "${HOME}/.dotfiles/tools/script/update"
