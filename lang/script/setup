@@ -108,23 +108,25 @@ yarn global add js-beautify
 yarn global add elm
 
 # python
-pip install --user pynvim
-pip install --user flake8
-pip install --user yapf
-pip install --user autoflake
-pip install --user isort
-pip install --user coverage
-pip install --user 'python-language-server[all]'
-pip install --uesr 'ptvsd>=4.2'
-pip install --user pyls-isort
-pip install --user pyls-mypy
-pip install --user importmagic
-pip install --user epc
-pip install --user black
-# pip install --user cython
-# pip install --user scikit-learn
-pip install --user jupyter_contrib_nbextensions
+pip3 install --user pynvim
+pip3 install --user flake8
+pip3 install --user yapf
+pip3 install --user autoflake
+pip3 install --user isort
+pip3 install --user coverage
+pip3 install --user 'python-language-server[all]'
+pip3 install --uesr 'ptvsd>=4.2'
+pip3 install --user pyls-isort
+pip3 install --user pyls-mypy
+pip3 install --user importmagic
+pip3 install --user epc
+pip3 install --user black
+# pip3 install --user cython
+# pip3 install --user scikit-learn
+pip3 install --user jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
+pip3 install --user pynvim
+pip install --user pynvim
 
 ln -fs "${HOME}/.dotfiles/lang/mypy"     "${HOME}/.config/mypy"
 ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${HOME}/.config/pylintrc"
