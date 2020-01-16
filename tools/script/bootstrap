@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# nix https://nixos.org/nix/
-curl https://nixos.org/nix/install | sh
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-nix-channel --update
-nix-env -iA nixpkgs.cachix
-cachix use all-hies
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  # nix https://nixos.org/nix/
+  curl https://nixos.org/nix/install | sh
+  nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+  nix-channel --update
+  nix-env -iA nixpkgs.cachix
+  cachix use all-hies
 
-nix-env --install openssl
+  nix-env --install openssl
+fi

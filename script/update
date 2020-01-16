@@ -1,8 +1,15 @@
 #!/bin/bash
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  OS_TYPE="macos"
+else
+  echo "現在 macos 以外対応してない"
+  OS_TYPE="unknown"
+fi
+
 (cd "${HOME}/.dotfiles" && git pull)
 
+bash "${HOME}/.dotfiles/tools/script/update"
 bash "${HOME}/.dotfiles/shell/script/update"
 bash "${HOME}/.dotfiles/lang/script/update"
 bash "${HOME}/.dotfiles/editor/script/update"
-bash "${HOME}/.dotfiles/tools/script/update"

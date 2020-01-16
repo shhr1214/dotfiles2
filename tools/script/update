@@ -1,3 +1,9 @@
 #!/bin/bash
 
-# (cd ${HOME}/.dotfiles/tools && cargo install --force --path .)
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  brew upgrade
+else
+  nix-channel --update; nix-env -iA nixpkgs.nix
+  nix-channel --update nixpkgs
+  nix-env --upgrade '*'
+fi

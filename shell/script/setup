@@ -1,7 +1,12 @@
 #!/bin/bash
 
-nix-env --install zsh
-nix-env --install tmux
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  brew install zsh
+  brew install tmux
+else
+  nix-env --install zsh
+  nix-env --install tmux
+fi
 
 ln -fs "${HOME}"/.dotfiles/shell/bash_profile "${HOME}"/.bash_profile
 ln -fs "${HOME}"/.dotfiles/shell/bashrc       "${HOME}"/.bashrc
@@ -11,4 +16,3 @@ ln -fs "${HOME}"/.dotfiles/shell/tmux.conf    "${HOME}"/.tmux.conf
 ln -fs "${HOME}"/.dotfiles/shell/nixpkgs      "${HOME}"/.config/nixpkgs
 
 source .zshrc
-

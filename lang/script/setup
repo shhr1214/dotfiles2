@@ -1,5 +1,47 @@
 #!/bin/bash
 
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  brew install nodejs
+  brew install yarn
+  brew install python
+  brew install pipenv
+  brew install ruby
+  brew install elixir
+  brew install go
+  brew install crystal
+  brew install crystal-icr
+  brew install shellcheck
+  brew install stack
+  brew install ghc
+  brew install opam
+  brew install ccls
+else
+  nix-env --install nodejs-13.3.0
+  nix-env --install yarn
+  nix-env --install python3-3.7.4
+  nix-env --install pipenv-2018.11.26
+  nix-env --install ruby
+  nix-env --install elixir
+  nix-env --install go
+  nix-env --install delve
+  nix-env --install crystal
+  nix-env --install icr
+  nix-env --install php-composer
+  nix-env --install ShellCheck
+  nix-env --install stack
+  nix-env --install ghc
+  nix-env -iA selection --arg selector 'p: { inherit (p) ghc865; }' -f https://github.com/infinisil/all-hies/tarball/master
+  nix-env --install opam
+  nix-env --install ccls
+  nix-env --install adoptopenjdk-openj9-bin
+  nix-env --install clojure
+  nix-env --install boot
+  nix-env --install leiningen
+  nix-env --install sbt
+  nix-env --install kotlin
+  nix-env --install gradle
+fi
+
 # rust
 rustup self update
 rustup update
@@ -14,43 +56,38 @@ cargo install racer
 cargo install cargo-edit
 mkdir "${HOME}/.zfunc"
 
+# javascript
+yarn global add node-gyp
+
+# python
+python -m ensurepip --default-pip --user
+pip install --upgrade --user pip
+
+# ruby
+mkdir -p "${HOME}/bin/gem"
+gem pristine bigdecimal --version 2.0.0
+gem pristine bigdecimal --version 1.4.4
+gem pristine date --version 3.0.0
+gem pristine dbm --version 1.1.0
+
 # script
-nix-env --install ShellCheck
 yarn global add bash-language-server
 pip install --user bashate
 
 # haskell
-nix-env --install stack
-nix-env --install ghc
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
-nix-env -iA selection --arg selector 'p: { inherit (p) ghc865; }' -f https://github.com/infinisil/all-hies/tarball/master
 
 # ocaml
-nix-env --install opam
 opam init
 opam config setup -a
 opam install merlin utop ocp-indent
 opam user-setup install
 
-# c/c++
-nix-env --install ccls
+# golang
+go get -u github.com/go-delve/delve/cmd/dlv
 
 # jvm familiy
-nix-env --install adoptopenjdk-openj9-bin
-nix-env --install clojure
-nix-env --install boot
-nix-env --install leiningen
-nix-env --install sbt
-nix-env --install kotlin
-nix-env --install gradle
 yarn global add lumo-cljs
-
-# elixir
-nix-env --install elixir
-
-# go
-nix-env --install go
-nix-env --install delve
 
 # javascript / web
 yarn global add typescript typescript-language-server
@@ -68,7 +105,7 @@ yarn global add vscode-css-languageserver-bin
 yarn global add js-beautify
 
 # elm
-nix-env --install elm
+yarn global add elm
 
 # python
 pip install --user pynvim
@@ -98,9 +135,6 @@ gem install pry
 gem install sqlint
 
 # crystal
-nix-env --install crystal
-nix-env --install icr
 
 # php
-nix-env --install php-composer
 yarn global add intelephense

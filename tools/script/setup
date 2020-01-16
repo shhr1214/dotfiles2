@@ -1,21 +1,34 @@
 #!/bin/bash
 
-nix-env --install ripgrep
-nix-env --install lsd
-nix-env --install ghq
-nix-env --install tig
-nix-env --install peco
-nix-env --install tokei
-nix-env --install bat
-nix-env --install ranger
-nix-env --install jq
-nix-env --install htop
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  brew install ripgrep
+  brew install lsd
+  brew install ghq
+  brew install tig
+  brew install peco
+  brew install tokei
+  brew install bat
+  brew install ranger
+  brew install jq
+  brew install htop
+  brew cask install alacritty
+else
+  nix-env --install ripgrep
+  nix-env --install lsd
+  nix-env --install ghq
+  nix-env --install tig
+  nix-env --install peco
+  nix-env --install tokei
+  nix-env --install bat
+  nix-env --install ranger
+  nix-env --install jq
+  nix-env --install htop
+  nix-env --install alacritty
+fi
 
-nix-env --install alacritty
 mkdir -p "${HOME}"/config/alacritty
 ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml "${HOME}"/.config/alacritty/alacritty.yml
-
-cat >> "$HOME"/.gitconfig <<EOF
+cat >> "${HOME}"/.gitconfig <<EOF
 
 [ghq]
 root = ${HOME}/src

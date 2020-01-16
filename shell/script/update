@@ -1,6 +1,1 @@
 #!/bin/bash
-
-nix-channel --update; nix-env -iA nixpkgs.nix
-nix-channel --update nixpkgs
-nix-env --upgrade '*'
-

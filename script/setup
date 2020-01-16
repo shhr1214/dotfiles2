@@ -1,6 +1,13 @@
 #!/bin/bash
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  OS_TYPE="macos"
+else
+  echo "現在 macos 以外対応してない"
+  OS_TYPE="unknown"
+fi
+
+bash "${HOME}/.dotfiles/tools/script/setup"
 bash "${HOME}/.dotfiles/shell/script/setup"
 bash "${HOME}/.dotfiles/lang/script/setup"
 bash "${HOME}/.dotfiles/editor/script/setup"
-bash "${HOME}/.dotfiles/tools/script/setup"

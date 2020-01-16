@@ -1,7 +1,12 @@
 #!/bin/bash
 
-nix-env --install emacs
-nix-env --install neovim
+if [[ "${OS_TYPE}" == "macos" ]]; then
+  brew cask install emacs
+  brew install neovim
+else
+  nix-env --install emacs
+  nix-env --install neovim
+fi
 
 # spacemacs
 if [ ! -e "${HOME}/.spacemacs.emacs.d" ]; then

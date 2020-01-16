@@ -1,5 +1,12 @@
 #!/bin/bash
 
-bash "${HOME}/.dotfiles/shell/script/bootstrap"
+if [[ "$(uname)" == "Darwin" ]]; then
+  OS_TYPE="macos"
+else
+  echo "現在 macos 以外対応してない"
+  OS_TYPE="unknown"
+fi
+
 bash "${HOME}/.dotfiles/tools/script/bootstrap"
+bash "${HOME}/.dotfiles/shell/script/bootstrap"
 bash "${HOME}/.dotfiles/lang/script/bootstrap"

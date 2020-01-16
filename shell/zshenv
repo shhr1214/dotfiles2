@@ -1,7 +1,14 @@
 # zmodload zsh/zprof && zprof
 
-export NIX_IGNORE_SYMLINK_STORE=1
-. "${HOME}/.nix-profile/etc/profile.d/nix.sh"
+if [[ "$(uname)" == "Darwin" ]]; then
+  OS_TYPE="macos"
+  export PATH="/usr/local/bin:${PATH}"
+else
+  echo "現在 macos 以外対応してない"
+  OS_TYPE="unknown"
+  export NIX_IGNORE_SYMLINK_STORE=1
+  . "${HOME}/.nix-profile/etc/profile.d/nix.sh"
+fi
 
 autoload -Uz run-help
 autoload -Uz add-zsh-hook
