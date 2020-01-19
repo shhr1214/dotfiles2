@@ -29,6 +29,10 @@ export NODE_PATH="${HOME}/.config/yarn/global/node_modules"
 # elm
 export ELM_HOME="${HOME}/node_modules/elm"
 
+# python
+alias python="python3"
+alias pip="pip3"
+
 # ruby
 export GEM_HOME="${HOME}/bin/gem"
 export PATH="${HOME}/bin/gem/bin:${PATH}"
