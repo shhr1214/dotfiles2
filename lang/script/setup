@@ -61,7 +61,7 @@ yarn global add node-gyp
 
 # python
 python -m ensurepip --default-pip --user
-pip install --upgrade --user pip
+pip3 install --upgrade --user pip
 
 # ruby
 mkdir -p "${HOME}/bin/gem"
@@ -72,7 +72,7 @@ gem pristine dbm --version 1.1.0
 
 # script
 yarn global add bash-language-server
-pip install --user bashate
+pip3 install --user bashate
 
 # haskell
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
