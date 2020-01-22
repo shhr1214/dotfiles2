@@ -35,4 +35,4 @@ alias pip="pip3"
 
 # ruby
 export GEM_HOME="${HOME}/bin/gem"
-export PATH="${HOME}/bin/gem/bin:${PATH}"
+export PATH="/usr/local/opt/ruby/bin:${HOME}/bin/gem/bin:${PATH}"
