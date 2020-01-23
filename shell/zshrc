@@ -50,7 +50,7 @@ bindkey '^]' peco-src
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}"/.dotfiles/private/.zshrc ] && source "${HOME}"/.dotfiles/private/.zshrc
 
-export PATH="${HOME}/.cargo/bin:${HOME}/.dotfiles/script:${HOME}/.dotfiles/bin:/usr/local/bin:${PATH}"
+export PATH="${HOME}/.cargo/bin:${HOME}/.dotfiles/script:${HOME}/.dotfiles/bin:${PATH}"
 
 # zcompile
 if [ "${HOME}"/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
