@@ -8,6 +8,11 @@ else
 fi
 
 (cd "${HOME}/.dotfiles" && git pull)
+if [[ $? -ne 0 ]]; then
+  echo "failed to udpate .dotfiles"
+  exit 1
+fi
+
 
 bash "${HOME}/.dotfiles/tools/script/update"
 bash "${HOME}/.dotfiles/shell/script/update"
