@@ -3,4 +3,4 @@ alias ll="ls -l"
 
 alias ssh="TERM=xterm-256color ssh"
 
-export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:${PATH}"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:${PATH}"

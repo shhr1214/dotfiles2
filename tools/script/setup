@@ -14,6 +14,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install htop
   brew cask install alacritty
   brew install coreutils
+  brew install gnu-sed
 else
   nix-env --install ripgrep
   nix-env --install lsd
