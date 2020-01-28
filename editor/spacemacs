@@ -114,6 +114,7 @@ This function should only modify configuration layer settings."
      (lsp :variables
           lsp-enable-file-watchers nil
           lsp-navigation 'simple
+          lsp-ui-doc-enable nil
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
