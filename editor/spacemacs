@@ -161,6 +161,7 @@ This function should only modify configuration layer settings."
                  typescript-fmt-on-save t)
      (unicode-fonts :variables unicode-fonts-force-multi-color-on-mac t)
      (version-control :variables version-control-diff-side 'left)
+     vim-empty-lines
      vimscript
      (vue :variables vue-backend 'lsp)
      yaml
