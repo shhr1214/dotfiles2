@@ -118,6 +118,7 @@ pip install --user 'python-language-server[all]'
 pip install --uesr 'ptvsd>=4.2'
 pip install --user pyls-isort
 pip install --user pyls-mypy
+pip install --user pyls-black
 pip install --user importmagic
 pip install --user epc
 pip install --user black
