@@ -32,11 +32,12 @@ go get -u github.com/rogpeppe/godef
 go get -u github.com/zmb3/gogetdoc
 
 # python
-pip3 install --user --upgrade pip
-pip3 list --outdated \
+pip install --user --upgrade pip
+pip list --outdated \
   | tail -n +3 \
+  | grep -v 'jedi' \
   | awk '{print $1}' \
-  | xargs pip3 install --user --upgrade
+  | xargs pip install --user --upgrade
 
 # ruby
 gem update $(gem outdated | cut -d ' ' -f 1)
