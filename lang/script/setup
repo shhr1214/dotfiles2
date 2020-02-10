@@ -127,7 +127,6 @@ pip install --user black
 pip install --user jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 pip install --user pynvim
-pip install --user pynvim
 
 ln -fs "${HOME}/.dotfiles/lang/mypy"     "${HOME}/.config/mypy"
 ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${HOME}/.config/pylintrc"
