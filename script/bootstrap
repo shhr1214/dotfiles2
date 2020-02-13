@@ -7,6 +7,6 @@ else
   export OS_TYPE="unknown"
 fi
 
-bash "${HOME}/.dotfiles/tools/script/bootstrap"
-bash "${HOME}/.dotfiles/shell/script/bootstrap"
-bash "${HOME}/.dotfiles/lang/script/bootstrap"
+/bin/bash "${HOME}/.dotfiles/tools/script/bootstrap"
+/bin/bash "${HOME}/.dotfiles/shell/script/bootstrap"
+/bin/bash "${HOME}/.dotfiles/lang/script/bootstrap"

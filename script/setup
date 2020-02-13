@@ -7,7 +7,7 @@ else
   export OS_TYPE="unknown"
 fi
 
-bash "${HOME}/.dotfiles/tools/script/setup"
-bash "${HOME}/.dotfiles/shell/script/setup"
-bash "${HOME}/.dotfiles/lang/script/setup"
-bash "${HOME}/.dotfiles/editor/script/setup"
+/bin/bash "${HOME}/.dotfiles/tools/script/setup"
+/bin/bash "${HOME}/.dotfiles/shell/script/setup"
+/bin/bash "${HOME}/.dotfiles/lang/script/setup"
+/bin/bash "${HOME}/.dotfiles/editor/script/setup"
