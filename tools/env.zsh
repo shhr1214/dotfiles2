@@ -1,6 +1,8 @@
 alias ls="lsd --group-dirs first "
 alias ll="ls -l"
 
+alias lg="lazygit"
+
 alias ssh="TERM=xterm-256color ssh"
 
 export PATH="/usr/local/bin:${PATH}"
