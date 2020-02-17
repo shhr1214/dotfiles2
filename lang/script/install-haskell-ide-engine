@@ -2,12 +2,12 @@
 
 hie_path="${HOME}/.dotfiles/private/haskell-ide-engine"
 
-if [ -e "${hie_engine}" ]; then
-  cd "${hie_engine}"
+if [ -e "${hie_path}" ]; then
+  cd "${hie_path}"
   git pull
 else
-  git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules "${hie_engine}"
-  cd "${hie_engine}"
+  git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules "${hie_path}"
+  cd "${hie_path}"
 fi
 
 stack ./install.hs hie
