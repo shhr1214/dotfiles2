@@ -1,6 +1,6 @@
 #!/bin/bash
 
-local hie_path="${HOME}/.dotfiles/private/haskell-ide-engine"
+hie_path="${HOME}/.dotfiles/private/haskell-ide-engine"
 
 if [ -e "${hie_engine}" ]; then
   cd "${hie_engine}"
