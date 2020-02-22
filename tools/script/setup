@@ -29,8 +29,10 @@ else
   nix-env --install alacritty
 fi
 
+mkdir -p "${HOME}"/config
 mkdir -p "${HOME}"/config/alacritty
 ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml "${HOME}"/.config/alacritty/alacritty.yml
+ln -fs "${HOME}"/.dotfiles/tools/starship.toml "${HOME}"/.config/starship.toml
 cat >> "${HOME}"/.gitconfig <<EOF
 
 [ghq]
