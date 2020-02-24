@@ -98,6 +98,10 @@ yarn global add vscode-css-languageserver-bin
 yarn global add vue-language-server
 yarn global add eslint-cli
 
+# reason
+yarn global add bs-platform
+opam install merlin reason
+
 # html / css
 gem install specific_install
 gem specific_install https://github.com/brigade/scss-lint.git

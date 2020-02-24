@@ -134,6 +134,7 @@ This function should only modify configuration layer settings."
              python-test-runner 'pytest)
      ;; racket
      react
+     (reasonml :variables reason-auto-refmt t)
      (ruby :variables ruby-enable-enh-ruby-mode t)
      (rust :variables
            rust-backend 'lsp
