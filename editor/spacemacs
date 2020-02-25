@@ -112,6 +112,7 @@ This function should only modify configuration layer settings."
      kubernetes
      lua
      (lsp :variables
+          lsp-rust-server 'rust-analyzer
           lsp-enable-file-watchers nil
           lsp-navigation 'simple
           lsp-ui-doc-enable nil
