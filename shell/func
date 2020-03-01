@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function spacemacsrepo () {
+  local repo_dev=https://github.com/syl20bnr/spacemacs/tree/develop
+
+  if [ $# -eq 0 ]; then
+    open "${repo_dev}"
+  elif [ $1 = "lang" ]; then
+    open "${repo_dev}/layers/%2Blang"
+  else
+    open "${repo_dev}"
+  fi
+}

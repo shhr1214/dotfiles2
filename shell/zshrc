@@ -35,8 +35,9 @@ function peco-src () {
 zle -N peco-src
 bindkey '^]' peco-src
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f "${HOME}"/.dotfiles/private/.zshrc ] && source "${HOME}"/.dotfiles/private/.zshrc
+source "${HOME}/.dotfiles/shell/func"
+[ -f "${HOME}/.fzf.zsh" ] && source "${HOME}/.fzf.zsh"
+[ -f "${HOME}/.dotfiles/private/.zshrc" ] && source "${HOME}/.dotfiles/private/.zshrc"
 
 export PATH="${HOME}/.cargo/bin:${HOME}/.dotfiles/script:${HOME}/.dotfiles/bin:${PATH}"
 
