@@ -6,7 +6,11 @@ function spacemacsrepo () {
   if [ $# -eq 0 ]; then
     open "${repo_dev}"
   elif [ $1 = "lang" ]; then
-    open "${repo_dev}/layers/%2Blang"
+    if [ $# -eq 1 ]; then
+      open "${repo_dev}/layers/%2Blang"
+    else
+      open "${repo_dev}/layers/%2Blang/${2}"
+    fi
   else
     open "${repo_dev}"
   fi
