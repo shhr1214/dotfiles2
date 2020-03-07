@@ -1,5 +1,6 @@
-alias ls="lsd --group-dirs first "
-alias ll="ls -l"
+# alias ls="lsd --group-dirs first "
+alias ls="exa --group-directories-first "
+alias ll="ls -l "
 
 alias lg="lazygit"
 
