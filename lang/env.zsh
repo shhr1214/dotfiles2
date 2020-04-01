@@ -31,7 +31,7 @@ export ELM_HOME="${HOME}/node_modules/elm"
 
 # python
 export PATH="/usr/local/opt/python/libexec/bin:${HOME}/Library/Python/3.7/bin:${PATH}"
-
+alias ipy=ipython
 
 # ruby
 export GEM_HOME="${HOME}/bin/gem"

@@ -10,5 +10,6 @@ function! myspacevim#after() abort
     inoremap <C-f> <Right>
 
     let g:rustfmt_autosave = 1
+    let g:neomake_open_list = 0
 endfunction
 
