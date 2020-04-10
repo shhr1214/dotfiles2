@@ -2,6 +2,7 @@
 
 if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install git
+  brew install lazygit
   brew install ripgrep
   brew install lsd
   brew install ghq
