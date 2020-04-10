@@ -73,10 +73,15 @@ filetypes = [
   'rust',
   'haskell',
   'go',
+  'c',
+  'cpp',
   'kotlin',
   'python',
+  'javascript',
   'typescript',
-  'html'
+  'html',
+  'css',
+  'sh'
 ]
 [layers.override_cmd]
   rust = ["rustup", "run", "stable", "rls"]
@@ -88,6 +93,8 @@ name = 'lang#rust'
 
 [[layers]]
 name = 'lang#haskell'
+recomended-style = 1
+format-autosave = 1
 
 [[layers]]
 name = 'lang#scheme'

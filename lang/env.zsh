@@ -4,6 +4,9 @@ export PATH="${HOME}/.local/bin:${PATH}"
 source "${HOME}/.cargo/env"
 export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 
+# c/cpp
+export PATH="/usr/local/opt/llvm/bin:${PATH}"
+
 # haskell
 export PATH="${HOME}/.cask/bin:${PATH}"
 
