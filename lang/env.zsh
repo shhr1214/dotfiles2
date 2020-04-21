@@ -6,6 +6,8 @@ export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/
 
 # c/cpp
 export PATH="/usr/local/opt/llvm/bin:${PATH}"
+export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include $CPPFLAGS"
 
 # haskell
 export PATH="${HOME}/.cask/bin:${PATH}"
@@ -16,6 +18,12 @@ alias ocaml="rlwrap ocaml"
 
 # jvm family
 alias cljs="lumo -r"
+# For the system Java wrappers to find this JDK, symlink it with
+# sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+
 
 # dotnet
 export PATH="/usr/local/share/dotnet:${PATH}"
