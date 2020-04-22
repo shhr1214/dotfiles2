@@ -1,0 +1,14 @@
+#!/bin/bash
+
+diff=$(git diff | wc -l)
+
+if [ "${diff}" = "0" ]; then
+  git checkout master
+  exit 0
+fi
+
+git add -A
+git commit -m "tmp commit; Don't push remote"
+
+git checkout master
+exit 0
