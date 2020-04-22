@@ -18,7 +18,7 @@
   enable_guicolors = true
   # Disable statusline separator, if you want to use other value, please
   # install nerd fonts
-  statusline_separator = "nil"
+  statusline_separator = "allow"
   buffer_index_type = 4
   # Display file type icon on the tabline, If you do not have nerd fonts
   # installed, please change the value to false
@@ -84,12 +84,15 @@ filetypes = [
   'sh'
 ]
 [layers.override_cmd]
-  rust = ["rustup", "run", "stable", "rls"]
+  rust = ["rust-analyzer"]
   go = ["gopls"]
   kotlin = ["kotlin-language-server"]
 
 [[layers]]
 name = 'lang#rust'
+
+[[layers]]
+name = 'lang#red'
 
 [[layers]]
 name = 'lang#haskell'
@@ -147,6 +150,9 @@ name = 'lang#html'
 
 [[layers]]
 name = 'lang#vue'
+
+# [[layers]]
+# name = 'lang#sql'
 
 [[layers]]
 name = 'lang#dockerfile'
