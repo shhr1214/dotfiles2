@@ -23,8 +23,6 @@ alias cljs="lumo -r"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 
-
-
 # dotnet
 export PATH="/usr/local/share/dotnet:${PATH}"
 

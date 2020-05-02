@@ -33,7 +33,7 @@
   default_indent = 4
   bootstrap_before = "myspacevim#before"
   bootstrap_after  = "myspacevim#after"
-  autocomplete_method = 'coc'
+  autocomplete_method = 'deoplete'
 
 # Enable autocomplete layer
 [[layers]]
@@ -100,6 +100,9 @@ recomended-style = 1
 format-autosave = 1
 
 [[layers]]
+name = 'lang#elixir'
+
+[[layers]]
 name = 'lang#scheme'
 
 [[layers]]
@@ -110,6 +113,7 @@ name = 'lang#go'
 
 [[layers]]
 name = 'lang#c'
+# enable_clang_syntax_highlight = 1
 
 [[layers]]
 name = 'lang#python'
