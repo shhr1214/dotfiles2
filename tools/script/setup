@@ -17,6 +17,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install coreutils
   brew install gnu-sed
   brew install libvterm
+  brew install hugo
 else
   nix-env --install ripgrep
   nix-env --install lsd

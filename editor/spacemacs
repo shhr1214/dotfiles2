@@ -58,22 +58,23 @@ This function should only modify configuration layer settings."
               clojure-enable-sayid t
               clojure-enable-clj-refactor t
               clojure-enable-linters 'clj-kondo)
-     csharp
      colors
+     coq
      crystal
+     csharp
      csv
      dap
      debug
      deft
-     ;; dhall
+     dhall
      docker
      elixir
      emacs-lisp
-     ;; (elm :variables
-     ;;      elm-format-command "elm-format-0.19"
-     ;;      elm-format-on-save t
-     ;;      elm-sort-imports-on-save t)
-     ;; erlang
+     (elm :variables
+          elm-format-command "elm-format-0.19"
+          elm-format-on-save t
+          elm-sort-imports-on-save t)
+     erlang
      ess
      fsharp
      git
@@ -124,10 +125,12 @@ This function should only modify configuration layer settings."
      nim
      ocaml
      org
+     pact
      (php :variables
           php-backend 'lsp)
      plantuml
      prettier
+     prolog
      protobuf
      (python :variables
              python-backend 'lsp
