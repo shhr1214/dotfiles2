@@ -165,7 +165,7 @@ This function should only modify configuration layer settings."
      treemacs
      (typescript :variables
                  typescript-backend 'lsp
-                 typescript-fmt-tool 'typescript-formatter
+                 typescript-fmt-tool 'prettier
                  typescript-fmt-on-save t
                  typescript-linter 'tslint)
      (unicode-fonts :variables unicode-fonts-force-multi-color-on-mac t)
