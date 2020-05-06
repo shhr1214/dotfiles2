@@ -37,3 +37,28 @@ function checkoutmaster () {
   return 0
 }
 
+function atcodergen () {
+  local atcoderdir="${HOME}/src/github.com/shhr1214/atcoder"
+  local name="$1"
+
+  if [ "${name}" = "" ]; then
+    echo "name を引数にいれて"
+    return 1
+  fi
+
+  if [ -e "${atcoderdir}/${name}" ]; then
+    echo "その名前のプロジェクトはすでにあるぞ"
+    return 1
+  fi
+
+  if [ ! -e "${atcoderdir}" ]; then
+    mkdir -p "${atcoderdir}"
+  fi
+
+  cd "${atcoderdir}"
+  cargo generate \
+        --git https://github.com/rust-lang-ja/atcoder-rust-base \
+        --branch ja \
+        --name "${name}"
+  cd "${name}"
+}
