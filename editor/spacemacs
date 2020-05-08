@@ -116,9 +116,6 @@ This function should only modify configuration layer settings."
      lua
      (lsp :variables
           lsp-rust-server 'rust-analyzer
-          lsp-enable-file-watchers nil
-          lsp-navigation 'simple
-          ;; lsp-ui-doc-enable nil
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
@@ -617,7 +614,7 @@ before packages are loaded."
   (global-set-key [mouse-4] '(lambda () (interactive) (scroll-down 1)))
   (global-set-key [mouse-5] '(lambda () (interactive) (scroll-up 1)))
 
-  (define-key evil-insert-state-map (kbd "C-h") (kbd "<DEL>"))
+  (define-key evil-insert-state-map (kbd "C-h") (kbd "<backspace>"))
   (define-key evil-insert-state-map (kbd "C-M-a") 'sp-beginning-of-sexp)
   (define-key evil-insert-state-map (kbd "C-M-e") 'sp-end-of-sexp)
   (define-key evil-insert-state-map (kbd "C-d") 'sp-down-sexp)
