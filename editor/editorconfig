@@ -48,6 +48,9 @@ indent_size = 2
 [*.c]
 indent_size = 2
 
+[*.cs]
+indent_size = 4
+
 [*.s]
 indent_style = tab
 

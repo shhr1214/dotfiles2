@@ -87,7 +87,7 @@ This function should only modify configuration layer settings."
          go-linter 'golangci-lint)
      (gtags :variables gtags-enable-by-default nil)
      (haskell :variables
-              haskell-completion-backend 'lsp
+              haskell-completion-backend 'intero
               haskell-process-type 'stack-ghci
               haskell-enable-hindent t
               haskell-enable-hindent-style "johan-tibell")
@@ -115,6 +115,7 @@ This function should only modify configuration layer settings."
      kubernetes
      lua
      (lsp :variables
+          lsp-enable-file-watchers nil
           lsp-rust-server 'rust-analyzer
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
@@ -611,10 +612,10 @@ before packages are loaded."
   (setq-default evil-escape-delay 0.4)
 
   (global-set-key (kbd "<F1>") help-map)
+  (global-set-key (kbd "C-h") (kbd "<DEL>"))
   (global-set-key [mouse-4] '(lambda () (interactive) (scroll-down 1)))
   (global-set-key [mouse-5] '(lambda () (interactive) (scroll-up 1)))
 
-  (define-key evil-insert-state-map (kbd "C-h") (kbd "<backspace>"))
   (define-key evil-insert-state-map (kbd "C-M-a") 'sp-beginning-of-sexp)
   (define-key evil-insert-state-map (kbd "C-M-e") 'sp-end-of-sexp)
   (define-key evil-insert-state-map (kbd "C-d") 'sp-down-sexp)
