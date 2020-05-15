@@ -1,0 +1,13 @@
+IgnoreUnknown UseKeyChain
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+
+Host GitHub
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa
+    TCPKeepAlive yes
+    IdentitiesOnly yes
+    User git
+

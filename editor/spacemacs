@@ -84,7 +84,7 @@ This function should only modify configuration layer settings."
          go-tab-width 4
          godoc-at-point-function 'godoc-gogetdoc
          gofmt-command "goimports"
-         go-linter 'golangci-lint)
+	 go-use-golangci-lint t)
      (gtags :variables gtags-enable-by-default nil)
      (haskell :variables
               haskell-completion-backend 'intero
@@ -100,7 +100,9 @@ This function should only modify configuration layer settings."
            less-enable-lsp t
            scss-enable-lsp t)
      import-js
-     (ivy :variables ivy-extra-directories nil)
+     (ivy :variables
+          ivy-enable-advanced-buffer-information t
+          ivy-extra-directories nil)
      (java :variables java-backend 'lsp)
      (javascript :variables
                  javascript-backend 'lsp
