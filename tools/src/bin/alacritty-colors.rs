@@ -44,8 +44,6 @@ fn main() -> Result<(), Error> {
         }
     }
 
-    dbg!(index);
-
     println!("choose color");
     for (i, color) in colors.iter().enumerate() {
         println!("{}: {}", i + 1, color);
