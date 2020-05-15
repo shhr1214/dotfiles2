@@ -10,14 +10,17 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install peco
   brew install tokei
   brew install bat
+  brew install exa
   brew install ranger
   brew install jq
   brew install htop
-  brew cask install alacritty
   brew install coreutils
   brew install gnu-sed
   brew install libvterm
   brew install hugo
+  brew cask install alacritty
+  brew tap homebrew/cask-fonts
+  brew cask install font-firacode-nerd-font
 else
   nix-env --install ripgrep
   nix-env --install lsd
@@ -32,8 +35,7 @@ else
   nix-env --install alacritty
 fi
 
-mkdir -p "${HOME}"/config
-mkdir -p "${HOME}"/config/alacritty
+mkdir -p "${HOME}"/.config/alacritty
 ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml  "${HOME}"/.config/alacritty/alacritty.yml
 ln -fs "${HOME}"/.dotfiles/tools/starship.toml  "${HOME}"/.config/starship.toml
 ln -fs "${HOME}"/.dotfiles/tools/karabiner.json "${HOME}"/.config/karabiner/karabiner.json
