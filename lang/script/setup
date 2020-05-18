@@ -17,6 +17,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install ccls
   brew install sbt
   brew install scalastyle
+  brew install golangci/tap/golangci-lint # go get すると 時間かかりすぎるわ。
 else
   nix-env --install nodejs-13.3.0
   nix-env --install yarn
