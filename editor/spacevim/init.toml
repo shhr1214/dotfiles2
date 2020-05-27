@@ -33,7 +33,8 @@
   default_indent = 4
   bootstrap_before = "myspacevim#before"
   bootstrap_after  = "myspacevim#after"
-  autocomplete_method = 'deoplete'
+  autocomplete_method = 'coc'
+  # autocomplete_method = 'deoplete'
 
 # Enable autocomplete layer
 [[layers]]
@@ -85,6 +86,7 @@ filetypes = [
 ]
 [layers.override_cmd]
   rust = ["rust-analyzer"]
+  haskell = ["hie-wrapper"]
   go = ["gopls"]
   kotlin = ["kotlin-language-server"]
 
