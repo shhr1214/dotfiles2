@@ -78,11 +78,10 @@ yarn global add bash-language-server
 pip install --user bashate
 
 # haskell
-stack install apply-refact hlint stylish-haskell hasktags hoogle hindent
+stack install apply-refact hlint stylish-haskell hasktags hoogle hindent intero
 
 # ocaml
 opam init
-opam config setup -a
 opam install merlin utop ocp-indent
 opam user-setup install
 

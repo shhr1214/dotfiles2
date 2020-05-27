@@ -21,6 +21,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew cask install alacritty
   brew tap homebrew/cask-fonts
   brew cask install font-firacode-nerd-font
+  curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
 else
   nix-env --install ripgrep
   nix-env --install lsd
@@ -35,12 +36,11 @@ else
   nix-env --install alacritty
 fi
 
+mkdir -p "${HOME}"/.config/git
+ln -fs "${HOME}"/.dotfiles/tools/gitconfig      "${HOME}"/.config/git/config
+touch "${HOME}"/.config/git/config.local
 mkdir -p "${HOME}"/.config/alacritty
 ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml  "${HOME}"/.config/alacritty/alacritty.yml
 ln -fs "${HOME}"/.dotfiles/tools/starship.toml  "${HOME}"/.config/starship.toml
 ln -fs "${HOME}"/.dotfiles/tools/karabiner.json "${HOME}"/.config/karabiner/karabiner.json
-cat >> "${HOME}"/.gitconfig <<EOF
-
-[ghq]
-root = ${HOME}/src
-EOF
+mkdir -p "${$XDG_DATA_HOME}/tig"

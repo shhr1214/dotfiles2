@@ -42,6 +42,9 @@ export SAVEHIST=1000000
 export LISTMAX=50
 
 export XDG_CONFIG_HOME="${HOME}/.config"
+export XDG_CACHE_HOME="${HOME}/.cache"
+export XDG_DATA_HOME="${HOME}/.local/share"
+
 source "${HOME}/.dotfiles/tools/env.zsh"
 source "${HOME}/.dotfiles/editor/env.zsh"
 source "${HOME}/.dotfiles/lang/env.zsh"

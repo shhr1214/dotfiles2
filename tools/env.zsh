@@ -2,6 +2,8 @@
 alias ls="exa --group-directories-first "
 alias ll="ls -l "
 
+alias less="bat"
+
 alias lg="lazygit"
 
 alias ssh="TERM=xterm-256color ssh"
