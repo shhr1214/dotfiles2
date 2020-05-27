@@ -9,16 +9,18 @@ else
   nix-env --install neovim
 fi
 
+mkdir -p "${HOME}/.config"
+
 # spacemacs
-if [ ! -e "${HOME}/.spacemacs.emacs.d" ]; then
-    git clone https://github.com/syl20bnr/spacemacs ~/.spacemacs.emacs.d
-    (cd ~/.spacemacs.emacs.d && git checkout -b develop origin/develop)
+if [ ! -e "${HOME}/.config/spacemacs.emacs.d" ]; then
+    git clone https://github.com/syl20bnr/spacemacs ~/.config/spacemacs.emacs.d
+    (cd "${HOME}/.config/.spacemacs.emacs.d" && git checkout -b develop origin/develop)
 fi
 
 # doom emacs
-if [ ! -e "${HOME}/.doom.emacs.d" ]; then
-    git clone https://github.com/hlissner/doom-emacs ~/.doom.emacs.d
-    ln -fs "${HOME}/.doom.emacs.d" "${HOME}/.emacs.d"
+if [ ! -e "${HOME}/.config/doom.emacs.d" ]; then
+    git clone https://github.com/hlissner/doom-emacs ~/.config/doom.emacs.d
+    ln -fs "${HOME}/.config/doom.emacs.d" "${HOME}/.emacs.d"
     ~/.emacs.d/bin/doom install
 fi
 
@@ -31,11 +33,9 @@ if [ ! -e "${HOME}/.dotfiles/editor/dein" ]; then
 fi
 curl -sLf https://spacevim.org/install.sh | bash
 
-mkdir -p "${HOME}/.config"
-
 ln -fs "${HOME}/.dotfiles/editor/spacemacs"    "${HOME}/.spacemacs"
 ln -fs "${HOME}/.dotfiles/editor/doom"         "${HOME}/.config/doom"
 ln -fs "${HOME}/.dotfiles/editor/nvim"         "${HOME}/.config/nvim"
 ln -fs "${HOME}/.dotfiles/editor/spacevim"     "${HOME}/.SpaceVim.d"
 ln -fs "${HOME}/.dotfiles/editor/editorconfig" "${HOME}/.editorconfig"
-ln -fs "${HOME}/.spacemacs.emacs.d"            "${HOME}/.emacs.d"
+ln -fs "${HOME}/.config/spacemacs.emacs.d"     "${HOME}/.emacs.d"
