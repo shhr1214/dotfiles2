@@ -18,7 +18,7 @@
   enable_guicolors = true
   # Disable statusline separator, if you want to use other value, please
   # install nerd fonts
-  statusline_separator = "allow"
+  statusline_separator = "arrow"
   buffer_index_type = 4
   # Display file type icon on the tabline, If you do not have nerd fonts
   # installed, please change the value to false
