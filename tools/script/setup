@@ -18,6 +18,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew install gnu-sed
   brew install libvterm
   brew install hugo
+  brew cask install docker
   brew cask install alacritty
   brew tap homebrew/cask-fonts
   brew cask install font-firacode-nerd-font
