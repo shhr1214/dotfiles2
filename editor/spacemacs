@@ -54,29 +54,29 @@ This function should only modify configuration layer settings."
             ;; c-c++-enable-google-newline t
             c-c++-lsp-sem-highlight-rainbow t
             c++-enable-organize-includes-on-save t)
-     (clojure :variables
-              clojure-enable-sayid t
-              clojure-enable-clj-refactor t
-              clojure-enable-linters 'clj-kondo)
+     ;; (clojure :variables
+     ;;          clojure-enable-sayid t
+     ;;          clojure-enable-clj-refactor t
+     ;;          clojure-enable-linters 'clj-kondo)
      colors
-     coq
-     crystal
-     csharp
+     ;; coq
+     ;; crystal
+     ;; csharp
      csv
      dap
      debug
-     deft
-     dhall
+     ;; deft
+     ;; dhall
      docker
-     elixir
+     ;; elixir
      emacs-lisp
-     (elm :variables
-          elm-format-command "elm-format-0.19"
-          elm-format-on-save t
-          elm-sort-imports-on-save t)
-     erlang
-     ess
-     fsharp
+     ;; (elm :variables
+     ;;      elm-format-command "elm-format-0.19"
+     ;;      elm-format-on-save t
+     ;;      elm-sort-imports-on-save t)
+     ;; erlang
+     ;; ess
+     ;; fsharp
      git
      (go :variables
          go-backend 'lsp
@@ -113,25 +113,25 @@ This function should only modify configuration layer settings."
      (json :variables
            json-fmt-tool 'prettier
            json-fmt-on-save t)
-     kotlin
-     kubernetes
-     lua
+     ;; kotlin
+     ;; kubernetes
+     ;; lua
      (lsp :variables
           lsp-enable-file-watchers nil
           lsp-rust-server 'rust-analyzer
           lsp-ui-sideline-enable nil)
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
-     nim
-     ocaml
+     ;; nim
+     ;; ocaml
      org
      pact
-     (php :variables
-          php-backend 'lsp)
+     ;; (php :variables
+     ;;      php-backend 'lsp)
      plantuml
      prettier
-     prolog
-     protobuf
+     ;; prolog
+     ;; protobuf
      (python :variables
              python-backend 'lsp
              python-lsp-server 'pyls
@@ -139,19 +139,19 @@ This function should only modify configuration layer settings."
              python-format-on-save t
              python-sort-imports-on-save t
              python-test-runner 'pytest)
-     racket
+     ;; racket
      react
-     (reasonml :variables reason-auto-refmt t)
-     restclient
+     ;; (reasonml :variables reason-auto-refmt t)
+     ;; restclient
      (ruby :variables ruby-enable-enh-ruby-mode t)
      (rust :variables
            rust-backend 'lsp
            rust-format-on-save t)
-     (scala :variables
-            scala-backend 'scala-metals
-            scala-enable-eldoc t
-            scala-auto-start-backend t)
-     scheme
+     ;; (scala :variables
+     ;;        scala-backend 'scala-metals
+     ;;        scala-enable-eldoc t
+     ;;        scala-auto-start-backend t)
+     ;; scheme
      (shell :variables
             shell-default-shell 'ansi-term
             shell-default-term-shell "/bin/zsh"
@@ -173,7 +173,7 @@ This function should only modify configuration layer settings."
      (version-control :variables version-control-diff-side 'left)
      vim-empty-lines
      vimscript
-     (vue :variables vue-backend 'lsp)
+     ;; (vue :variables vue-backend 'lsp)
      yaml
      )
 
@@ -321,7 +321,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(doom-one)
+   dotspacemacs-themes '(spacemacs-dark
+                         spacemacs-light)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
@@ -650,7 +651,6 @@ before packages are loaded."
   (define-key evil-insert-state-map (kbd "M-k") 'sp-backward-kill-sexp)
 
   (display-time-mode t)
-  (setq powerline-default-separator-dir 'box)
   (setq indent-tabs-mode nil)
 
   ;; haskell
