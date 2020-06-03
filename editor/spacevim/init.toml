@@ -162,3 +162,6 @@ name = 'lang#vue'
 
 [[layers]]
 name = 'lang#dockerfile'
+
+[[layers]]
+name = 'lang#markdown'
