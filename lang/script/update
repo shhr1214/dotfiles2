@@ -30,7 +30,7 @@ go get -u github.com/zmb3/gogetdoc
 
 # python
 pip install --user --upgrade pip
-pip list --outdated \
+pip list --user --outdated \
   | tail -n +3 \
   | grep -v 'jedi' \
   | awk '{print $1}' \
