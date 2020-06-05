@@ -39,7 +39,7 @@ export NODE_PATH="${HOME}/.config/yarn/global/node_modules"
 export ELM_HOME="${HOME}/node_modules/elm"
 
 # python
-export PATH="/usr/local/opt/python/libexec/bin:${HOME}/Library/Python/3.7/bin:${PATH}"
+export PYTHONUSERBASE="${HOME}/.local"
 alias ipy=ipython
 
 # ruby
