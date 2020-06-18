@@ -14,6 +14,7 @@ function! myspacevim#after() abort
   let g:clang_library_path = '/usr/local/opt/llvm/lib'
 
   let g:neoformat_enabled_markdown = ['prettier']
+  let g:neoformat_enabled_javascript = ['prettier']
   let g:neoformat_enabled_yaml = ['prettier']
 
   augroup fmt
