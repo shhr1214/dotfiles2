@@ -25,6 +25,8 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 
 # dotnet
 export PATH="/usr/local/share/dotnet:${PATH}"
+export PATH="${HOME}/.dotnet/tools:${PATH}"
+
 
 # go
 export GOPATH="${HOME}"
