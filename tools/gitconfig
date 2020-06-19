@@ -1,7 +1,18 @@
 [include]
   path = ~/.config/git/config.local
 
+[core]
+  quotepath = false
+
+[fetch]
+  prune = true
+
+[merge]
+  ff = false
+
+[pull]
+  ff = only
+  rebase = false
+
 [ghq]
   root = ~/src
-[pull]
-	rebase = false
