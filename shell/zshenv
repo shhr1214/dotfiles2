@@ -2,7 +2,7 @@
 
 if [[ "$(uname)" == "Darwin" ]]; then
   export OS_TYPE="macos"
-  export PATH="/usr/local/bin:${PATH}"
+  export PATH="/usr/local/sbin:/usr/local/bin:${PATH}"
 else
   echo "現在 macos 以外対応してない"
   export OS_TYPE="unknown"
