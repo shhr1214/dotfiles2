@@ -111,6 +111,7 @@ This function should only modify configuration layer settings."
                  javascript-import-tool 'import-js
                  javascript-repl 'nodejs)
      (json :variables
+           json-backend 'lsp
            json-fmt-tool 'prettier
            json-fmt-on-save t)
      ;; kotlin
@@ -142,7 +143,7 @@ This function should only modify configuration layer settings."
              python-test-runner 'pytest)
      ;; racket
      react
-     ;; (reasonml :variables reason-auto-refmt t)
+     (reasonml :variables reason-auto-refmt t)
      ;; restclient
      (ruby :variables ruby-enable-enh-ruby-mode t)
      (rust :variables
@@ -160,6 +161,8 @@ This function should only modify configuration layer settings."
             shell-default-position 'bottom)
      (shell-scripts :variables shell-scripts-backend 'lsp)
      (sql :variables
+          sql-backend 'lsp
+          sql-lsp-sqls-workspace-config-path 'workspace
           sql-capitalize-keywords t
           sql-auto-indent nil)
      (syntax-checking :variables syntax-checking-enable-tooltips nil)
