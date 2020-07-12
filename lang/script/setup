@@ -62,6 +62,7 @@ mkdir "${HOME}/.zfunc"
 
 # javascript
 yarn global add node-gyp
+yarn global add purescript spago
 
 # python
 python -m ensurepip --default-pip --user
