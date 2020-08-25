@@ -124,7 +124,7 @@ This function should only modify configuration layer settings."
      (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
      ;; nim
-     ;; ocaml
+     ocaml
      org
      pact
      ;; (php :variables
