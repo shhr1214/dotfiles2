@@ -21,12 +21,11 @@ alias cljs="lumo -r"
 # For the system Java wrappers to find this JDK, symlink it with
 # sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include ${CPPFLAGS}"
 
 # dotnet
 export PATH="/usr/local/share/dotnet:${PATH}"
 export PATH="${HOME}/.dotnet/tools:${PATH}"
-
 
 # go
 export GOPATH="${HOME}"
@@ -48,3 +47,6 @@ alias ipy=ipython
 # ruby
 export GEM_HOME="${HOME}/bin/gem"
 export PATH="/usr/local/opt/ruby/bin:${HOME}/bin/gem/bin:${PATH}"
+export LDFLAGS="-L/usr/local/opt/ruby/lib ${LDFLAGS}"
+export CPPFLAGS="-I/usr/local/opt/ruby/include ${CPPFLAGS}"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"

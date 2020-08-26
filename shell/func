@@ -16,6 +16,14 @@ function spacemacsrepo () {
   fi
 }
 
+function spacevimdocs () {
+  if [ $1 = "layers" ]; then
+    open "https://spacevim.org/layers/"
+  else
+    open "https://spacevim.org/documentation/"
+  fi
+}
+
 function checkoutmaster () {
   local current_branch=$(git branch | rg '\*' | cut -c 3-)
   if [ "${current_branch}" = "master" ]; then
