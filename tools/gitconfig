@@ -3,6 +3,7 @@
 
 [core]
   quotepath = false
+  ignorecase = true
 
 [fetch]
   prune = true
