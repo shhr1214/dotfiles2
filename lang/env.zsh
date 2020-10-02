@@ -28,6 +28,7 @@ export PATH="/usr/local/share/dotnet:${PATH}"
 export PATH="${HOME}/.dotnet/tools:${PATH}"
 
 # go
+export GO111MODULE=on
 export GOPATH="${HOME}"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:${PATH}"

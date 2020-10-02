@@ -61,7 +61,7 @@ This function should only modify configuration layer settings."
      colors
      ;; coq
      ;; crystal
-     ;; csharp
+     csharp
      csv
      dap
      debug
@@ -76,7 +76,7 @@ This function should only modify configuration layer settings."
      ;;      elm-sort-imports-on-save t)
      ;; erlang
      ;; ess
-     ;; fsharp
+     fsharp
      git
      (go :variables
          go-backend 'lsp

@@ -1,0 +1,3 @@
+#!/bin/bash
+name=$(basename $1 .res)
+rustc $@ && "./${name}" && rm "./${name}"

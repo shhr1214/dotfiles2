@@ -21,7 +21,7 @@ if [[ "${OS_TYPE}" == "macos" ]]; then
   brew cask install docker
   brew cask install alacritty
   brew tap homebrew/cask-fonts
-  brew cask install font-firacode-nerd-font
+  brew cask install font-fira-code-nerd-font
   curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
 else
   nix-env --install ripgrep
