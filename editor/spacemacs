@@ -87,7 +87,7 @@ This function should only modify configuration layer settings."
          go-use-golangci-lint t)
      (gtags :variables gtags-enable-by-default nil)
      (haskell :variables
-              haskell-completion-backend 'intero
+              haskell-completion-backend 'lsp
               haskell-process-type 'stack-ghci
               haskell-enable-hindent t
               haskell-enable-hindent-style "johan-tibell")
@@ -658,6 +658,7 @@ before packages are loaded."
   (setq indent-tabs-mode nil)
 
   ;; haskell
+  (setq lsp-haskell-process-path-hie "haskell-language-server-wrapper")
   (defun haskell-indentation-advice ()
     (when (and (< 1 (line-number-at-pos))
             (save-excursion

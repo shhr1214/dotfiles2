@@ -86,7 +86,7 @@ filetypes = [
 ]
 [layers.override_cmd]
   rust = ["rust-analyzer"]
-  haskell = ["hie-wrapper"]
+  haskell = ["haskell-language-server-wrapper", "--lsp"]
   go = ["gopls"]
   kotlin = ["kotlin-language-server"]
 
