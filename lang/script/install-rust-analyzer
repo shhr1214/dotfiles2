@@ -1,0 +1,10 @@
+#!/bin/bash
+
+version=2020-10-05
+binary_name=rust-analyzer
+
+cd "${HOME}/.dotfiles/lang/script" || exit
+curl -L -o "${binary_name}" "https://github.com/rust-analyzer/rust-analyzer/releases/download/${version}/rust-analyzer-mac"
+
+chmod 755 "${binary_name}"
+mv "${binary_name}" "${HOME}/.local/bin/"
