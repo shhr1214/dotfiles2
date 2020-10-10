@@ -1,18 +1,22 @@
 #!/bin/bash
 
-version=0.4.0
+version=0.5.0
 hlspw="haskell-language-server-wrapper"
+hlspversions="8.8.4 8.8.3"
+hlsp884="haskell-language-server-8.8.4"
 hlsp884="haskell-language-server-8.8.4"
 
 cd "${HOME}/.dotfiles/lang/script" || exit
+
 curl -L -o "${hlspw}.gz" "https://github.com/haskell/haskell-language-server/releases/download/${version}/haskell-language-server-wrapper-macOS.gz"
-curl -L -o "${hlsp884}.gz" "https://github.com/haskell/haskell-language-server/releases/download/${version}/haskell-language-server-macOS-8.8.4.gz"
-
 gunzip "${hlspw}.gz"
-gunzip "${hlsp884}.gz"
-
 chmod 755 "${hlspw}"
-chmod 755 "${hlsp884}"
-
 mv "${hlspw}" "${HOME}/.local/bin/"
-mv "${hlsp884}" "${HOME}/.local/bin/"
+
+for v in ${hlspversions}; do
+  curl -L -o "haskell-language-server-${v}.gz" "https://github.com/haskell/haskell-language-server/releases/download/${version}/haskell-language-server-macOS-${v}.gz"
+  gunzip "haskell-language-server-${v}.gz"
+  chmod 755 "haskell-language-server-${v}"
+  mv "haskell-language-server-${v}" "${HOME}/.local/bin/"
+done
+
