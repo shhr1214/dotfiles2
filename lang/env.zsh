@@ -2,7 +2,7 @@ export PATH="${HOME}/.local/bin:${PATH}"
 
 # rust
 source "${HOME}/.cargo/env"
-export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/library"
 
 # c/cpp
 export PATH="/usr/local/opt/llvm/bin:${PATH}"

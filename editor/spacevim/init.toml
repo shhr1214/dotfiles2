@@ -92,6 +92,8 @@ filetypes = [
 
 [[layers]]
 name = 'lang#rust'
+recomended_style = true
+format_on_save = true
 
 [[layers]]
 name = 'lang#red'

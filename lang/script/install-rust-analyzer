@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2020-10-05
+version=2020-10-12
 binary_name=rust-analyzer
 
 cd "${HOME}/.dotfiles/lang/script" || exit
