@@ -1,40 +1,41 @@
 #!/bin/bash
 
 if [[ "${OS_TYPE}" == "macos" ]]; then
-  brew install git
-  brew install lazygit
-  brew install ripgrep
-  brew install lsd
-  brew install ghq
-  brew install tig
-  brew install peco
-  brew install tokei
   brew install bat
-  brew install exa
-  brew install ranger
-  brew install jq
-  brew install htop
   brew install coreutils
+  brew install exa
+  brew install ghq
+  brew install git
+  brew install git-delta
   brew install gnu-sed
-  brew install libvterm
+  brew install htop
   brew install hugo
+  brew install jq
+  brew install lazygit
+  brew install libvterm
+  brew install lsd
+  brew install peco
+  brew install ranger
+  brew install ripgrep
+  brew install tig
+  brew install tokei
   brew cask install docker
   brew cask install alacritty
   brew tap homebrew/cask-fonts
   brew cask install font-fira-code-nerd-font
   curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
 else
-  nix-env --install ripgrep
-  nix-env --install lsd
-  nix-env --install ghq
-  nix-env --install tig
-  nix-env --install peco
-  nix-env --install tokei
-  nix-env --install bat
-  nix-env --install ranger
-  nix-env --install jq
-  nix-env --install htop
   nix-env --install alacritty
+  nix-env --install bat
+  nix-env --install ghq
+  nix-env --install htop
+  nix-env --install jq
+  nix-env --install lsd
+  nix-env --install peco
+  nix-env --install ranger
+  nix-env --install ripgrep
+  nix-env --install tig
+  nix-env --install tokei
 fi
 
 mkdir -p "${HOME}"/.config/git
