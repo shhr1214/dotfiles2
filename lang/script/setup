@@ -1,52 +1,5 @@
 #!/bin/bash
 
-if [[ "${OS_TYPE}" == "macos" ]]; then
-  brew install nodejs
-  brew install yarn
-  brew install deno
-  brew install python
-  brew install pipenv
-  brew install ruby
-  brew install elixir
-  brew install go
-  brew install crystal
-  brew install crystal-icr
-  brew install shellcheck
-  brew install stack
-  brew install ghc
-  brew install opam
-  brew install ccls
-  brew install gradle
-  brew install sbt
-  brew install scalastyle
-  brew install golangci/tap/golangci-lint # go get すると 時間かかりすぎるわ。
-else
-  nix-env --install nodejs-13.3.0
-  nix-env --install yarn
-  nix-env --install python3-3.7.4
-  nix-env --install pipenv-2018.11.26
-  nix-env --install ruby
-  nix-env --install elixir
-  nix-env --install go
-  nix-env --install delve
-  nix-env --install crystal
-  nix-env --install icr
-  nix-env --install php-composer
-  nix-env --install ShellCheck
-  nix-env --install stack
-  nix-env --install ghc
-  nix-env -iA selection --arg selector 'p: { inherit (p) ghc865; }' -f https://github.com/infinisil/all-hies/tarball/master
-  nix-env --install opam
-  nix-env --install ccls
-  nix-env --install adoptopenjdk-openj9-bin
-  nix-env --install clojure
-  nix-env --install boot
-  nix-env --install leiningen
-  nix-env --install sbt
-  nix-env --install kotlin
-  nix-env --install gradle
-fi
-
 # rust
 rustup self update
 rustup update
@@ -140,8 +93,8 @@ jupyter contrib nbextension install --user
 pip install --user pynvim
 pip install --user neovim
 
-ln -fs "${HOME}/.dotfiles/lang/mypy"     "${HOME}/.config/mypy"
-ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${HOME}/.config/pylintrc"
+ln -fs "${HOME}/.dotfiles/lang/mypy"     "${XDG_CONFIG_HOME}/mypy"
+ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${XDG_CONFIG_HOME}/pylintrc"
 
 # ruby
 gem install solargraph

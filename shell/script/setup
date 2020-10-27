@@ -1,24 +1,12 @@
 #!/bin/bash
 
-if [[ "${OS_TYPE}" == "macos" ]]; then
-  brew install zsh
-  brew install tmux
-else
-  nix-env --install zsh
-  nix-env --install tmux
-fi
+mkdir -p "${XDG_CONFIG_HOME}/tmux"
 
-# ln -fs "${HOME}"/.dotfiles/shell/bash_profile "${HOME}"/.bash_profile
-# ln -fs "${HOME}"/.dotfiles/shell/bashrc       "${HOME}"/.bashrc
-ln -fs "${HOME}"/.dotfiles/shell/zshenv       "${HOME}"/.zshenv
-ln -fs "${HOME}"/.dotfiles/shell/zshrc        "${HOME}"/.zshrc
-
-mkdir -p "${HOME}"/.config/tmux
-ln -fs "${HOME}"/.dotfiles/shell/tmux.conf    "${HOME}"/.config/tmuc/tmux.conf
-
-ln -fs "${HOME}"/.dotfiles/shell/nixpkgs      "${HOME}"/.config/nixpkgs
+ln -fs "${HOME}/.dotfiles/shell/zshenv"    "${HOME}/.zshenv"
+ln -fs "${HOME}/.dotfiles/shell/zshrc"     "${HOME}/.zshrc"
+ln -fs "${HOME}/.dotfiles/shell/tmux.conf" "${XDG_CONFIG_HOME}/tmuc/tmux.conf"
+ln -fs "${HOME}/.dotfiles/shell/nixpkgs"   "${XDG_CONFIG_HOME}/nixpkgs"
 
 curl -fsSL https://starship.rs/install.sh | bash
 
-source .zshrc
-
+source "${HOME}/.zshrc"

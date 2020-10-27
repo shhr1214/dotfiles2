@@ -1,48 +1,14 @@
 #!/bin/bash
 
-if [[ "${OS_TYPE}" == "macos" ]]; then
-  brew install bat
-  brew install coreutils
-  brew install exa
-  brew install ghq
-  brew install git
-  brew install git-delta
-  brew install gnu-sed
-  brew install htop
-  brew install hugo
-  brew install jq
-  brew install lazygit
-  brew install libvterm
-  brew install lsd
-  brew install peco
-  brew install ranger
-  brew install ripgrep
-  brew install tig
-  brew install tokei
-  brew cask install docker
-  brew cask install alacritty
-  brew tap homebrew/cask-fonts
-  brew cask install font-fira-code-nerd-font
-  curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
-else
-  nix-env --install alacritty
-  nix-env --install bat
-  nix-env --install ghq
-  nix-env --install htop
-  nix-env --install jq
-  nix-env --install lsd
-  nix-env --install peco
-  nix-env --install ranger
-  nix-env --install ripgrep
-  nix-env --install tig
-  nix-env --install tokei
-fi
+toolsdir="${HOME}/.dotfiles/tools"
 
-mkdir -p "${HOME}"/.config/git
-ln -fs "${HOME}"/.dotfiles/tools/gitconfig      "${HOME}"/.config/git/config
-touch "${HOME}"/.config/git/config.local
-mkdir -p "${HOME}"/.config/alacritty
-ln -fs "${HOME}"/.dotfiles/tools/alacritty.yml  "${HOME}"/.config/alacritty/alacritty.yml
-ln -fs "${HOME}"/.dotfiles/tools/starship.toml  "${HOME}"/.config/starship.toml
-ln -fs "${HOME}"/.dotfiles/tools/karabiner.json "${HOME}"/.config/karabiner/karabiner.json
-mkdir -p "${$XDG_DATA_HOME}/tig"
+mkdir -p "${XDG_CONFIG_HOME}/git"
+mkdir -p "${XDG_CONFIG_HOME}/alacritty"
+mkdir -p "${XDG_DATA_HOME}/tig"
+
+ln -fs "${toolsdir}/gitconfig"      "${XDG_CONFIG_HOME}"/git/config
+ln -fs "${toolsdir}/alacritty.yml"  "${XDG_CONFIG_HOME}"/alacritty/alacritty.yml
+ln -fs "${toolsdir}/starship.toml"  "${XDG_CONFIG_HOME}"/starship.toml
+ln -fs "${toolsdir}/karabiner.json" "${XDG_CONFIG_HOME}"/karabiner/karabiner.json
+
+touch "${XDG_CONFIG_HOME}/git/config.local"

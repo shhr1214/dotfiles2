@@ -2,6 +2,7 @@
 
 if [[ "${OS_TYPE}" == "macos" ]]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  (cd "${HOME}/.dotfiles/tools" && brew bundle)
 else
   # nix https://nixos.org/nix/
   curl https://nixos.org/nix/install | sh
