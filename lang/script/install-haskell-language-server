@@ -1,10 +1,8 @@
 #!/bin/bash
 
-version=0.5.0
+version=0.5.1
 hlspw="haskell-language-server-wrapper"
 hlspversions="8.8.4 8.8.3"
-hlsp884="haskell-language-server-8.8.4"
-hlsp884="haskell-language-server-8.8.4"
 
 cd "${HOME}/.dotfiles/lang/script" || exit
 
