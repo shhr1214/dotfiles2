@@ -4,10 +4,62 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export OS_TYPE="macos"
 else
   echo "現在 macos 以外対応してない"
-  export OS_TYPE="unknown"
+  exit 1
 fi
 
-/bin/bash "${HOME}/.dotfiles/tools/script/setup"
-/bin/bash "${HOME}/.dotfiles/shell/script/setup"
+source "${shelldir}/zshenv"
+source "${shelldir}/zshrc"
+
+shelldir="${HOME}/.dotfiles/shell"
+toolsdir="${HOME}/.dotfiles/tools"
+editordir="${HOME}/.dotfiles/editor"
+spacemacsdir="${XDG_CONFIG_HOME}/spacemacs.emacs.d"
+doomemacsdir="${XDG_CONFIG_HOME}/doom.emacs.d"
+
+# spacemacs
+if [ ! -e "${spacemacsdir}" ]; then
+    git clone https://github.com/syl20bnr/spacemacs "${spacemacsdir}"
+    (cd "${spacemacsdir}" && git checkout -b develop origin/develop)
+fi
+
+# doom emacs
+if [ ! -e "${doomemacsdir}" ]; then
+    git clone https://github.com/hlissner/doom-emacs "${doomemacsdir}"
+    ln -fs "${doomemacsdir}" "${XDG_CONFIG_HOME}/emacs"
+    "${XDG_CONFIG_HOME}/emacs/bin/doom install"
+fi
+
+# spacevim
+if [ ! -e "${HOME}/.dotfiles/editor/dein" ]; then
+    mkdir -p "${HOME}/.dotfiles/editor/dein"
+    curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+    sh ./installer.sh "${XDG_CACHE_HOME}/dein"
+    rm ./installer.sh
+fi
+curl -sLf https://spacevim.org/install.sh | bash
+
+mkdir -p "${XDG_CONFIG_HOME}"
+mkdir "${XDG_CONFIG_HOME}/alacritty"
+mkdir "${XDG_CONFIG_HOME}/git"
+mkdir "${XDG_CONFIG_HOME}/tmux"
+mkdir "${XDG_DATA_HOME}/tig"
+touch "${XDG_CONFIG_HOME}/git/config.local"
+
+ln -fs "${shelldir}/zshenv"                   "${HOME}/.zshenv"
+ln -fs "${shelldir}/zshrc"                    "${HOME}/.zshrc"
+ln -fs "${shelldir}/nixpkgs"                  "${XDG_CONFIG_HOME}/nixpkgs"
+ln -fs "${toolsdir}/alacritty/alacritty.yml"  "${XDG_CONFIG_HOME}/alacritty/alacritty.yml"
+ln -fs "${toolsdir}/git/gitconfig"            "${XDG_CONFIG_HOME}/git/config"
+ln -fs "${toolsdir}/karabiner.karabiner.json" "${XDG_CONFIG_HOME}/karabiner/karabiner.json"
+ln -fs "${toolsdir}/starship/starship.toml"   "${XDG_CONFIG_HOME}/starship.toml"
+ln -fs "${toolsdir}/tmux/tmux.conf"           "${XDG_CONFIG_HOME}/tmux/tmux.conf"
+ln -fs "${editordir}/spacemacs"               "${HOME}/.spacemacs"
+ln -fs "${editordir}/doom"                    "${XDG_CONFIG_HOME}/doom"
+ln -fs "${editordir}/nvim"                    "${XDG_CONFIG_HOME}/nvim"
+ln -fs "${editordir}/spacevim"                "${HOME}/.SpaceVim.d"
+ln -fs "${editordir}/editorconfig"            "${HOME}/.editorconfig"
+ln -fs "${XDG_CONFIG_HOME}/spacemacs.emacs.d" "${XDG_CONFIG_HOME}/emacs"
+
+curl -fsSL https://starship.rs/install.sh | bash
+
 /bin/bash "${HOME}/.dotfiles/lang/script/setup"
-/bin/bash "${HOME}/.dotfiles/editor/script/setup"

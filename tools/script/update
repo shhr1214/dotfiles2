@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ "${OS_TYPE}" == "macos" ]]; then
-  brew upgrade
-else
-  nix-channel --update; nix-env -iA nixpkgs.nix
-  nix-channel --update nixpkgs
-  nix-env --upgrade '*'
-fi

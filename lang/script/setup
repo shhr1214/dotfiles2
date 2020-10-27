@@ -8,11 +8,11 @@ rustup component add rust-analysis
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
-rustup completions zsh > ~/.zfunc/_rustup
+mkdir -p "${HOME}/.zfunc"
+rustup completions zsh > "${HOME}/.zfunc/_rustup"
 
 cargo install racer
 cargo install cargo-edit
-mkdir "${HOME}/.zfunc"
 
 # javascript
 yarn global add node-gyp
@@ -79,7 +79,7 @@ pip install --user autoflake
 pip install --user isort
 pip install --user coverage
 pip install --user python-language-server
-pip install --user 'ptvsd>=4.2'
+pip install --user ptvsd
 pip install --user pyls-isort
 pip install --user pyls-mypy
 pip install --user pyls-black
@@ -100,8 +100,6 @@ ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${XDG_CONFIG_HOME}/pylintrc"
 gem install solargraph
 gem install pry
 gem install sqlint
-
-# crystal
 
 # php
 yarn global add intelephense

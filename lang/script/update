@@ -8,7 +8,7 @@ rustup component add rust-analysis
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
-rustup completions zsh > ~/.zfunc/_rustup
+rustup completions zsh > "${HOME}/.zfunc/_rustup"
 
 # Golang
 GO111MODULE=on go get -v golang.org/x/tools/gopls@latest
@@ -38,7 +38,7 @@ pip list --user --outdated \
   | xargs pip install --user --upgrade
 
 # ruby
-gem update $(gem outdated | cut -d ' ' -f 1)
+gem update "$(gem outdated | cut -d ' ' -f 1)"
 
 # node
 yarn global upgrade

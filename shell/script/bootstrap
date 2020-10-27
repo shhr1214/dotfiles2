@@ -1,3 +1,0 @@
-#!/bin/bash
-
-tic -x -o "${HOME}/.terminfo" "${HOME}/.dotfiles/shell/xterm-24bit.terminfo"

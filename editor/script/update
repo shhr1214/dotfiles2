@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd "${HOME}/.emacs.d"  && git pull
-cd "${HOME}/.SpaceVim" && git pull

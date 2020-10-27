@@ -4,9 +4,13 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export OS_TYPE="macos"
 else
   echo "現在 macos 以外対応してない"
-  export OS_TYPE="unknown"
+  exit 1
 fi
 
-/bin/bash "${HOME}/.dotfiles/tools/script/bootstrap"
-/bin/bash "${HOME}/.dotfiles/shell/script/bootstrap"
-/bin/bash "${HOME}/.dotfiles/lang/script/bootstrap"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+(cd "${HOME}/.dotfiles/tools" && brew bundle)
+tic -x -o "${HOME}/.terminfo" "${HOME}/.dotfiles/shell/xterm-24bit.terminfo"
+
+if [ ! -e "${HOME}/.cargo" ]; then
+    curl https://sh.rustup.rs -sSf | sh
+fi
