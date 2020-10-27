@@ -3,7 +3,7 @@
 
 [core]
   quotepath = false
-  ignorecase = true
+  ignorecase = false
   pager = delta
 
 [interactive]
