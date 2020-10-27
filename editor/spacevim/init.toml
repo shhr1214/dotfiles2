@@ -55,6 +55,10 @@ show_cursor_error = false
 name = 'debug'
 
 [[layers]]
+name = "format"
+format_on_save = true
+
+[[layers]]
 name = 'VersionControl'
 
 [[layers]]
@@ -78,6 +82,7 @@ filetypes = [
   'cpp',
   'kotlin',
   'python',
+  'ruby',
   'javascript',
   'typescript',
   'html',
@@ -104,6 +109,9 @@ recomended-style = 1
 format-autosave = 1
 
 [[layers]]
+name = 'lang#ocaml'
+
+[[layers]]
 name = 'lang#elixir'
 
 [[layers]]
@@ -111,6 +119,9 @@ name = 'lang#scheme'
 
 [[layers]]
 name = 'lang#lisp'
+
+[[layers]]
+name = 'lang#fsharp'
 
 [[layers]]
 name = 'lang#go'
