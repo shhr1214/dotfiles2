@@ -1,7 +1,9 @@
 #!/bin/bash
 
+readonly version=0.7.0
+
 cd "${HOME}/.dotfiles/lang/script"
-curl -LO "https://github.com/fwcd/kotlin-language-server/releases/download/0.5.2/server.zip"
+curl -LO "https://github.com/fwcd/kotlin-language-server/releases/download/${version}/server.zip"
 unzip server.zip
 rm server.zip
 
