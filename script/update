@@ -15,7 +15,7 @@ fi
 
 brew upgrade
 
+/bin/bash "${HOME}/.dotfiles/lang/script/update"
+
 (cd "${XDG_CONFIG_HOME}/emacs"  && git pull)
 (cd "${HOME}/.SpaceVim" && git pull)
-
-/bin/bash "${HOME}/.dotfiles/lang/script/update"
