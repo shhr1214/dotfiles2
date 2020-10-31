@@ -3,6 +3,7 @@ alias ls="exa --group-directories-first "
 alias ll="ls -l "
 
 alias less="bat"
+alias diff="delta"
 
 alias lg="lazygit"
 
