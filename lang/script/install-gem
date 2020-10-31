@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p "${HOME}/bin/gem"
+gem install pry
+gem install solargraph
+gem install specific_install
+gem install sqlint
+gem pristine bigdecimal --version 1.4.4
+gem pristine bigdecimal --version 2.0.0
+gem pristine date --version 3.0.0
+gem pristine dbm --version 1.1.0
+gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
+gem specific_install https://github.com/brigade/scss-lint.git

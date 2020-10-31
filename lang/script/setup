@@ -1,37 +1,10 @@
 #!/bin/bash
 
-# rust
-rustup self update
-rustup update
-rustup component add rls
-rustup component add rust-analysis
-rustup component add rust-src
-rustup component add rustfmt
-rustup component add clippy
-mkdir -p "${HOME}/.zfunc"
-rustup completions zsh > "${HOME}/.zfunc/_rustup"
-
-cargo install racer
-cargo install cargo-edit
-
-# javascript
-yarn global add node-gyp
-yarn global add purescript spago
-
-# python
-python -m ensurepip --default-pip --user
-pip install --upgrade --user pip
-
-# ruby
-mkdir -p "${HOME}/bin/gem"
-gem pristine bigdecimal --version 2.0.0
-gem pristine bigdecimal --version 1.4.4
-gem pristine date --version 3.0.0
-gem pristine dbm --version 1.1.0
-
-# script
-yarn global add bash-language-server
-pip install --user bashate
+/bin/bash "${HOME}/.dotfiles/lang/script/rust"
+/bin/bash "${HOME}/.dotfiles/lang/script/golang"
+/bin/bash "${HOME}/.dotfiles/lang/script/install-pip"
+/bin/bash "${HOME}/.dotfiles/lang/script/install-yarn"
+/bin/bash "${HOME}/.dotfiles/lang/script/install-gem"
 
 # haskell
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent intero
@@ -40,66 +13,4 @@ stack install apply-refact hlint stylish-haskell hasktags hoogle hindent intero
 opam init
 opam install merlin utop ocp-indent
 opam user-setup install
-
-# golang
-go get -u github.com/go-delve/delve/cmd/dlv
-
-# jvm familiy
-yarn global add lumo-cljs
-
-# javascript / web
-yarn global add typescript typescript-language-server
-yarn global add javascript-typescript-langserver
-yarn global add typescript-formatter tslint
-yarn global add prettier import-js
-yarn global add vscode-html-languageserver-bin
-yarn global add vscode-css-languageserver-bin
-yarn global add vue-language-server
-yarn global add eslint-cli
-
-# reason
-yarn global add bs-platform
 opam install merlin reason
-
-# html / css
-gem install specific_install
-gem specific_install https://github.com/brigade/scss-lint.git
-gem specific_install https://github.com/Sweetchuck/scss_lint_reporter_checkstyle.git
-yarn global add vscode-css-languageserver-bin
-yarn global add js-beautify
-
-# elm
-yarn global add elm
-
-# python
-pip install --user pynvim
-pip install --user flake8
-pip install --user yapf
-pip install --user autoflake
-pip install --user isort
-pip install --user coverage
-pip install --user python-language-server
-pip install --user ptvsd
-pip install --user pyls-isort
-pip install --user pyls-mypy
-pip install --user pyls-black
-pip install --user importmagic
-pip install --user epc
-pip install --user black
-pip install --user cython
-pip install --user scikit-learn
-pip install --user jupyter_contrib_nbextensions
-jupyter contrib nbextension install --user
-pip install --user pynvim
-pip install --user neovim
-
-ln -fs "${HOME}/.dotfiles/lang/mypy"     "${XDG_CONFIG_HOME}/mypy"
-ln -fs "${HOME}/.dotfiles/lang/pylintrc" "${XDG_CONFIG_HOME}/pylintrc"
-
-# ruby
-gem install solargraph
-gem install pry
-gem install sqlint
-
-# php
-yarn global add intelephense

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+yarn global add bash-language-server
+yarn global add elm
+yarn global add eslint-cli
+yarn global add intelephense
+yarn global add javascript-typescript-langserver
+yarn global add js-beautify
+yarn global add lumo-cljs
+yarn global add node-gyp
+yarn global add prettier import-js
+yarn global add purescript spago
+yarn global add typescript typescript-language-server
+yarn global add typescript-formatter tslint
+yarn global add vscode-css-languageserver-bin
+yarn global add vscode-html-languageserver-bin
+yarn global add vue-language-server
