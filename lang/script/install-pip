@@ -1,26 +1,30 @@
 #!/bin/bash
 
-python -m ensurepip --default-pip --user
-pip install --upgrade --user pip
-pip install --user autoflake
-pip install --user bashate
-pip install --user black
-pip install --user coverage
-pip install --user cython
-pip install --user epc
-pip install --user flake8
-pip install --user importmagic
-pip install --user isort
-pip install --user jupyter_contrib_nbextensions
-pip install --user neovim
-pip install --user ptvsd
-pip install --user pyls-black
-pip install --user pyls-isort
-pip install --user pyls-mypy
-pip install --user pynvim
-pip install --user python-language-server
-pip install --user scikit-learn
-pip install --user yapf
+pyenv
+
+pip3 install --upgrade --user pip
+pip3 install --user autoflake
+pip3 install --user bashate
+pip3 install --user black
+pip3 install --user coverage
+pip3 install --user cython
+pip3 install --user epc
+pip3 install --user flake8
+pip3 install --user importmagic
+pip3 install --user isort
+pip3 install --user jupyter_contrib_nbextensions
+pip3 install --user neovim
+pip3 install --user ptvsd
+pip3 install --user pyls-black
+pip3 install --user pyls-isort
+pip3 install --user pyls-mypy
+pip3 install --user pynvim
+pip3 install --user python-language-server
+pip3 install --user scikit-learn
+pip3 install --user yapf
+
+pip2 install --upgrade --user pip
+pip2 install --user pynvim
 
 jupyter contrib nbextension install --user
 
