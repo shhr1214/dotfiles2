@@ -5,7 +5,8 @@ alias ew="emacs-with-window"
 alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 
-alias spacemacs="rm ${HOME}/.config/emacs && ln -fs ${HOME}/.config/spacemacs.emacs.d ${HOME}/.config/emacs && emacs"
-alias doomemacs="rm ${HOME}/.config/emacs && ln -fs ${HOME}/.config/doom.emacs.d ${HOME}/.config/emacs && emacs"
+alias spacemacs="rm ${XDG_CONFIG_HOME}/emacs && ln -fs ${XDG_CONFIG_HOME}/spacemacs.emacs.d ${XDG_CONFIG_HOME}/emacs && emacs"
+alias doomemacs="rm ${XDG_CONFIG_HOME}/emacs && ln -fs ${XDG_CONFIG_HOME}/doom.emacs.d      ${XDG_CONFIG_HOME}/emacs && emacs"
 
-export PATH="${HOME}/.config/doom.emacs.d/bin:${PATH}"
+export PATH="${XDG_CONFIG_HOME}/doom.emacs.d/bin:${PATH}"
+export SPACEVIMDIR="${XDG_CONFIG_HOME}/SpaceVim/"

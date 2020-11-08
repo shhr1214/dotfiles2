@@ -56,7 +56,7 @@ ln -fs "${toolsdir}/tmux/tmux.conf"           "${XDG_CONFIG_HOME}/tmux/tmux.conf
 ln -fs "${editordir}/spacemacs"               "${HOME}/.spacemacs"
 ln -fs "${editordir}/doom"                    "${XDG_CONFIG_HOME}/doom"
 ln -fs "${editordir}/nvim"                    "${XDG_CONFIG_HOME}/nvim"
-ln -fs "${editordir}/spacevim"                "${HOME}/.SpaceVim.d"
+ln -fs "${editordir}/spacevim"                "${XDG_CONFIG_HOME}/SpaceVim"
 ln -fs "${editordir}/editorconfig"            "${HOME}/.editorconfig"
 ln -fs "${XDG_CONFIG_HOME}/spacemacs.emacs.d" "${XDG_CONFIG_HOME}/emacs"
 
