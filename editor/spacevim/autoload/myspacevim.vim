@@ -9,6 +9,8 @@ function! myspacevim#after() abort
   inoremap <C-b> <Left>
   inoremap <C-f> <Right>
 
+  let g:coc_config_home = "${XDG_CONFIG_HOME}/SpaceVim/"
+
   let g:rustfmt_autosave = 1
   let g:neomake_open_list = 0
   let g:clang_library_path = '/usr/local/opt/llvm/lib'
@@ -18,14 +20,14 @@ function! myspacevim#after() abort
   let g:neoformat_enabled_javascript = ['prettier']
   let g:neoformat_enabled_yaml = ['prettier']
 
-  augroup fmt
-    autocmd!
-    autocmd BufWritePre * undojoin | Neoformat
-  augroup END
+  " augroup fmt
+  "   autocmd!
+  "   autocmd BufWritePre * undojoin | Neoformat
+  " augroup END
 
-  augroup SyntaxSettings
-    autocmd!
-    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
-  augroup END
+  " augroup SyntaxSettings
+  "   autocmd!
+  "   autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+  " augroup END
 endfunction
 

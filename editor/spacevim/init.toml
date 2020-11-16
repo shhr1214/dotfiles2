@@ -59,7 +59,6 @@ name = 'denite'
 
 [[layers]]
 name = "format"
-format_on_save = true
 
 [[layers]]
 name = 'git'
