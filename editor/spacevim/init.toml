@@ -43,26 +43,29 @@ auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "smart"
 
 [[layers]]
-name = 'denite'
-
-[[layers]]
 name = 'checkers'
 enable_neomake = false
 enable_ale = true
 show_cursor_error = false
 
 [[layers]]
+name = 'colorscheme'
+
+[[layers]]
 name = 'debug'
+
+[[layers]]
+name = 'denite'
 
 [[layers]]
 name = "format"
 format_on_save = true
 
 [[layers]]
-name = 'VersionControl'
+name = 'git'
 
 [[layers]]
-name = 'git'
+name = 'VersionControl'
 
 [[layers]]
 name = 'shell'
@@ -70,55 +73,54 @@ default_position = 'bottom'
 default_height = 20
 
 [[layers]]
-name = 'colorscheme'
+name = 'test'
+
+[[layers]]
+name = 'ui'
+enable_indentline = false
 
 [[layers]]
 name = 'lsp'
 filetypes = [
-  'rust',
-  'haskell',
-  'go',
   'c',
   'cpp',
+  'css',
+  'go',
+  'haskell',
+  'html',
+  'javascript',
   'kotlin',
   'python',
   'ruby',
-  'javascript',
-  'typescript',
-  'html',
-  'css',
-  'sh'
+  'rust',
+  'sh',
+  'typescript'
 ]
 [layers.override_cmd]
-  rust = ["rust-analyzer"]
-  haskell = ["haskell-language-server-wrapper", "--lsp"]
   go = ["gopls"]
+  haskell = ["haskell-language-server-wrapper", "--lsp"]
   kotlin = ["kotlin-language-server"]
+  rust = ["rust-analyzer"]
 
 [[layers]]
-name = 'lang#rust'
-recomended_style = true
-format_on_save = true
+name = 'lang#c'
+# enable_clang_syntax_highlight = 1
 
 [[layers]]
-name = 'lang#red'
+name = 'lang#clojure'
 
 [[layers]]
-name = 'lang#haskell'
-recomended-style = 1
-format-autosave = 1
+name = 'lang#csharp'
+highlight_types = 0
 
 [[layers]]
-name = 'lang#ocaml'
+name = 'lang#dockerfile'
 
 [[layers]]
 name = 'lang#elixir'
 
 [[layers]]
-name = 'lang#scheme'
-
-[[layers]]
-name = 'lang#lisp'
+name = 'lang#elm'
 
 [[layers]]
 name = 'lang#fsharp'
@@ -127,8 +129,37 @@ name = 'lang#fsharp'
 name = 'lang#go'
 
 [[layers]]
-name = 'lang#c'
-# enable_clang_syntax_highlight = 1
+name = 'lang#haskell'
+recomended-style = 1
+format-autosave = 1
+
+[[layers]]
+name = 'lang#html'
+
+[[layers]]
+name = 'lang#java'
+
+[[layers]]
+name = 'lang#javascript'
+auto_fix = true
+
+[[layers]]
+name = 'lang#json'
+
+[[layers]]
+name = 'lang#kotlin'
+
+[[layers]]
+name = 'lang#lisp'
+
+[[layers]]
+name = 'lang#markdown'
+
+[[layers]]
+name = 'lang#ocaml'
+
+[[layers]]
+name = 'lang#perl'
 
 [[layers]]
 name = 'lang#python'
@@ -137,44 +168,31 @@ enable_typeinfo = true
 python_file_head = []
 
 [[layers]]
-name = 'lang#perl'
+name = 'lang#red'
 
 [[layers]]
-name = 'lang#java'
+name = 'lang#ruby'
+repl_command = 'pry'
 
 [[layers]]
-name = 'lang#kotlin'
+name = 'lang#rust'
+recomended_style = true
+format_on_save = true
 
 [[layers]]
 name = 'lang#scala'
 
 [[layers]]
-name = 'lang#clojure'
-
-[[layers]]
-name = 'lang#elm'
-
-[[layers]]
-name = 'lang#javascript'
-auto_fix = true
-
-[[layers]]
-name = 'lang#typescript'
-
-[[layers]]
-name = 'lang#json'
-
-[[layers]]
-name = 'lang#html'
-
-[[layers]]
-name = 'lang#vue'
+name = 'lang#scheme'
 
 # [[layers]]
 # name = 'lang#sql'
 
 [[layers]]
-name = 'lang#dockerfile'
+name = 'lang#toml'
 
 [[layers]]
-name = 'lang#markdown'
+name = 'lang#typescript'
+
+[[layers]]
+name = 'lang#vue'

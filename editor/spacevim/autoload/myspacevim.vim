@@ -13,6 +13,7 @@ function! myspacevim#after() abort
   let g:neomake_open_list = 0
   let g:clang_library_path = '/usr/local/opt/llvm/lib'
 
+  let g:neoformat_enabled_csharp = ['clang-format']
   let g:neoformat_enabled_markdown = ['prettier']
   let g:neoformat_enabled_javascript = ['prettier']
   let g:neoformat_enabled_yaml = ['prettier']
