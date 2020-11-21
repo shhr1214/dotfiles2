@@ -1,7 +1,19 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
+    "c",
     "cs",
+    "cpp",
+    "css",
     "go",
-    "json"
+    "haskell",
+    "html",
+    "javascript",
+    "json",
+    "kotlin",
+    "python",
+    "ruby",
+    "rust",
+    "sh",
+    "typescript"
   ]
 }

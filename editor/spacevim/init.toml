@@ -110,7 +110,7 @@ name = 'lang#clojure'
 
 [[layers]]
 name = 'lang#csharp'
-highlight_types = 0
+highlight_types = 3
 
 [[layers]]
 name = 'lang#dockerfile'
@@ -183,6 +183,8 @@ name = 'lang#scala'
 
 [[layers]]
 name = 'lang#scheme'
+scheme_dialect = 'gauche'
+scheme_interpreter = '/usr/local/bin/gosh'
 
 # [[layers]]
 # name = 'lang#sql'
