@@ -23,6 +23,7 @@
   # Display file type icon on the tabline, If you do not have nerd fonts
   # installed, please change the value to false
   enable_tabline_filetype_icon = true
+  filetree_direction = "left"
   # Display current mode text on statusline, by default It is disabled,
   # only color will be changed when switch modes.
   enable_statusline_mode = false
@@ -35,6 +36,7 @@
   bootstrap_after  = "myspacevim#after"
   autocomplete_method = 'coc'
   # autocomplete_method = 'deoplete'
+  guifont = "FiraCode Nerd Font:h14"
 
 # Enable autocomplete layer
 [[layers]]
@@ -63,6 +65,9 @@ format_on_save = true
 
 [[layers]]
 name = 'git'
+
+[[layers]]
+name = 'gtags'
 
 [[layers]]
 name = 'VersionControl'
@@ -124,6 +129,7 @@ name = 'lang#elm'
 
 [[layers]]
 name = 'lang#fsharp'
+format_on_save = true
 
 [[layers]]
 name = 'lang#go'
