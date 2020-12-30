@@ -1,9 +1,15 @@
 #!/bin/bash
 
 binary_name=rust-analyzer
+version="${1}"
 
-cd "${HOME}/.dotfiles/lang/script" || exit
-curl -L -o "${binary_name}" "https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-mac"
+cd "${HOME}/.dotfiles/lang/script" || exit 1
+
+if [ "${version}" = "" ]; then
+  curl -L -o "${binary_name}" "https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-mac" || exit 1
+else
+  curl -L -o "${binary_name}" "https://github.com/rust-analyzer/rust-analyzer/releases/download/${version}/rust-analyzer-mac" || exit 1
+fi
 
 chmod 755 "${binary_name}"
 mv "${binary_name}" "${HOME}/.local/bin/"
