@@ -162,6 +162,9 @@ name = 'lang#lisp'
 name = 'lang#markdown'
 
 [[layers]]
+name = 'lang#nim'
+
+[[layers]]
 name = 'lang#ocaml'
 
 [[layers]]
