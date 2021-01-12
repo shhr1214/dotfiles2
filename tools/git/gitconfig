@@ -5,6 +5,10 @@
   quotepath = false
   ignorecase = false
   pager = delta
+  autocrlf = input
+
+[init]
+  defaultBranch = main
 
 [interactive]
   diffFilter = delta --color-only
