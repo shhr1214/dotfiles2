@@ -316,7 +316,7 @@ schemas:
       white:   '#d2d4de'
 
 
-colors: *iceberg
+colors: *one-dark
 # Colors (Tomorrow Night)
 #colors:
   # Default colors
