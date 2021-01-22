@@ -196,8 +196,9 @@ name = 'lang#scheme'
 scheme_dialect = 'gauche'
 scheme_interpreter = '/usr/local/bin/gosh'
 
-# [[layers]]
-# name = 'lang#sql'
+[[layers]]
+name = 'lang#sql'
+format_on_save = false
 
 [[layers]]
 name = 'lang#toml'
