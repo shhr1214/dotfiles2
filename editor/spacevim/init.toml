@@ -52,6 +52,7 @@ show_cursor_error = false
 
 [[layers]]
 name = 'colorscheme'
+scheme_dialect = 'chez-scheme'
 
 [[layers]]
 name = 'debug'
