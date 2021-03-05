@@ -41,18 +41,9 @@ export PATH="${NODE_PATH}/bin:${HOME}/.yarn/bin:${PATH}"
 export ELM_HOME="${HOME}/node_modules/elm"
 
 # python
-# export PYTHONUSERBASE="${HOME}/.local"
-export PYTHON_HOST_PROG="${XDG_CONFIG_HOME}/pyenv/shims/python2"
-export PYTHON3_HOST_PROG="${XDG_CONFIG_HOME}/pyenv/shims/python3"
-export PYENV_ROOT="${XDG_CONFIG_HOME}/pyenv"
-export PATH="${PYENV_ROOT}/bin:${PATH}"
-
-pyenv() {
-  unfunction "$0"
-  source <(pyenv init -)
-  $0 "$@"
-}
-
+export PYTHONUSERBASE="${HOME}/.local"
+#alias python=python3
+#alias pip=pip3
 alias ipy=ipython
 
 # ruby

@@ -14,6 +14,7 @@ function! myspacevim#after() abort
   let g:rustfmt_autosave = 1
   let g:neomake_open_list = 0
   let g:clang_library_path = '/usr/local/opt/llvm/lib'
+  let g:python3_host_prog = '/usr/local/bin/python3'
 
   let g:neoformat_enabled_csharp = ['clang-format']
   let g:neoformat_enabled_markdown = ['prettier']

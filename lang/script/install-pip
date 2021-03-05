@@ -1,7 +1,5 @@
 #!/bin/bash
 
-pyenv
-
 pip3 install --upgrade --user pip
 pip3 install --user autoflake
 pip3 install --user bashate
@@ -22,9 +20,6 @@ pip3 install --user pynvim
 pip3 install --user python-language-server
 pip3 install --user scikit-learn
 pip3 install --user yapf
-
-pip2 install --upgrade --user pip
-pip2 install --user pynvim
 
 jupyter contrib nbextension install --user
 
