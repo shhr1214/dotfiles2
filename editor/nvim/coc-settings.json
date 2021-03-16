@@ -1,0 +1,30 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.config": "/usr/local/bin/deno",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "c",
+    "cs",
+    "cpp",
+    "css",
+    "go",
+    "haskell",
+    "html",
+    "javascript",
+    "json",
+    "kotlin",
+    "python",
+    "ruby",
+    "rust",
+    "sh",
+    "typescript"
+  ],
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  }
+}

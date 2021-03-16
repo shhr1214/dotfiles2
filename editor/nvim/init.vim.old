@@ -1,22 +1,32 @@
-" ==============================================================================
-" plugin
-" ==============================================================================
-
-call plug#begin("~/.vim/plugged")
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'joshdick/onedark.vim'
-call plug#end()
-
-let g:coc_global_extensions = [
-			\'coc-git',
-			\'coc-go',
-			\'coc-json',
-			\'coc-prettier',
-			\'coc-rust-analyzer',
-			\'coc-tsserver',
-			\]
-
 set encoding=utf-8
+
+" dein
+if &compatible
+  set nocompatible
+endif
+
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+let s:dein_dir='~/.cache/dein'
+
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+  call dein#add(s:dein_dir . '/repos/github.com/Shougo/dein.vim')
+
+  call dein#load_toml($HOME . '/.dotfiles/editor/nvim/plugins.toml', {'lazy': 0})
+  call dein#load_toml($HOME . '/.dotfiles/editor/nvim/lazy.toml', {'lazy': 1})
+
+  call dein#end()
+  call dein#save_state()
+endif
+
+filetype plugin indent on
+syntax enable
+
+if dein#check_install()
+  call dein#install()
+endif
+
+" vim
 autocmd FileType vim setlocal tabstop=2 shiftwidth=2
 
 " ==============================================================================
@@ -49,7 +59,6 @@ set mouse=a
 " ==============================================================================
 
 inoremap <silent> fd <esc>
-nnoremap <silent> fd <Esc>
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
@@ -68,18 +77,11 @@ set smartcase
 " view
 " ==============================================================================
 
-" for onedark theme
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
+set t_Co=256
 
-syntax on
-colorscheme onedark
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 set showtabline=2
 
@@ -90,7 +92,6 @@ set smarttab
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set signcolumn=yes
 
 " ヴィジュアル選択範囲カラー
 if has('nvim')
@@ -109,4 +110,3 @@ endif
 " ==============================================================================
 
 set noswapfile
-
