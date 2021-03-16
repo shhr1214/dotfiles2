@@ -34,73 +34,72 @@
   default_indent = 4
   bootstrap_before = "myspacevim#before"
   bootstrap_after  = "myspacevim#after"
-  autocomplete_method = 'coc'
-  # autocomplete_method = 'deoplete'
+  autocomplete_method = "coc"
+  lint_engine = "ale"
+  # autocomplete_method = "deoplete"
   guifont = "FiraCode Nerd Font:h14"
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
+name = "autocomplete"
 auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "smart"
 
 [[layers]]
-name = 'checkers'
-enable_neomake = false
-enable_ale = true
+name = "checkers"
 show_cursor_error = false
 
 [[layers]]
-name = 'colorscheme'
-scheme_dialect = 'chez-scheme'
+name = "colorscheme"
+scheme_dialect = "chez-scheme"
 
 [[layers]]
-name = 'debug'
+name = "debug"
 
 [[layers]]
-name = 'denite'
+name = "denite"
 
 [[layers]]
 name = "format"
 format_on_save = true
 
 [[layers]]
-name = 'git'
+name = "git"
 
 [[layers]]
-name = 'gtags'
+name = "gtags"
 
 [[layers]]
-name = 'VersionControl'
+name = "VersionControl"
 
 [[layers]]
-name = 'shell'
-default_position = 'bottom'
+name = "shell"
+default_position = "bottom"
 default_height = 20
 
 [[layers]]
-name = 'test'
+name = "test"
 
 [[layers]]
-name = 'ui'
+name = "ui"
 enable_indentline = false
 
 [[layers]]
-name = 'lsp'
+name = "lsp"
 filetypes = [
-  'c',
-  'cpp',
-  'css',
-  'go',
-  'haskell',
-  'html',
-  'javascript',
-  'kotlin',
-  'python',
-  'ruby',
-  'rust',
-  'sh',
-  'typescript'
+  "c",
+  "cpp",
+  "css",
+  "go",
+  "haskell",
+  "html",
+  "javascript",
+  "kotlin",
+  "python",
+  "ruby",
+  "rust",
+  "sh",
+  "typescript"
 ]
 [layers.override_cmd]
   go = ["gopls"]
@@ -109,103 +108,103 @@ filetypes = [
   rust = ["rust-analyzer"]
 
 [[layers]]
-name = 'lang#c'
+name = "lang#c"
 # enable_clang_syntax_highlight = 1
 
 [[layers]]
-name = 'lang#clojure'
+name = "lang#clojure"
 
 [[layers]]
-name = 'lang#csharp'
+name = "lang#csharp"
 highlight_types = 3
 
 [[layers]]
-name = 'lang#dockerfile'
+name = "lang#dockerfile"
 
 [[layers]]
-name = 'lang#elixir'
+name = "lang#elixir"
 
 [[layers]]
-name = 'lang#elm'
+name = "lang#elm"
 
 [[layers]]
-name = 'lang#fsharp'
+name = "lang#fsharp"
 format_on_save = true
 
 [[layers]]
-name = 'lang#go'
+name = "lang#go"
 
 [[layers]]
-name = 'lang#haskell'
+name = "lang#haskell"
 recomended-style = 1
 format-autosave = 1
 
 [[layers]]
-name = 'lang#html'
+name = "lang#html"
 
 [[layers]]
-name = 'lang#java'
+name = "lang#java"
 
 [[layers]]
-name = 'lang#javascript'
+name = "lang#javascript"
 auto_fix = true
 
 [[layers]]
-name = 'lang#json'
+name = "lang#json"
 
 [[layers]]
-name = 'lang#kotlin'
+name = "lang#kotlin"
 
 [[layers]]
-name = 'lang#lisp'
+name = "lang#lisp"
 
 [[layers]]
-name = 'lang#markdown'
+name = "lang#markdown"
 
 [[layers]]
-name = 'lang#nim'
+name = "lang#nim"
 
 [[layers]]
-name = 'lang#ocaml'
+name = "lang#ocaml"
 
 [[layers]]
-name = 'lang#perl'
+name = "lang#perl"
 
 [[layers]]
-name = 'lang#python'
+name = "lang#python"
 format-on-save = 1
 enable_typeinfo = true
 python_file_head = []
 
 [[layers]]
-name = 'lang#red'
+name = "lang#red"
 
 [[layers]]
-name = 'lang#ruby'
-repl_command = 'pry'
+name = "lang#ruby"
+repl_command = "pry"
 
 [[layers]]
-name = 'lang#rust'
+name = "lang#rust"
 recomended_style = true
 format_on_save = true
 
 [[layers]]
-name = 'lang#scala'
+name = "lang#scala"
 
 [[layers]]
-name = 'lang#scheme'
-scheme_dialect = 'gauche'
-scheme_interpreter = '/usr/local/bin/gosh'
+name = "lang#scheme"
+scheme_dialect = "gauche"
+scheme_interpreter = "/usr/local/bin/gosh"
 
 [[layers]]
-name = 'lang#sql'
+name = "lang#sql"
 format_on_save = false
 
 [[layers]]
-name = 'lang#toml'
+name = "lang#toml"
 
 [[layers]]
-name = 'lang#typescript'
+name = "lang#typescript"
 
 [[layers]]
-name = 'lang#vue'
+name = "lang#vue"

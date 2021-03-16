@@ -19,6 +19,7 @@ function! myspacevim#after() abort
   let g:neoformat_enabled_csharp = ['clang-format']
   let g:neoformat_enabled_markdown = ['prettier']
   let g:neoformat_enabled_javascript = ['prettier']
+  let g:neoformat_enabled_typescript = ['prettier']
   let g:neoformat_enabled_yaml = ['prettier']
   let g:neoformat_enabled_sql = []
 endfunction

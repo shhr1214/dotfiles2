@@ -34,8 +34,7 @@ export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:${PATH}"
 
 # node
-export NODE_PATH="${HOME}/.config/yarn/global/node_modules"
-export PATH="${NODE_PATH}/bin:${HOME}/.yarn/bin:${PATH}"
+export PATH="$(yarn global dir)/node_modules/.bin:${PATH}"
 
 # elm
 export ELM_HOME="${HOME}/node_modules/elm"

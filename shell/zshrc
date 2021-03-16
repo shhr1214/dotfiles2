@@ -46,7 +46,6 @@ if [ "${HOME}"/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 source "${HOME}/.config/broot/launcher/bash/br"
 
 # if (which zprof > /dev/null 2>&1) ;then

@@ -1,4 +1,7 @@
 {
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.config": "/usr/local/bin/deno",
   "coc.preferences.formatOnSaveFiletypes": [
     "c",
     "cs",
