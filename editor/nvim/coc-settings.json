@@ -1,7 +1,6 @@
 {
-  "deno.enable": true,
-  "deno.lint": true,
-  "deno.config": "/usr/local/bin/deno",
+  "coc.source.file.enable": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.formatOnSaveFiletypes": [
     "c",
     "cs",
@@ -19,6 +18,11 @@
     "sh",
     "typescript"
   ],
+  "deno.enable": false,
+  "deno.lint": false,
+  "deno.config": "/usr/local/bin/deno",
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
   "languageserver": {
     "go": {
       "command": "gopls",
