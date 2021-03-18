@@ -23,12 +23,5 @@
   "deno.config": "/usr/local/bin/deno",
   "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"]
-    }
-  }
+  "languageserver": {}
 }
