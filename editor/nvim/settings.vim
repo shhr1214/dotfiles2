@@ -23,6 +23,9 @@ inoremap <silent><C-f> <Right>
 inoremap <silent> fd <Esc>
 nnoremap <silent> fd <Esc>
 
+nnoremap <silent><Leader>' :split<CR>
+      \ :term<CR>i
+
 " coc
 
 inoremap <silent><expr> <Tab>

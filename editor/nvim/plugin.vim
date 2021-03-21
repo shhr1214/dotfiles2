@@ -19,6 +19,7 @@ call plug#begin("~/.config/nvim/plugged")
 call plug#end()
 
 let g:coc_global_extensions = [
+      \'coc-clangd',
       \'coc-deno',
       \'coc-diagnostic',
       \'coc-eslint',
