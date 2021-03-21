@@ -41,13 +41,16 @@ export ELM_HOME="${HOME}/node_modules/elm"
 
 # python
 export PYTHONUSERBASE="${HOME}/.local"
-#alias python=python3
-#alias pip=pip3
+alias python=python3
+alias pip=pip3
 alias ipy=ipython
 
 # ruby
 export GEM_HOME="${HOME}/bin/gem"
-export PATH="/usr/local/opt/ruby/bin:${HOME}/bin/gem/bin:${PATH}"
-export LDFLAGS="-L/usr/local/opt/ruby/lib ${LDFLAGS}"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include ${CPPFLAGS}"
 export CPPFLAGS="-I/usr/local/opt/ruby/include ${CPPFLAGS}"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export LDFLAGS="-L/usr/local/opt/ruby/lib ${LDFLAGS}"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:${HOME}/bin/gem/bin:${PATH}"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"

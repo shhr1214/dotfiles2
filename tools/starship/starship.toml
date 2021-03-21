@@ -2,3 +2,16 @@ add_newline = false
 
 [aws]
 disabled = true
+
+[package]
+symbol = ' '
+
+[python]
+python_binary = ["python3", "python", "python2"]
+symbol = ' '
+
+[ruby]
+symbol = ' '
+
+[rust]
+symbol = ' '
