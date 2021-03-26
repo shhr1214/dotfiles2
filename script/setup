@@ -7,14 +7,15 @@ else
   exit 1
 fi
 
-source "${shelldir}/zshenv"
-source "${shelldir}/zshrc"
-
 shelldir="${HOME}/.dotfiles/shell"
+langdir="${HOME}/.dotfiles/lang"
 toolsdir="${HOME}/.dotfiles/tools"
 editordir="${HOME}/.dotfiles/editor"
 spacemacsdir="${XDG_CONFIG_HOME}/spacemacs.emacs.d"
 doomemacsdir="${XDG_CONFIG_HOME}/doom.emacs.d"
+
+source "${shelldir}/zshenv"
+source "${shelldir}/zshrc"
 
 # spacemacs
 if [ ! -e "${spacemacsdir}" ]; then
@@ -51,6 +52,7 @@ touch "${XDG_CONFIG_HOME}/git/config.local"
 ln -fs "${shelldir}/zshenv"                   "${HOME}/.zshenv"
 ln -fs "${shelldir}/zshrc"                    "${HOME}/.zshrc"
 ln -fs "${shelldir}/nixpkgs"                  "${XDG_CONFIG_HOME}/nixpkgs"
+ln -fs "${langdir}/npm"                       "${XDG_CONFIG_HOME}/npm"
 ln -fs "${toolsdir}/alacritty/alacritty.yml"  "${XDG_CONFIG_HOME}/alacritty/alacritty.yml"
 ln -fs "${toolsdir}/git/gitconfig"            "${XDG_CONFIG_HOME}/git/config"
 ln -fs "${toolsdir}/karabiner/karabiner.json" "${XDG_CONFIG_HOME}/karabiner/karabiner.json"

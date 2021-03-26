@@ -22,9 +22,16 @@ inoremap <silent><C-b> <Left>
 inoremap <silent><C-f> <Right>
 inoremap <silent> fd <Esc>
 nnoremap <silent> fd <Esc>
+nnoremap <silent><Leader>s :w<CR>
 
-nnoremap <silent><Leader>' :split<CR>
-      \ :term<CR>i
+nnoremap <silent><Leader>' :split<CR> :term<CR>i
+nnoremap <silent><Leader>ws :split<CR>
+nnoremap <silent><Leader>wv :vsplit<CR>
+nnoremap <silent><Leader>wh <C-w>h
+nnoremap <silent><Leader>wj <C-w>j
+nnoremap <silent><Leader>wk <C-w>k
+nnoremap <silent><Leader>wl <C-w>l
+nnoremap <silent><Leader>tn :tabnew<CR>
 
 " coc
 

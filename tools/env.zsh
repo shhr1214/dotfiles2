@@ -28,3 +28,4 @@ export PATH="${XDG_CONFIG_HOME}/doom.emacs.d/bin:${PATH}"
 export PATH="/usr/local/bin:${PATH}"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
 
+export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
