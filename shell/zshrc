@@ -42,8 +42,8 @@ source "${HOME}/.dotfiles/shell/func"
 export PATH="${HOME}/.cargo/bin:${HOME}/.dotfiles/script:${HOME}/.dotfiles/bin:${PATH}"
 
 # zcompile
-if [ "${HOME}"/.dotfiles/shell/zshrc -nt ~/.zshrc.zwc ]; then
-  zcompile ~/.zshrc
+if [ "${HOME}/.dotfiles/shell/zshrc" -nt "${ZDOTDIR}/.zshrc.zwc" ]; then
+  zcompile "${ZDOTDIR}/.zshrc"
 fi
 
 source "${HOME}/.config/broot/launcher/bash/br"

@@ -7,5 +7,5 @@ rustup component add rust-analysis
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
-mkdir -p "${HOME}/.zfunc"
-rustup completions zsh > "${HOME}/.zfunc/_rustup"
+mkdir -p "${ZDOTDIR}/func"
+rustup completions zsh > "${ZDOTDIR}/func/_rustup"

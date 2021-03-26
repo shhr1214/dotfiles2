@@ -42,15 +42,16 @@ curl -sLf https://spacevim.org/install.sh | bash
 # neovim vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-mkdir -p "${XDG_CONFIG_HOME}"
-mkdir "${XDG_CONFIG_HOME}/alacritty"
-mkdir "${XDG_CONFIG_HOME}/git"
-mkdir "${XDG_CONFIG_HOME}/tmux"
-mkdir "${XDG_DATA_HOME}/tig"
+mkdir -p "${XDG_CONFIG_HOME}/alacritty"
+mkdir -p "${XDG_CONFIG_HOME}/git"
+mkdir -p "${XDG_CONFIG_HOME}/tmux"
+mkdir -p "${XDG_DATA_HOME}/tig"
+mkdir -p "${ZDOTDIR}"
 touch "${XDG_CONFIG_HOME}/git/config.local"
 
-ln -fs "${shelldir}/zshenv"                   "${HOME}/.zshenv"
-ln -fs "${shelldir}/zshrc"                    "${HOME}/.zshrc"
+ln -fs "${shelldir}/zshenv_home"                   "${HOME}/.zshenv"
+ln -fs "${shelldir}/zshenv"                   "${ZDOTDIR}/.zshenv"
+ln -fs "${shelldir}/zshrc"                    "${ZDOTDIR}/.zshrc"
 ln -fs "${shelldir}/nixpkgs"                  "${XDG_CONFIG_HOME}/nixpkgs"
 ln -fs "${langdir}/npm"                       "${XDG_CONFIG_HOME}/npm"
 ln -fs "${toolsdir}/alacritty/alacritty.yml"  "${XDG_CONFIG_HOME}/alacritty/alacritty.yml"
