@@ -27,6 +27,7 @@ nnoremap <silent><Leader>s :w<CR>
 nnoremap <silent><Leader>' :split<CR> :term<CR>i
 nnoremap <silent><Leader>ws :split<CR>
 nnoremap <silent><Leader>wv :vsplit<CR>
+nnoremap <silent><Leader>wd :quit<CR>
 nnoremap <silent><Leader>wh <C-w>h
 nnoremap <silent><Leader>wj <C-w>j
 nnoremap <silent><Leader>wk <C-w>k
@@ -52,3 +53,12 @@ function! s:check_back_space() abort
 endfunction
 
 nnoremap <Leader>tt :CocCommand explorer<CR>
+
+" fzf
+
+nnoremap <silent><Leader>ff :Files<CR>
+nnoremap <silent><Leader>fg :GFiles<CR>
+nnoremap <silent><Leader>fb :Buffers<CR>
+nnoremap <silent><Leader>fw :Windows<CR>
+nnoremap <Leader>fr :Rg<Space>
+

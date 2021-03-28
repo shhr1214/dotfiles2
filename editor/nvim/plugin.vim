@@ -12,6 +12,8 @@ call plug#begin("~/.config/nvim/plugged")
   Plug 'ulwlu/elly.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
 
   " Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
   " Plug 'ionide/Ionide-vim', {'do':  'make fsautocomplete'}
@@ -42,3 +44,5 @@ let g:coc_global_extensions = [
       \'coc-yaml',
       \'coc-yank',
       \]
+
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
