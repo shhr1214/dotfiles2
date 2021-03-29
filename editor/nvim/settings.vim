@@ -34,6 +34,8 @@ nnoremap <silent><Leader>wk <C-w>k
 nnoremap <silent><Leader>wl <C-w>l
 nnoremap <silent><Leader>tn :tabnew<CR>
 
+nnoremap <silent><Leader>bd :bd<CR>
+
 " coc
 
 inoremap <silent><expr> <Tab>
@@ -57,8 +59,9 @@ nnoremap <Leader>tt :CocCommand explorer<CR>
 " fzf
 
 nnoremap <silent><Leader>ff :Files<CR>
-nnoremap <silent><Leader>fg :GFiles<CR>
-nnoremap <silent><Leader>fb :Buffers<CR>
-nnoremap <silent><Leader>fw :Windows<CR>
+nnoremap <silent><Leader>gf :GFiles<CR>
+nnoremap <silent><Leader>bf :Buffers<CR>
+nnoremap <silent><Leader>wf :Windows<CR>
 nnoremap <Leader>fr :Rg<Space>
 
+let g:user_emmet_leader_key='<C-Z>'

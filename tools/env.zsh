@@ -21,12 +21,14 @@ alias vi="nvim -u NONE --noplugin"
 alias vim="nvim"
 alias spacemacs="rm ${XDG_CONFIG_HOME}/emacs && ln -fs ${XDG_CONFIG_HOME}/spacemacs.emacs.d ${XDG_CONFIG_HOME}/emacs && emacs"
 alias doomemacs="rm ${XDG_CONFIG_HOME}/emacs && ln -fs ${XDG_CONFIG_HOME}/doom.emacs.d      ${XDG_CONFIG_HOME}/emacs && emacs"
+
 export EDITOR="nvim -u NONE --noplugin"
 export CVSEDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 export SPACEVIMDIR="${XDG_CONFIG_HOME}/SpaceVim/"
 export PAGER=less
 export LESSCHARSET='utf-8'
+export FZF_DEFAULT_COMMAND='rg --files'
 
 export PATH="${XDG_CONFIG_HOME}/doom.emacs.d/bin:${PATH}"
 export PATH="/usr/local/bin:${PATH}"
