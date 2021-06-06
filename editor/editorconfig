@@ -11,6 +11,9 @@ trim_trailing_whitespace = true
 [*.rs]
 indent_size = 4
 
+[*.{fs,fsx}]
+indent_size = 4
+
 [*.hs]
 indent_size = 2
 

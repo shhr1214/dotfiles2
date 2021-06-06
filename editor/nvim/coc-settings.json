@@ -26,5 +26,15 @@
   "python.pythonPath": "/usr/local/bin/python3",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
-  "languageserver": {}
+  "languageserver": {
+    "fsharp": {
+      "command": "dotnet",
+      "args": [
+        "${HOME}/.local/lib/fsharp/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp3.0/FSharpLanguageServer.dll",
+        "--background-service-enabled"
+      ],
+      "filetypes": ["fsharp"],
+      "ignoredRootPaths": ["/", "~"]
+    }
+  }
 }

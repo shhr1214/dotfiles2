@@ -26,6 +26,7 @@ export EDITOR="nvim -u NONE --noplugin"
 export CVSEDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 export SPACEVIMDIR="${XDG_CONFIG_HOME}/SpaceVim/"
+export SPACEMACSDIR="${XDG_CONFIG_HOME}/spacemacs/"
 export PAGER=less
 export LESSCHARSET='utf-8'
 export FZF_DEFAULT_COMMAND='rg --files'

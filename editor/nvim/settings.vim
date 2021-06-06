@@ -33,6 +33,7 @@ nnoremap <silent><Leader>wj <C-w>j
 nnoremap <silent><Leader>wk <C-w>k
 nnoremap <silent><Leader>wl <C-w>l
 nnoremap <silent><Leader>tn :tabnew<CR>
+nnoremap <silent><Leader><Tab> :bp<CR>
 
 nnoremap <silent><Leader>bd :bd<CR>
 

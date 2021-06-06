@@ -1,0 +1,9 @@
+#!/bin/bash
+
+repo=https://github.com/fsprojects/fsharp-language-server
+libdir="${HOME}/.local/lib/fsharp"
+
+mkdir -p "${libdir}"
+
+(cd "${libdir}" && git clone "${repo}")
+(cd "${libdir}/fsharp-language-server" && yarn install && dotnet build -c Release)
