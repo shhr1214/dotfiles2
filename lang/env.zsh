@@ -22,6 +22,8 @@ alias cljs="lumo -r"
 # For the system Java wrappers to find this JDK, symlink it with
 # sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export SDKMAN_DIR="$XDG_CONFIG_HOME/sdkman"
+source "$XDG_CONFIG_HOME/sdkman/bin/sdkman-init.sh"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include ${CPPFLAGS}"
 export GRADLE_USER_HOME="${XDG_DATA_HOME}/gradle"
 export LEIN_HOME="{$XDG_DATA_HOME}/lein"

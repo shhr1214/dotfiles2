@@ -46,8 +46,6 @@ if [ "${HOME}/.dotfiles/shell/zshrc" -nt "${ZDOTDIR}/.zshrc.zwc" ]; then
   zcompile "${ZDOTDIR}/.zshrc"
 fi
 
-source "${HOME}/.config/broot/launcher/bash/br"
-
 # if (which zprof > /dev/null 2>&1) ;then
 #   zprof
 # fi

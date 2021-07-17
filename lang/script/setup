@@ -9,6 +9,9 @@
 # haskell
 stack install apply-refact hlint stylish-haskell hasktags hoogle hindent intero
 
+# java
+curl -s https://get.sdkman.io | bash
+
 # ocaml
 opam init
 opam install merlin utop ocp-indent
